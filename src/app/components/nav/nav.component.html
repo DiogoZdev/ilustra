@@ -1,0 +1,28 @@
+<nav>
+    <div class="contain" row>
+        <div class="navigation">
+            <ul>
+                <li>{{ "INICIO" | translate }}</li>
+                <li>{{ "SOBRE" | translate }}</li>
+            </ul>
+        </div>
+        <div class="settings" to-right>
+            <mat-icon class="gear" (click)="toggleConfiguration()">settings</mat-icon>
+            <div class="configuration" *ngIf="showConfiguration">
+                <div>
+                    <ul>
+                        <li class="opt" (click)="setLanguage('PT')">português</li>
+                        <li class="opt" (click)="setLanguage('ES')">español</li>
+                        <li class="opt" (click)="setLanguage('EN')">english</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="opt"><mat-icon (click)="setTheme('light')">light_mode</mat-icon></li>
+                        <li class="opt"><mat-icon (click)="setTheme('dark')">dark_mode</mat-icon></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

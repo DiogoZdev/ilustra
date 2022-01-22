@@ -1,0 +1,65 @@
+nav {
+    background-color: #ddd;
+  
+    .navigation {
+      ul {
+        display: flex;
+        flex-direction: row;
+  
+        li {
+            list-style: none;
+            padding: 1rem;
+        }
+      }
+    }
+  }
+  
+  .settings {
+    position: relative;
+  }
+  
+  .gear {
+    padding: 1rem;
+  }
+  
+  .configuration {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    min-height: max-content;
+    border-radius: 4px;
+    background-color: #ddd;
+  
+    div {
+      width: 100%;
+      padding: 0.5rem;
+      top: 0;
+    }
+  
+    div:last-child {
+      border-left: 1px solid #bbb;
+    }
+  
+    h3 {
+      font-size: 1rem;
+      font-weight: 200;
+      text-align: center;
+    }
+  
+    .opt {
+      font-size: 0.8rem;
+      padding: 0.4rem;
+      width: 100%;
+      border-radius: 4px;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0000001a;
+      }
+    }
+  }
+  

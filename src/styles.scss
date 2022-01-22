@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+// imports
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Nanum+Pen+Script');
+
+// Root styles
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // box-shadow: 1px 1px 1px red ;
+}
+
+:root {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.contain {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* IMPORTANT STYLES */
+
+mat-icon {
+    cursor: pointer;
+}
+
+ul {
+    display: block;
+    min-width: max-content;
+    min-height: max-content;
+}
+
+li {
+    list-style-type: none;
+}
+
+[row] {
+    display: flex;
+    flex-direction: row;
+}
+
+[to-right] {
+    margin-left: auto;
+}
