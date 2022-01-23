@@ -8,12 +8,22 @@ import { NavComponent } from './components/nav/nav.component';
 import { MatIconModule } from '@angular/material/icon';
 import { PipesModule } from 'pipes-module';
 import { TranslatePipe } from './utils/pipes/translate.pipe';
+import { GaleriaComponent } from './components/galeria/galeria.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AboutComponent } from './components/about/about.component';
+import { ToTopComponent } from './components/to-top/to-top.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    TranslatePipe
+    TranslatePipe,
+    GaleriaComponent,
+    HeaderComponent,
+    FooterComponent,
+    AboutComponent,
+    ToTopComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,14 @@
+<div class="to-top" *ngIf="showScroll">
+    <mat-icon (click)="toTop()">keyboard_double_arrow_up</mat-icon>
+</div>
+
+
 <nav>
     <div class="contain" row>
         <div class="navigation">
             <ul>
-                <li>{{ "INICIO" | translate }}</li>
-                <li>{{ "SOBRE" | translate }}</li>
+                <li opt (click)="sendPage('home')">{{ "INICIO" | translate }}</li>
+                <li opt (click)="sendPage('about')">{{ "SOBRE" | translate }}</li>
             </ul>
         </div>
         <div class="settings" to-right>

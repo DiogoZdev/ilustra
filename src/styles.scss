@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     // box-shadow: 1px 1px 1px red ;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -27,6 +28,7 @@ html, body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 1rem;
+    background-color: inherit;
 }
 
 /* IMPORTANT STYLES */
@@ -50,6 +52,22 @@ li {
     flex-direction: row;
 }
 
+[col] {
+    width: 100%;
+}
+
+[pad] {
+    padding: 1rem;
+}
+
 [to-right] {
     margin-left: auto;
+}
+
+[opt] {
+    cursor: pointer;
+
+    &:hover {
+        background-color: #0001;
+    }
 }

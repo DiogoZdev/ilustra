@@ -1,3 +1,20 @@
+.to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #444;
+  border-radius: 50%;
+
+  mat-icon {
+    width: 100%;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+  }
+}
+
 nav {
     background-color: #ddd;
   
