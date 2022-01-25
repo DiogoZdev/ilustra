@@ -1,42 +1,53 @@
 {
-  "INICIO": {
-    "PT": "Início",
-    "EN": "Home",
-    "ES": "Inicio"
-  },
-  "SOBRE": {
-    "PT": "Sobre",
-    "EN": "About",
-    "ES": "Información"
+  "NAV": {
+    "INICIO": {
+      "PT": "Início",
+      "EN": "Home",
+      "ES": "Inicio"
+    },
+    "SOBRE": {
+      "PT": "Sobre",
+      "EN": "About",
+      "ES": "Información"
+    }
   },
   "TAGLINE": {
     "PT": "Arte e Design",
     "EN": "Art & Design",
     "ES": "Arte y Design"
   },
-  "CAT_TUDO": {
-    "PT": "Tudo",
-    "EN": "All",
-    "ES": "Todos"
+  "CATEGORIA": {
+    "TUDO": {
+      "PT": "Tudo",
+      "EN": "All",
+      "ES": "Todos"
+    },
+    "INFANTIL": {
+      "PT": "Infantil",
+      "EN": "For Kids",
+      "ES": "Para Niños"
+    },
+    "EPICO": {
+      "PT": "Épico",
+      "EN": "Epic",
+      "ES": "Épico"
+    },
+    "OUTROS": {
+      "PT": "Outros",
+      "EN": "Other",
+      "ES": "Otros"
+    }
   },
-  "CAT_INFANTIL": {
-    "PT": "Infantil",
-    "EN": "For Kids",
-    "ES": "Para Niños"
-  },
-  "CAT_EPICO": {
-    "PT": "Épico",
-    "EN": "Epic",
-    "ES": "Épico"
-  },
-  "CAT_OUTROS": {
-    "PT": "Outros",
-    "EN": "Other",
-    "ES": "Otros"
-  },
-  "CONTATO": {
-    "PT": "Entre em contato",
-    "EN": "Get in touch",
-    "ES": "Habla Conmigo"
+  "FOOTER": {
+    "CONTATO": {
+      "PT": "Entre em contato",
+      "EN": "Get in touch",
+      "ES": "Habla Conmigo"
+    },
+    "COMPARTILHE": {
+      "PT": "Compartilhe!",
+      "EN": "Share!",
+      "ES": "Comparte!"
+    }
   }
 }

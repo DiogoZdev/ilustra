@@ -12,10 +12,13 @@ export class TranslatePipe implements PipeTransform {
    * @param chave chave de tradução
    * @returns valor traduzido
    */
-   transform(key: any ) {
+  transform(key: string ) {
+    let language = localStorage.getItem('language') as any;
     let path = JSON.parse(JSON.stringify(i18n));
-    let id = localStorage.getItem('language') as any;
-    return path[key][id];
+    let keyArray = key.split('.');
+    keyArray.length > 1
+      ? keyArray.forEach((el) => {path = path[el];})
+      : path = path[key];    
+    return path[language] || "erro";
   }
 }
-

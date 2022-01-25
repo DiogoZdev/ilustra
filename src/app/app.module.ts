@@ -12,7 +12,6 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
-import { ToTopComponent } from './components/to-top/to-top.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +21,7 @@ import { ToTopComponent } from './components/to-top/to-top.component';
     GaleriaComponent,
     HeaderComponent,
     FooterComponent,
-    AboutComponent,
-    ToTopComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,

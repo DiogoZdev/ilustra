@@ -3,4 +3,12 @@ footer {
   padding: 1rem 0;
 
   color: #eee;
+
+  .flyer {
+    width: 100px;
+    margin: 1rem;
+    aspect-ratio: 1 / 1.5;
+    background-color: rgb(255, 123, 0);
+    transform: rotate(-7deg);
+  }
 }
