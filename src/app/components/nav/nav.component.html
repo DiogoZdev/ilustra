@@ -1,9 +1,9 @@
 <div class="to-top" *ngIf="showScroll">
-    <mat-icon (click)="toTop()">keyboard_double_arrow_up</mat-icon>
+    <mat-icon (click)="toTop()">arrow_drop_up</mat-icon>
 </div>
 
 
-<nav>
+<nav [attr.tema]="theme">
     <div class="contain" row>
         <div class="navigation">
             <ul>
@@ -23,8 +23,8 @@
                 </div>
                 <div>
                     <ul>
-                        <li class="opt"><mat-icon (click)="setTheme('light')">light_mode</mat-icon></li>
-                        <li class="opt"><mat-icon (click)="setTheme('dark')">dark_mode</mat-icon></li>
+                        <li class="opt" (click)="setTheme('light')"><mat-icon>light_mode</mat-icon></li>
+                        <li class="opt" (click)="setTheme('dark')"><mat-icon>dark_mode</mat-icon></li>
                     </ul>
                 </div>
             </div>

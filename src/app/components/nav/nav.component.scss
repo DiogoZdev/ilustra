@@ -1,82 +1,110 @@
+@import "../../../colors.scss";
+
 .to-top {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
   width: 2rem;
   height: 2rem;
-  background-color: #444;
+  background-color: white;
+  color: #222;
   border-radius: 50%;
+  box-shadow: 2px 2px 4px #0005;
 
   mat-icon {
     width: 100%;
     line-height: 1.5;
     text-align: center;
-    color: white;
   }
 }
 
 nav {
-    background-color: #ddd;
-  
-    .navigation {
-      ul {
-        display: flex;
-        flex-direction: row;
-  
-        li {
-            list-style: none;
-            padding: 1rem;
-        }
-      }
-    }
-  }
-  
-  .settings {
-    position: relative;
-  }
-  
-  .gear {
-    padding: 1rem;
-  }
-  
-  .configuration {
-    position: absolute;
-    top: 110%;
-    right: 0;
-    display: flex;
-    flex-direction: row;
-    padding: 0.5rem;
-    min-height: max-content;
-    border-radius: 4px;
-    background-color: #ddd;
-  
-    div {
-      width: 100%;
-      padding: 0.5rem;
-      top: 0;
-    }
-  
-    div:last-child {
-      border-left: 1px solid #bbb;
-    }
-  
-    h3 {
-      font-size: 1rem;
-      font-weight: 200;
-      text-align: center;
-    }
-  
-    .opt {
-      font-size: 0.8rem;
-      padding: 0.4rem;
-      width: 100%;
-      border-radius: 4px;
-      text-align: center;
-      cursor: pointer;
+  .navigation {
+    ul {
+      display: flex;
+      flex-direction: row;
 
-      &:hover {
-        background-color: #0000001a;
+      li {
+          list-style: none;
+          padding: 1rem;
       }
     }
   }
+}
+
+.settings {
+  position: relative;
+}
+
+.gear {
+  padding: 1rem;
+}
   
+.configuration {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  min-height: max-content;
+  border-radius: 4px;
+
+  div {
+    width: 100%;
+    padding: 0.5rem;
+    top: 0;
+  }
+
+  div:last-child {
+    border-left: 1px solid #bbb;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  .opt {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0000001a;
+    }
+  }
+}
+
+nav[tema=light] {
+  background-color: var(--backgroudII-light);
+  color: var(--font-light);
+
+  .configuration {
+    background-color: var(--backgroudII-light);
+  }
+}
+
+nav[tema=dark] {
+  background-color: var(--backgroudII-dark);
+  color: var(--font-dark);
+
+  li:hover {
+    background-color: #000;
+  }
+
+  .configuration {
+    background-color: var(--backgroudII-dark);
+    &>:last-child {
+      border-left: #333 solid 1px;
+    }
+
+    li:hover {
+      background-color: #000;
+    }
+  }
+}

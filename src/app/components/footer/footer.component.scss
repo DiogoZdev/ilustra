@@ -1,5 +1,5 @@
 footer {
-  background-color: #151515;
+  background-color: #000b17;
   padding: 1rem 0;
 
   color: #eee;
@@ -10,5 +10,27 @@ footer {
     aspect-ratio: 1 / 1.5;
     background-color: rgb(255, 123, 0);
     transform: rotate(-7deg);
+  }
+
+  .contain {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+
+    & > :nth-child(2) {
+      ul {
+        li {
+          line-height: 2.5;
+        }
+      }
+    }
+
+    & > :nth-child(3) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      p {
+        text-align: center;
+        color: #385270;
+      }
+    }
   }
 }

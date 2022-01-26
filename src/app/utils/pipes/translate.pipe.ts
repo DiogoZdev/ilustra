@@ -12,13 +12,28 @@ export class TranslatePipe implements PipeTransform {
    * @param chave chave de tradução
    * @returns valor traduzido
    */
-  transform(key: string ) {
-    let language = localStorage.getItem('language') as any;
-    let path = JSON.parse(JSON.stringify(i18n));
-    let keyArray = key.split('.');
-    keyArray.length > 1
-      ? keyArray.forEach((el) => {path = path[el];})
-      : path = path[key];    
-    return path[language] || "erro";
+  transform(chave: any ) {
+    let json = JSON.parse(JSON.stringify(i18n));
+    const idioma = localStorage.getItem('language')?.toUpperCase() as any;
+    const chaveArr = chave.split('.');
+
+    if (chaveArr.length > 1) {
+      chaveArr.forEach((k: string) => {
+				// valida se não vai quebrar o sistema
+        if (json[k] !== undefined) {
+          json = json[k]; 
+        }
+      })
+    } else {
+			// valida se não vai quebrar o sistema
+      if (json[chave] !== undefined)
+      json = json[chave];
+    }      
+
+    if (json[idioma] === undefined ) {
+      return `? [${chave}]`;
+    } else {
+      return json[idioma];
+    }
   }
 }

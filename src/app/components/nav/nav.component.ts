@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit, Output, EventEmitter } from '@angular/core';
+import { themeGetter } from 'src/app/utils/pipes/theme';
 
 @Component({
   selector: 'app-nav',
@@ -7,6 +8,8 @@ import { Component, HostListener, OnInit, Output, EventEmitter } from '@angular/
 })
 export class NavComponent implements OnInit {
 
+  public theme: string = '';
+  
   /**
    * Boolean de exibição do botão "voltar ao topo"
    */
@@ -42,7 +45,8 @@ export class NavComponent implements OnInit {
 
     if (localStorage.getItem("theme") === undefined) {
       localStorage.setItem("theme", "light")
-    };
+    } 
+    this.theme = localStorage.getItem("theme") || 'light' ;
   }
 
   /**
@@ -83,6 +87,7 @@ export class NavComponent implements OnInit {
     localStorage.setItem("theme", value)
     // TODO implementar alteração do tema
     console.log(value);
+    this.theme = value;
   }
 
   /**

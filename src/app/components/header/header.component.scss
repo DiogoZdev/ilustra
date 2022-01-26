@@ -1,9 +1,19 @@
 header {
-    background-color: white;
     min-height: 150px;
     padding-top: 30px;
 
     h1, h3 {
         text-align: center;
     }
+}
+
+header[tema=light] {
+    background-color: var(--backgroudI-light);
+    color: var(--font-light);
+}
+
+header[tema=dark] {
+    background-color: var(--backgroudI-dark);
+
+    color: var(--font-dark);
 }
