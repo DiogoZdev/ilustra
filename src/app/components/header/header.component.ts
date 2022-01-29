@@ -1,23 +1,28 @@
-import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit, OnChanges {
+export class HeaderComponent implements OnInit{
   
-  public theme = localStorage.getItem('theme');
+  /**
+   * Definição do tema
+   */
+  theme!: string;
 
-  constructor() {}
+  constructor(
+    private themeService: ThemeService,
+  ) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
+    setTimeout(() => {
+      this.themeService.getTheme().subscribe((tema) => {
+        this.theme = tema;
+      });
+    }, 500)
   }
-
-  ngOnChanges(changes: SimpleChanges): void {
-      this.theme = localStorage.getItem('theme')
-      console.log(this.theme);
-      
-  }
-
 }

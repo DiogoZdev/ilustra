@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -6,15 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'andressa-ilustra';
+  /**
+   * Título da aplicação
+   */
+  public title = 'andressa-ilustra';
 
-  page!: string;
+  /**
+   * Página selecionada a ser exibida
+   */
+  public page = 'home';
 
+  constructor () {}
+
+  /**
+   * Método inicial do componente
+   */
   ngOnInit(): void {
-      localStorage.setItem("page", "home");
-      this.page = "home";
   }
 
+  /**
+   *  Método de definição de página
+   */
   setPage(page: string) {
     this.page = page;
   }

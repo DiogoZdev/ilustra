@@ -1,7 +1,15 @@
 <app-nav
-  (pageEmitter)="setPage($event)"
-></app-nav>
-<app-header></app-header>
-<app-galeria *ngIf="page === 'home'"></app-galeria>
-<app-about *ngIf="page === 'about'"></app-about>
-<app-footer></app-footer>
+  (pageEmitter)="setPage($event)">
+</app-nav>
+
+<app-header>
+</app-header>
+
+<app-galeria *ngIf="page === 'home'">
+</app-galeria>
+
+<app-about *ngIf="page === 'about'">
+</app-about>
+
+<app-footer>
+</app-footer>

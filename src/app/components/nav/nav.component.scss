@@ -81,16 +81,18 @@ nav {
 }
 
 nav[tema=light] {
-  background-color: var(--backgroudII-light);
+  transition: all ease 0.3s;
+  background-color: var(--backgroundII-light);
   color: var(--font-light);
 
   .configuration {
-    background-color: var(--backgroudII-light);
+    background-color: var(--backgroundII-light);
   }
 }
 
 nav[tema=dark] {
-  background-color: var(--backgroudII-dark);
+  transition: all ease 0.3s;
+  background-color: var(--backgroundII-dark);
   color: var(--font-dark);
 
   li:hover {
@@ -98,7 +100,7 @@ nav[tema=dark] {
   }
 
   .configuration {
-    background-color: var(--backgroudII-dark);
+    background-color: var(--backgroundII-dark);
     &>:last-child {
       border-left: #333 solid 1px;
     }

@@ -1,6 +1,5 @@
 main {
   padding: 1rem;
-  background-color: white;
 }
 
 .filter {
@@ -44,7 +43,29 @@ main {
 
 .imagens {
   height: 800px;
-  background: url(https://unsplash.it/1000/1000);
   margin-top: 2rem;
 
+}
+
+main[theme=light] {
+  transition: all ease 0.3s;
+  background-color: var(--white);
+
+  .imagens {
+    background-color: var(--backgroundI-light);
+  }
+}
+
+main[theme=dark] {
+  transition: all ease 0.3s;
+  background-color: var(--backgroundI-dark);
+  color: var(--font-dark);
+
+  .imagens {
+    background-color: var(--backgroundII-dark);
+  }
+
+  .filter {
+    color: #000;
+  }
 }

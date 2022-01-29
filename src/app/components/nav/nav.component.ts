@@ -1,15 +1,15 @@
-import { Component, HostListener, OnInit, Output, EventEmitter } from '@angular/core';
-import { themeGetter } from 'src/app/utils/pipes/theme';
+import { Component, HostListener, OnInit, Output, EventEmitter, AfterViewInit } from '@angular/core';
+import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
-export class NavComponent implements OnInit {
+export class NavComponent implements OnInit { 
 
-  public theme: string = '';
-  
+  public theme!: string;
+
   /**
    * Boolean de exibição do botão "voltar ao topo"
    */
@@ -20,13 +20,17 @@ export class NavComponent implements OnInit {
    */
   public showConfiguration: boolean = false;
 
-
+  /**
+   * Output de página
+   */
   @Output() pageEmitter = new EventEmitter<string>();
 
   /**
    * Método construtor do componente
    */
-  constructor() { }
+  constructor(
+    private themeService: ThemeService
+  ) { }
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
@@ -43,10 +47,22 @@ export class NavComponent implements OnInit {
       localStorage.setItem("language", "PT");
     }
 
-    if (localStorage.getItem("theme") === undefined) {
-      localStorage.setItem("theme", "light")
-    } 
-    this.theme = localStorage.getItem("theme") || 'light' ;
+    if (localStorage.getItem("page") === undefined) {
+      localStorage.setItem("page", "home");
+    }
+
+    if (localStorage.getItem("theme")) {
+      this.theme = localStorage.getItem("theme") as string;
+      setTimeout(() => {
+        this.themeService.setTheme(this.theme);
+      }, 700);
+    } else {
+      localStorage.setItem("theme", "light");
+      this.themeService.setTheme('light');
+    }
+    this.themeService.getTheme().subscribe((tema) => {
+      this.theme = tema;
+    });
   }
 
   /**
@@ -56,13 +72,11 @@ export class NavComponent implements OnInit {
   sendPage(page: string) {
     this.pageEmitter.emit(page);
   }
-
   /**
    * Método para exibir configurações da página
    */
   toggleConfiguration() {
     this.showConfiguration = !this.showConfiguration;
-
     if (this.showConfiguration === true) {
       setTimeout(() => {
         this.showConfiguration = false;
@@ -80,14 +94,11 @@ export class NavComponent implements OnInit {
   }
 
   /**
-   * Método de alteração do tema
-   * @param value Tema selecionado
+   * Método que define o tema no observable
+   * @param tema Novo tema
    */
-  setTheme(value: string): void {
-    localStorage.setItem("theme", value)
-    // TODO implementar alteração do tema
-    console.log(value);
-    this.theme = value;
+  setTheme(tema: string) {
+    this.themeService.setTheme(tema);
   }
 
   /**

@@ -1,5 +1,4 @@
 footer {
-  background-color: #000b17;
   padding: 1rem 0;
 
   color: #eee;
@@ -33,4 +32,15 @@ footer {
       }
     }
   }
+}
+
+footer[theme=light] {
+  transition: all ease 0.3s;
+  background-color: var(--backgroundII-light);
+  color: var(--font-light);
+}
+
+footer[theme=dark] {
+  transition: all ease 0.3s;
+  background-color: var(--backgroundII-dark);
 }
