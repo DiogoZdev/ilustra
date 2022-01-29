@@ -9,8 +9,12 @@
 			</ul>
 		</div>
 
-		<div class="imagens"></div>
-
-
+		<div (click)="toggleDisplay()" class="imagens">
+			<img *ngFor="let project of visibleProjectsList" [src]="project.thumbnail" alt="">
+		</div>
 	</div>
 </main>
+
+<app-display [theme]="theme" *ngIf="viewDisplay"
+	(viewEmitter)="toggleDisplay()"
+></app-display>

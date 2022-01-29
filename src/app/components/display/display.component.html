@@ -1,0 +1,33 @@
+<div [attr.theme]="theme" class="background">
+  <div class="display">
+    <div class="chevron">
+      <mat-icon>chevron_left</mat-icon>
+    </div>
+    <div class="image">
+      <div class="image--art">
+        <img src="https://unsplash.it/1000/1000" alt="">
+        <mat-icon
+          class="icon chev chev-left"
+        >chevron_left
+        </mat-icon>
+        <mat-icon
+          class="icon chev chev-right"
+        >chevron_right
+        </mat-icon>
+        <mat-icon
+          (click)="toggleDisplayView()"
+          class="icon close"
+        >cancel</mat-icon>
+      </div>
+      <div class="image--info" *ngIf="showInfo">
+        <!-- TEMPLATE INFORMAÇÂO -->
+        <h1>Título Bacana</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eveniet molestias atque quam aspernatur autem id dolorem sequi fugiat placeat.</p>
+        <!--  -->
+      </div>
+      <mat-icon (click)="toggleArtInfo()" class="icon info">info</mat-icon>
+    </div>
+    <div class="chevron">
+      <mat-icon>chevron_right</mat-icon>
+  </div>
+</div>

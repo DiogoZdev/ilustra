@@ -11,7 +11,7 @@ export class FooterComponent implements OnInit {
   /**
    * Tema do componente
    */
-  public theme = '';
+  public theme = 'light';
 
   constructor(
     private themeService: ThemeService,

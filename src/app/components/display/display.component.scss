@@ -1,0 +1,144 @@
+mat-icon {
+  width: fit-content;
+  height: fit-content;
+}
+
+.background {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000c;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  width: 95%;
+  max-height: 85vh;
+  aspect-ratio: 16/9;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+
+  .chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    mat-icon {
+      font-size: 3rem;
+      text-align: center;
+      width: 100%;
+      color: #eee;
+      text-shadow: 2xp 2px 0 #000;
+    }
+  }
+
+  .image {
+    position: relative;
+    display: flex;
+    max-height: 85vh;
+
+    .info {
+      color: transparent;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    &:hover {
+      .info {
+        color: #fa0;
+      }
+    }
+
+    .icon {
+      color: transparent;
+      position: absolute;
+
+      text-align: center;
+      font-size: 1.5rem;
+
+      transition: all 0.3s ease;
+    }
+    
+    .image--art {
+      position: relative;
+      width: 100%;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        .icon {
+          color: white;
+          text-shadow: 0 0 4px #000;
+        }
+      }
+
+      img {
+        object-fit: cover;
+      }
+
+      .chev {
+        font-size: 2.5rem;
+      }
+
+      .chev-left {
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .chev-right {
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .close {
+        top: 1rem;
+        left: 1rem;
+      }
+    }
+
+    .image--info {
+      // background-color: #111;
+      // color: #eee;
+      width: 50%;
+      border-radius: 0 8px 8px 0;
+      padding: 2rem;
+
+      h1 {
+        font-size: 30px;
+        line-height: 1.5;
+        padding: 1ch 0;
+      }
+
+      p {
+        text-indent: 1ch;
+        font-size: 16px;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+.background[theme=light] {
+  .image--info {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+
+.background[theme=dark] {
+  .image--info {
+    background-color: #111;
+    color: #eee;
+  }
+}

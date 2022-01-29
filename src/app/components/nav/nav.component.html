@@ -2,7 +2,6 @@
     <mat-icon (click)="toTop()">arrow_drop_up</mat-icon>
 </div>
 
-
 <nav [attr.tema]="theme">
     <div class="contain" row>
         <div class="navigation">
@@ -12,7 +11,9 @@
             </ul>
         </div>
         <div class="settings" to-right>
-            <mat-icon class="gear" (click)="toggleConfiguration()">settings</mat-icon>
+            <mat-icon class="gear" (click)="toggleConfiguration()">
+                settings
+            </mat-icon>
             <div class="configuration" *ngIf="showConfiguration">
                 <div>
                     <ul>

@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, Output, EventEmitter, AfterViewInit } from '@angular/core';
+import { Component, HostListener, OnInit, Output, EventEmitter } from '@angular/core';
 import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { ThemeService } from 'src/app/services/theme.service';
 })
 export class NavComponent implements OnInit { 
 
-  public theme!: string;
+  public theme = 'light';
 
   /**
    * Boolean de exibição do botão "voltar ao topo"
@@ -29,8 +29,10 @@ export class NavComponent implements OnInit {
    * Método construtor do componente
    */
   constructor(
-    private themeService: ThemeService
-  ) { }
+    private themeService: ThemeService,
+  ) { 
+
+  }
 
   @HostListener("window:scroll", [])
   onWindowScroll() {

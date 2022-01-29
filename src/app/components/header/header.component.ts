@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit{
   /**
    * Definição do tema
    */
-  theme!: string;
+  public theme = 'light';
 
   constructor(
     private themeService: ThemeService,

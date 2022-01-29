@@ -49,6 +49,7 @@ nav {
   padding: 0.5rem;
   min-height: max-content;
   border-radius: 4px;
+  box-shadow: 0 0 3px #0005;
 
   div {
     width: 100%;
@@ -82,11 +83,12 @@ nav {
 
 nav[tema=light] {
   transition: all ease 0.3s;
-  background-color: var(--backgroundII-light);
-  color: var(--font-light);
+  background-color: var(--backgroundI-dark);
+  color: var(--font-dark);
 
   .configuration {
     background-color: var(--backgroundII-light);
+    color: var(--font-light);
   }
 }
 

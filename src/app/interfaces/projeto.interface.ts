@@ -21,6 +21,11 @@ export interface Projeto {
   imagens: string[];
 
   /**
+   * Thumbnail do projeto
+   */
+  thumbnail: string,
+
+  /**
    * Categoria do projeto
    */
   categoria: string;

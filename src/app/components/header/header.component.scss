@@ -8,11 +8,13 @@ header {
 }
 
 header[theme=light] {
+    transition: all 0.3s ease;
     background-color: var(--backgroundI-light);
     color: var(--font-light);
 }
 
 header[theme=dark] {
+    transition: all 0.3s ease;
     background-color: var(--backgroundI-dark);
     color: var(--font-dark);
 }
