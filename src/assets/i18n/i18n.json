@@ -1,19 +1,41 @@
 {
-  "NAV": {
-    "INICIO": {
-      "PT": "Início",
-      "EN": "Home",
-      "ES": "Inicio"
+  "PT": "",
+  "EN": "",
+  "ES": "",
+  "ABOUT": {
+    "TRABALHO": {
+      "TITULO": {
+        "PT": "Meu Trabalho",
+        "EN": "Mi Trabajo",
+        "ES": "My Work"
+      },
+      "PARAGRAFO1": {
+        "PT": "",
+        "EN": "",
+        "ES": ""
+      },
+      "PARAGRAFO2": {
+        "PT": "",
+        "EN": "",
+        "ES": ""
+      }
     },
-    "SOBRE": {
-      "PT": "Sobre",
-      "EN": "About",
-      "ES": "Información"
-    },
-    "CONFIGURACOES": {
-      "PT": "Configurações",
-      "EN": "Settings",
-      "ES": "Información"
+    "EU": {
+      "TITULO": {
+        "PT": "Sobre Mim",
+        "EN": "Yo",
+        "ES": "About Me"
+      },
+      "PARAGRAFO1": {
+        "PT": "",
+        "EN": "",
+        "ES": ""
+      },
+      "PARAGRAFO2": {
+        "PT": "",
+        "EN": "",
+        "ES": ""
+      }
     }
   },
   "TAGLINE": {
@@ -53,6 +75,23 @@
       "PT": "Compartilhe!",
       "EN": "Share!",
       "ES": "Comparte!"
+    }
+  },
+  "NAV": {
+    "INICIO": {
+      "PT": "Início",
+      "EN": "Home",
+      "ES": "Inicio"
+    },
+    "SOBRE": {
+      "PT": "Sobre",
+      "EN": "About",
+      "ES": "Información"
+    },
+    "CONFIGURACOES": {
+      "PT": "Configurações",
+      "EN": "Settings",
+      "ES": "Información"
     }
   }
 }

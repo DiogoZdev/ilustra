@@ -5,7 +5,13 @@
     </div>
     <div class="image">
       <div class="image--art">
-        <img src="https://unsplash.it/1000/1000" alt="">
+        <!-- TEMPLATE DA IMAGEM -->
+        <img
+          *ngIf="projetoSelecionado !== null"
+          [src]="projetoSelecionado.thumbnail"
+          alt="projetoSelecionado.titulo"
+        >
+        <!-- FIM TEMPLATE IMAGEM -->
         <mat-icon
           class="icon chev chev-left"
         >chevron_left
@@ -21,8 +27,8 @@
       </div>
       <div class="image--info" *ngIf="showInfo">
         <!-- TEMPLATE INFORMAÇÂO -->
-        <h1>Título Bacana</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eveniet molestias atque quam aspernatur autem id dolorem sequi fugiat placeat.</p>
+        <h1>{{ projetoSelecionado?.titulo }}</h1>
+        <p>{{ projetoSelecionado?.descricao }}</p>
         <!--  -->
       </div>
       <mat-icon (click)="toggleArtInfo()" class="icon info">info</mat-icon>

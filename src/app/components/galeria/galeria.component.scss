@@ -48,10 +48,12 @@ main {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0;
+  gap: 5px;
 
   img {
+    cursor: pointer;
     aspect-ratio: 16/9;
+    object-fit: cover;
   }
 
 }
@@ -59,20 +61,12 @@ main {
 main[theme=light] {
   transition: all ease 0.3s;
   background-color: var(--backgroundI-light);
-
-  .imagens {
-    background-color: var(--backgroundII-light);
-  }
 }
 
 main[theme=dark] {
   transition: all ease 0.3s;
   background-color: var(--backgroundI-dark);
   color: var(--font-dark);
-
-  .imagens {
-    background-color: var(--backgroundII-dark);
-  }
 
   .filter {
     color: #000;

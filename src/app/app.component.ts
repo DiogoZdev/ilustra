@@ -17,12 +17,33 @@ export class AppComponent implements OnInit {
    */
   public page = 'home';
 
-  constructor () {}
+  /**
+   * Tema do sistema
+   */
+  public theme = '';
+
+  /**
+   * Método construtor do componente
+   */
+  constructor (
+    private themeService: ThemeService,
+  ) {}
 
   /**
    * Método inicial do componente
    */
   ngOnInit(): void {
+
+    if (localStorage.getItem('theme')) {
+      this.theme = localStorage.getItem('theme') as string;
+      this.themeService.setTheme(this.theme)
+    }
+
+    setTimeout(() => {
+      this.themeService.getTheme().subscribe((tema) => {
+        this.theme = tema;
+      });
+    }, 500)
   }
 
   /**

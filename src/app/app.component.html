@@ -1,11 +1,29 @@
 <div class="wrapper">
-  <app-nav (pageEmitter)="setPage($event)"> </app-nav>
+  <app-nav
+    (pageEmitter)="setPage($event)"
+    [theme]="theme"
+  >
+  </app-nav>
 
-  <app-header> </app-header>
+  <app-header
+    [theme]="theme"
+  >
+  </app-header>
 
-  <app-galeria *ngIf="page === 'home'"> </app-galeria>
+  <app-galeria 
+    *ngIf="page === 'home'"
+    [theme]="theme"
+  >
+  </app-galeria>
 
-  <app-about *ngIf="page === 'about'"> </app-about>
+  <app-about
+    *ngIf="page === 'about'"
+    [theme]="theme"
+  >
+  </app-about>
 
-  <app-footer> </app-footer>
+  <app-footer
+    [theme]="theme"
+  >
+  </app-footer>
 </div>

@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, HostListener, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { ThemeService } from 'src/app/services/theme.service';
 })
 export class NavComponent implements OnInit { 
 
-  public theme = 'light';
+  @Input() theme = '';
 
   /**
    * Boolean de exibição do botão "voltar ao topo"
@@ -29,7 +29,7 @@ export class NavComponent implements OnInit {
    * Método construtor do componente
    */
   constructor(
-    private themeService: ThemeService,
+    private themeService: ThemeService
   ) { 
 
   }
@@ -52,19 +52,6 @@ export class NavComponent implements OnInit {
     if (localStorage.getItem("page") === undefined) {
       localStorage.setItem("page", "home");
     }
-
-    if (localStorage.getItem("theme")) {
-      this.theme = localStorage.getItem("theme") as string;
-      setTimeout(() => {
-        this.themeService.setTheme(this.theme);
-      }, 700);
-    } else {
-      localStorage.setItem("theme", "light");
-      this.themeService.setTheme('light');
-    }
-    this.themeService.getTheme().subscribe((tema) => {
-      this.theme = tema;
-    });
   }
 
   /**

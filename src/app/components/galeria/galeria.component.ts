@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ThemeService } from 'src/app/services/theme.service';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { Projeto } from 'src/app/interfaces/projeto.interface';
 
@@ -15,7 +14,7 @@ export class GaleriaComponent implements OnInit {
   /**
    * Tema do componente
    */
-  public theme = 'light';
+  @Input() theme = '';
 
   /**
    * Flag de visualização de imagem individual
@@ -23,31 +22,59 @@ export class GaleriaComponent implements OnInit {
   viewDisplay = false;
 
   /**
+   * Projeto selecionado para visualização
+   */
+  public projetoSelecionado!: Projeto | null;
+
+  /**
    * Lista de projetos 
    */
   projectsList: Projeto[] = [];
 
-  visibleProjectsList: Projeto[] = [];
+  /**
+   * Lista de projetos visíveis no compónente
+   */
+  visibleProjectsList: Projeto[] = [
+
+    {
+      titulo: 'Sketchbook Baleia',
+      descricao: 'TO PROCURANDO NEEEEEEEMO',
+      criado: '',
+      imagens: [],
+      thumbnail: '../../../assets/projects/gallery/whale_sketch.png',
+      categoria: '',
+
+    },
+    {
+      titulo: 'Sketchbook diário',
+      descricao: 'bonitinho pa pêga',
+      criado: '',
+      imagens: [],
+      thumbnail: '../../../assets/projects/gallery/diario_sketch.png',
+      categoria: '',
+
+    },
+    {
+      titulo: 'Sketchbook Crânio',
+      descricao: 'ficou top',
+      criado: '',
+      imagens: [],
+      thumbnail: '../../../assets/projects/gallery/skull_sketch.png',
+      categoria: '',
+
+    },
+  ];
 
   /**
    * Método construtor
    * @param themeService Instância do themeService
    */
-  constructor(
-    private themeService: ThemeService,
-  ) { }
+  constructor() { }
   
   /**
    * Método inicial do componente
    */
   ngOnInit(): void {
-
-    setTimeout(() => {
-      this.themeService.getTheme().subscribe((tema) => {
-        this.theme = tema;
-      });
-    }, 500);
-
     if (!localStorage.getItem('filtro-galeria')) {
       localStorage.setItem('filtro-galeria', "all")
     }
@@ -59,8 +86,12 @@ export class GaleriaComponent implements OnInit {
     console.log(this.filtroSelecionado);
   }
 
-  toggleDisplay() {
+  toggleDisplay(projeto?: Projeto) {
     this.viewDisplay = !this.viewDisplay;
+    projeto 
+    ? this.projetoSelecionado = projeto
+    : this.projetoSelecionado = null
+    console.log(this.projetoSelecionado);
   }
 
 }
