@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import * as projects from 'src/assets/projects/projects.json'
 
 import { Projeto } from 'src/app/interfaces/projeto.interface';
 
@@ -29,41 +30,12 @@ export class GaleriaComponent implements OnInit {
   /**
    * Lista de projetos 
    */
-  projectsList: Projeto[] = [];
+  projectsList: Projeto[] = JSON.parse(JSON.stringify(projects)).projects;
 
   /**
    * Lista de projetos visíveis no compónente
    */
-  visibleProjectsList: Projeto[] = [
-
-    {
-      titulo: 'Sketchbook Baleia',
-      descricao: 'TO PROCURANDO NEEEEEEEMO',
-      criado: '',
-      imagens: [],
-      thumbnail: '../../../assets/projects/gallery/whale_sketch.png',
-      categoria: '',
-
-    },
-    {
-      titulo: 'Sketchbook diário',
-      descricao: 'bonitinho pa pêga',
-      criado: '',
-      imagens: [],
-      thumbnail: '../../../assets/projects/gallery/diario_sketch.png',
-      categoria: '',
-
-    },
-    {
-      titulo: 'Sketchbook Crânio',
-      descricao: 'ficou top',
-      criado: '',
-      imagens: [],
-      thumbnail: '../../../assets/projects/gallery/skull_sketch.png',
-      categoria: '',
-
-    },
-  ];
+  visibleProjectsList: Projeto[] = this.projectsList;
 
   /**
    * Método construtor

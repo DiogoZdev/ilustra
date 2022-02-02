@@ -1,0 +1,73 @@
+{
+  "projects":
+  [
+    {
+      "titulo": "Sketchbook Baleia",
+      "descricao": "TO PROCURANDO NEEEEEEEMO",
+      "criado": "",
+      "imagens": [],
+      "thumbnail": "../../../assets/projects/gallery/whale_sketch.png",
+      "categoria": ""
+    },
+    {
+      "titulo": "Sketchbook diário",
+      "descricao": "bonitinho pa pêga",
+      "criado": "",
+      "imagens": [],
+      "thumbnail": "../../../assets/projects/gallery/diario_sketch.png",
+      "categoria": ""
+
+    },
+    {
+      "titulo": "Sketchbook Crânio",
+      "descricao": "ficou top",
+      "criado": "",
+      "imagens": [],
+      "thumbnail": "../../../assets/projects/gallery/skull_sketch.png",
+      "categoria": ""
+
+    },
+    {
+      "titulo": "Anã",
+      "descricao": "Little Warrior Woman",
+      "criado": "",
+      "imagens": [],
+      "thumbnail": "../../../assets/projects/gallery/ana_thumbnail.jpg",
+      "categoria": ""
+
+    },
+    {
+      "titulo": "Anão",
+      "descricao": "Homi brabo",
+      "criado": "",
+      "imagens": [
+
+      ],
+      "thumbnail": "../../../assets/projects/gallery/anao_thumbnail.jpg",
+      "categoria": ""
+
+    },
+    {
+      "titulo": "Elfo",
+      "descricao": "Elfo brabo",
+      "criado": "",
+      "imagens": [
+        
+      ],
+      "thumbnail": "../../../assets/projects/gallery/elfo_thumbnail.jpg",
+      "categoria": ""
+
+    },
+    {
+      "titulo": "Orc",
+      "descricao": "Orc brabo",
+      "criado": "",
+      "imagens": [
+        
+      ],
+      "thumbnail": "../../../assets/projects/gallery/orc_thumbnail.jpg",
+      "categoria": ""
+
+    }
+  ]
+}
