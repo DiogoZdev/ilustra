@@ -28,6 +28,6 @@ export interface Projeto {
   /**
    * Categoria do projeto
    */
-  categoria: string;
+  categoria: string[];
 
 }

@@ -10,11 +10,12 @@
 		</div>
 
 		<div class="imagens">
-			<img *ngFor="let project of visibleProjectsList"
+			<img 
+				*ngFor="let project of visibleProjectsList"
 				[src]="project.thumbnail"
 				alt="project.titulo"
 				(click)="toggleDisplay(project)"
-				>
+			>
 		</div>
 	</div>
 </main>
@@ -22,6 +23,7 @@
 <app-display
 	*ngIf="viewDisplay"
 	[theme]="theme"
-	[projetoSelecionado]="projetoSelecionado"
+	[selectedProject]="selectedProject"
 	(viewEmitter)="toggleDisplay()"
-></app-display>
+>
+</app-display>

@@ -3,71 +3,85 @@
   [
     {
       "titulo": "Sketchbook Baleia",
-      "descricao": "TO PROCURANDO NEEEEEEEMO",
+      "descricao": "",
       "criado": "",
-      "imagens": [],
+      "imagens": [
+        "../../../assets/projects/gallery/whale_sketch.png"
+      ],
       "thumbnail": "../../../assets/projects/gallery/whale_sketch.png",
-      "categoria": ""
+      "categoria": ["other", "all"]
     },
     {
       "titulo": "Sketchbook diário",
-      "descricao": "bonitinho pa pêga",
+      "descricao": "",
       "criado": "",
-      "imagens": [],
+      "imagens": [
+        "../../../assets/projects/gallery/diario_sketch.png"
+      ],
       "thumbnail": "../../../assets/projects/gallery/diario_sketch.png",
-      "categoria": ""
-
+      "categoria": ["other", "all"]
     },
     {
       "titulo": "Sketchbook Crânio",
-      "descricao": "ficou top",
+      "descricao": "",
       "criado": "",
-      "imagens": [],
+      "imagens": [
+        "../../../assets/projects/gallery/skull_sketch.png"
+      ],
       "thumbnail": "../../../assets/projects/gallery/skull_sketch.png",
-      "categoria": ""
-
+      "categoria": ["other", "all"]
     },
     {
       "titulo": "Anã",
       "descricao": "Little Warrior Woman",
       "criado": "",
-      "imagens": [],
+      "imagens": [
+        "../../../assets/projects/gallery/ana_thumbnail.jpg",
+        "../../../assets/projects/gallery/ana.jpg"
+      ],
       "thumbnail": "../../../assets/projects/gallery/ana_thumbnail.jpg",
-      "categoria": ""
-
+      "categoria": ["char", "all"]
     },
     {
       "titulo": "Anão",
-      "descricao": "Homi brabo",
+      "descricao": "",
       "criado": "",
       "imagens": [
-
+        "../../../assets/projects/gallery/anao.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/anao_thumbnail.jpg",
-      "categoria": ""
-
+      "categoria": ["char", "all"]
     },
     {
       "titulo": "Elfo",
       "descricao": "Elfo brabo",
       "criado": "",
       "imagens": [
-        
+        "../../../assets/projects/gallery/elfo.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/elfo_thumbnail.jpg",
-      "categoria": ""
-
+      "categoria": ["char", "all"]
     },
     {
       "titulo": "Orc",
       "descricao": "Orc brabo",
       "criado": "",
       "imagens": [
-        
+        "../../../assets/projects/gallery/orc.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/orc_thumbnail.jpg",
-      "categoria": ""
-
+      "categoria": ["char", "all"]
+    },
+    {
+      "titulo": "Gnomo",
+      "descricao": "",
+      "criado": "",
+      "imagens": [
+        "../../../assets/projects/gallery/gnomo.jpg",
+        "../../../assets/projects/gallery/gnomo_thumbnail.jpg"
+      ],
+      "thumbnail": "../../../assets/projects/gallery/gnomo_thumbnail.jpg",
+      "categoria": ["char", "all"]
     }
   ]
 }

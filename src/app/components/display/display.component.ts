@@ -17,7 +17,14 @@ export class DisplayComponent implements OnInit {
   /**
    * Projeto selecionado no componente pai
    */
-  @Input() projetoSelecionado!: Projeto | null;
+  @Input() selectedProject!: Projeto | null;
+
+  /**
+   * Imagem com melhor definição
+   */
+  public imgCount: number = 0;
+
+  public hasNext: boolean = false;
 
   /**
    * Flag de exibição de informações da arte
@@ -28,13 +35,37 @@ export class DisplayComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.validateNext();
+  }
 
   /**
    * Método que ativa / desativa visualização do componente
    */
   toggleDisplayView() {
     this.viewEmitter.emit();
+  }
+
+  /**
+   * Método para visualizar imagem anterior no projeto
+   */
+  previous() {
+    this.imgCount--;
+    this.validateNext();
+  }
+
+  /**
+   * Método para visualizar imagem seguinte no projeto
+   */
+  next() {
+    this.imgCount++;
+    this.validateNext();
+  }
+
+  validateNext() {
+    this.imgCount !== (this.selectedProject?.imagens.length as number) - 1
+      ? this.hasNext = true
+      : this.hasNext = false; 
   }
 
   /**
