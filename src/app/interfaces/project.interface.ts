@@ -1,4 +1,4 @@
-export interface Projeto {
+export interface Project {
 
   /**
    * Título do projeto

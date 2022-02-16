@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import * as projects from 'src/assets/projects/projects.json'
 
-import { Projeto } from 'src/app/interfaces/projeto.interface';
+import { Project } from 'src/app/interfaces/project.interface';
 
 @Component({
   selector: 'app-galeria',
@@ -13,29 +13,29 @@ export class GaleriaComponent implements OnInit {
   filtroSelecionado!: string;
 
   /**
-   * Tema do componente
+   * Component's theme
    */
   @Input() theme = '';
 
   /**
-   * Flag de visualização de imagem individual
+   * Individual project visualization boolean flag
    */
   viewDisplay = false;
 
   /**
-   * Projeto selecionado para visualização
+   * Selected project
    */
-  public selectedProject!: Projeto | null;
+  public selectedProject!: Project | null;
 
   /**
-   * Lista de projetos 
+   * Lista de projects 
    */
-  projectsList: Projeto[] = JSON.parse(JSON.stringify(projects)).projects;
+  projectsList: Project[] = JSON.parse(JSON.stringify(projects)).projects;
 
   /**
-   * Lista de projetos visíveis no compónente
+   * Lista de projects visíveis no compónente
    */
-  visibleProjectsList: Projeto[] = this.projectsList;
+  visibleProjectsList: Project[] = this.projectsList;
 
   /**
    * Método construtor
@@ -44,7 +44,7 @@ export class GaleriaComponent implements OnInit {
   constructor() { }
   
   /**
-   * Método inicial do componente
+   * Initial method
    */
   ngOnInit(): void {
     if (!localStorage.getItem('filtro-galeria')) {
@@ -52,16 +52,24 @@ export class GaleriaComponent implements OnInit {
     }
   }
 
+  /**
+   * Filtering image method
+   * @param item filter value
+   */
   filter(item: string) {
     this.filtroSelecionado = item;
     localStorage.setItem('filtro-galeria', item);
     console.log(this.filtroSelecionado);
   }
 
-  toggleDisplay(projeto?: Projeto) {
+  /**
+   * Method to open project visualization
+   * @param project 
+   */
+  toggleDisplay(project?: Project) {
     this.viewDisplay = !this.viewDisplay;
-    projeto 
-    ? this.selectedProject = projeto
+    project 
+    ? this.selectedProject = project
     : this.selectedProject = null
     console.log(this.selectedProject);
   }

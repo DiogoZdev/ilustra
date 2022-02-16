@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Projeto } from 'src/app/interfaces/projeto.interface';
-import { ThemeService } from 'src/app/services/theme.service';
+import { Project } from 'src/app/interfaces/project.interface';
 
 @Component({
   selector: 'app-display',
@@ -10,44 +9,53 @@ import { ThemeService } from 'src/app/services/theme.service';
 export class DisplayComponent implements OnInit {
 
   /**
-   * Tema do componente
+   * Component's theme
    */
   @Input() theme = '';
 
   /**
-   * Projeto selecionado no componente pai
+   * Selected project in parent component
    */
-  @Input() selectedProject!: Projeto | null;
+  @Input() selectedProject!: Project | null;
 
   /**
-   * Imagem com melhor definição
+   * Initial image position in image array
    */
   public imgCount: number = 0;
 
+  /**
+   * Verification of next image within the visualized project
+   */
   public hasNext: boolean = false;
 
   /**
-   * Flag de exibição de informações da arte
+   * Boolean flag to exhibit project information
    */
-  showInfo = false;
+  public showInfo = false;
 
+  /**
+   * Event Emitter for project template visualization.
+   */
   @Output() viewEmitter = new EventEmitter();
 
   constructor() { }
 
+  /**
+   * Initial component methods
+   */
   ngOnInit() {
     this.validateNext();
   }
 
   /**
-   * Método que ativa / desativa visualização do componente
+   * Method to activate / deactivate component visualization
    */
   toggleDisplayView() {
     this.viewEmitter.emit();
   }
 
   /**
-   * Método para visualizar imagem anterior no projeto
+   * Method to visualize previous image, if it exists
    */
   previous() {
     this.imgCount--;
@@ -55,13 +63,16 @@ export class DisplayComponent implements OnInit {
   }
 
   /**
-   * Método para visualizar imagem seguinte no projeto
+   * Method to visualize next image, if it exists
    */
   next() {
     this.imgCount++;
     this.validateNext();
   }
 
+  /**
+   * Method to validate if project has a next image
+   */
   validateNext() {
     this.imgCount !== (this.selectedProject?.imagens.length as number) - 1
       ? this.hasNext = true
@@ -69,7 +80,7 @@ export class DisplayComponent implements OnInit {
   }
 
   /**
-   * Método que exibe / esconde informações
+   * Method to show / hide information
    */
   toggleArtInfo() {
     this.showInfo = !this.showInfo;
