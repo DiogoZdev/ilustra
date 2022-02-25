@@ -43,6 +43,16 @@
       "categoria": ["char", "all"]
     },
     {
+      "titulo": "Mago",
+      "descricao": "O Mestre dos Pássaros",
+      "criado": "",
+      "imagens": [
+        "../../../assets/projects/gallery/mago.jpg"
+      ],
+      "thumbnail": "../../../assets/projects/gallery/mago_thumbnail.jpg",
+      "categoria": ["char", "all"]
+    },
+    {
       "titulo": "Anão",
       "descricao": "",
       "criado": "",

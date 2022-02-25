@@ -24,6 +24,7 @@
 	*ngIf="viewDisplay"
 	[theme]="theme"
 	[selectedProject]="selectedProject"
+	[displayGallery] = "visibleProjectsList"
 	(viewEmitter)="toggleDisplay()"
 >
 </app-display>

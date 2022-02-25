@@ -25,7 +25,7 @@ export class GaleriaComponent implements OnInit {
   /**
    * Selected project
    */
-  public selectedProject!: Project | null;
+  public selectedProject!: Project;
 
   /**
    * Lista de projects 
@@ -68,9 +68,9 @@ export class GaleriaComponent implements OnInit {
    */
   toggleDisplay(project?: Project) {
     this.viewDisplay = !this.viewDisplay;
-    project 
-    ? this.selectedProject = project
-    : this.selectedProject = null
+    if (project) {
+      this.selectedProject = project;
+    } 
     console.log(this.selectedProject);
   }
 

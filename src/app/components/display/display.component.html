@@ -1,7 +1,7 @@
 <div [attr.theme]="theme" class="background">
   <div class="display">
     <div class="chevron">
-      <mat-icon>chevron_left</mat-icon>
+      <mat-icon (click)="previousProject()">chevron_left</mat-icon>
     </div>
     <div class="image">
       <div class="image--art">
@@ -38,6 +38,6 @@
       <mat-icon (click)="toggleArtInfo()" class="icon info">info</mat-icon>
     </div>
     <div class="chevron">
-      <mat-icon>chevron_right</mat-icon>
+      <mat-icon  (click)="nextProject()">chevron_right</mat-icon>
   </div>
 </div>

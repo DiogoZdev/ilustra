@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';
 import { Project } from 'src/app/interfaces/project.interface';
 
 @Component({
@@ -6,7 +6,7 @@ import { Project } from 'src/app/interfaces/project.interface';
   templateUrl: './display.component.html',
   styleUrls: ['./display.component.scss']
 })
-export class DisplayComponent implements OnInit {
+export class DisplayComponent implements OnInit, AfterViewInit {
 
   /**
    * Component's theme
@@ -16,12 +16,22 @@ export class DisplayComponent implements OnInit {
   /**
    * Selected project in parent component
    */
-  @Input() selectedProject!: Project | null;
+  @Input() selectedProject!: Project;
+
+  /**
+   * Filtered list from parent component
+   */
+  @Input() displayGallery!: Project[] | [];
 
   /**
    * Initial image position in image array
    */
   public imgCount: number = 0;
+
+  /**
+   * Selected Image Position in array
+   */
+  public projectCount!: number;
 
   /**
    * Verification of next image within the visualized project
@@ -44,6 +54,28 @@ export class DisplayComponent implements OnInit {
    * Initial component methods
    */
   ngOnInit() {
+    console.log(this.projectCount);
+    
+    this.validateNext();
+  }
+
+  ngAfterViewInit() {
+    this.checkProjectPosition();
+  }
+
+  /**
+   * Method to validate selected project position in array
+   */
+  checkProjectPosition() {
+    this.projectCount = this.displayGallery.findIndex(proj => proj === this.selectedProject);
+  }
+
+  /**
+   * Method to set new project to be displayed;
+   */
+  setProject() {
+    this.imgCount = 0;
+    this.selectedProject = this.displayGallery[this.projectCount];
     this.validateNext();
   }
 
@@ -77,6 +109,29 @@ export class DisplayComponent implements OnInit {
     this.imgCount !== (this.selectedProject?.imagens.length as number) - 1
       ? this.hasNext = true
       : this.hasNext = false; 
+  }
+
+  previousProject() {
+    if(this.projectCount === 0) {
+      this.projectCount = this.displayGallery.length -1;
+    } else {
+      this.projectCount -= 1;
+    }
+    this.setProject();
+    console.log(this.projectCount);
+    
+  }
+
+  /**
+   * Method to navigate to next Project
+   */
+  nextProject() {
+    if(this.displayGallery.length === (this.projectCount + 1)) {
+      this.projectCount = 0
+    } else {
+      this.projectCount += 1; 
+    }
+    this.setProject()
   }
 
   /**
