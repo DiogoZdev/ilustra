@@ -5,19 +5,19 @@
   "ABOUT": {
     "TRABALHO": {
       "TITULO": {
-        "PT": "Meu Trabalho",
-        "EN": "Mi Trabajo",
-        "ES": "My Work"
+        "PT": "Sobre Mim",
+        "EN": "About Me",
+        "ES": "Quién Soy Yo"
       },
-      "PARAGRAFO1": {
-        "PT": "",
-        "EN": "",
-        "ES": ""
+      "P1": {
+        "PT": "Oi, eu sou Andressa, nascida no interior de São Paulo. Faço pintura a óleo em tela, retratos com grafite em papel e tenho um grande apreço por design e uma paixão por ilustração infantil.",
+        "EN": "Hi there, I'm Andressa and I was born in the interior of São Paulo. I make oil painting in canvas, portaits with graphite, I have a deep feeling for design but I truly love illustrating for children.",
+        "ES": "!Hola! Yo soy Andressa, nacida en el interior de São Paulo. Hago pintura sobre lienzo, retratos a grafito, desing me encanta mucho, pero amo dibujos para niños."
       },
-      "PARAGRAFO2": {
-        "PT": "",
-        "EN": "",
-        "ES": ""
+      "P2": {
+        "PT": "Participo voluntariamente do projeto 'Nós - Nosso Olhar Solidário' contribuindo com ilustrações e posts para o aplicativo e site. Curso Artes Visuais e trabalho com ilustração desde 2021, criando, pensonagens, mascotes e desenhos infantis.",
+        "EN": "I'm a volunteer in the project 'Nós - Nosso Olhar Solidário' (Nós - Nest of Solidarity) contributing with posts and inllustrations for the application and website. I study Visual Arts and I illustrate since 2021, creating characters, mascots and child related content.",
+        "ES": "Participo voluntariemente del proyecto 'Nós - Nosso Olhar Solidário' (Nós - Nuestros ojos Solidarios) contribuyendo con ilustraciones para la applicación y sitio web. Estudo Artes Visuales y trabajo con ilustración desde 2021 creando personajes, mascotas y dibujos para ninõs."
       }
     },
     "EU": {
@@ -43,26 +43,26 @@
     "EN": "Art & Design",
     "ES": "Arte y Design"
   },
-  "CATEGORIA": {
-    "TUDO": {
+  "CATEGORY": {
+    "ALL": {
       "PT": "Tudo",
       "EN": "All",
       "ES": "Todos"
     },
-    "INFANTIL": {
+    "CHAR": {
+      "PT": "Personagens",
+      "EN": "Characters",
+      "ES": "Personajes"
+    },
+    "NOTEBOOK": {
+      "PT": "Cadernos",
+      "EN": "Notebooks",
+      "ES": "Cuadernos"
+    },
+    "KIDS": {
       "PT": "Infantil",
-      "EN": "For Kids",
+      "EN": "Kids",
       "ES": "Para Niños"
-    },
-    "EPICO": {
-      "PT": "Épico",
-      "EN": "Epic",
-      "ES": "Épico"
-    },
-    "OUTROS": {
-      "PT": "Outros",
-      "EN": "Other",
-      "ES": "Otros"
     }
   },
   "FOOTER": {

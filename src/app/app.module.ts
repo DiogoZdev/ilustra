@@ -8,7 +8,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { MatIconModule } from '@angular/material/icon';
 import { PipesModule } from 'pipes-module';
 import { TranslatePipe } from './utils/pipes/translate.pipe';
-import { GaleriaComponent } from './components/galeria/galeria.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
@@ -18,12 +18,12 @@ import { DisplayComponent } from './components/display/display.component';
   declarations: [
     AppComponent,
     NavComponent,
-    TranslatePipe,
-    GaleriaComponent,
+    GalleryComponent,
     HeaderComponent,
     FooterComponent,
     AboutComponent,
-    DisplayComponent
+    DisplayComponent,
+    TranslatePipe,
   ],
   imports: [
     BrowserModule,

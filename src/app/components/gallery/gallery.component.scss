@@ -13,7 +13,7 @@ main {
   // display: none;
   justify-content: center;
 
-  background-color: #eee5;
+  background-color: #fff8;
   backdrop-filter: blur(4px);
 
 
@@ -46,17 +46,29 @@ main {
 .imagens {
   height: fit-content;
   margin-top: 2rem;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
 
-  img {
-    cursor: pointer;
-    aspect-ratio: 16/9;
-    object-fit: cover;
+  @media (max-width: 800px) {
+  grid-template-columns: repeat(2, 1fr);
   }
 
+  @media screen and (max-width: 550px) {
+    grid-template-columns: 1fr;
+    }
+
+  .imagem-container {
+    cursor: pointer;
+    aspect-ratio: 16/9;
+    padding: 0;
+
+    img.thumbnail {
+      object-fit: cover;
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
 }
 
 main[theme=light] {

@@ -3,19 +3,26 @@
 
 		<div class="filter">
 			<ul>
-				<li opt (click)="filter('all')">{{ "CATEGORIA.TUDO" | translate }}</li>
-				<li opt (click)="filter('kids')">{{ "CATEGORIA.INFANTIL" | translate }}</li>
-				<li opt (click)="filter('other')">{{ "CATEGORIA.OUTROS" | translate }}</li>
+				<li opt
+					*ngFor="let f of filters"
+					(click)="filter(f.value)"
+				>
+					{{ f.key | translate }}
+				</li>
 			</ul>
 		</div>
 
 		<div class="imagens">
-			<img 
+			<div class="imagem-container" 
 				*ngFor="let project of visibleProjectsList"
+				(click)="toggleDisplay(project)"
+				>
+				<img
+				class="thumbnail"
 				[src]="project.thumbnail"
 				alt="project.titulo"
-				(click)="toggleDisplay(project)"
 			>
+			</div>
 		</div>
 	</div>
 </main>

@@ -66,11 +66,8 @@ export class NavComponent implements OnInit {
    */
   toggleConfiguration() {
     this.showConfiguration = !this.showConfiguration;
-    if (this.showConfiguration === true) {
-      setTimeout(() => {
-        this.showConfiguration = false;
-      }, 15000)
-    }
+
+    document.querySelector(".gear")?.classList.toggle('rotate');
   }
 
   /**
@@ -79,7 +76,6 @@ export class NavComponent implements OnInit {
    */
   setLanguage(lang: string): void {
     localStorage.setItem("language", lang);
-    console.log(lang);
   }
 
   /**

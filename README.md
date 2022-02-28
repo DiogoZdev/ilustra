@@ -12,3 +12,4 @@ Em desenvolvimento.
 - internacionalização do projeto / tradução (PT, EN, ES) (i18n)
 - temas personalizados
 - HostListeners
+- Galeria dinâmica

@@ -34,10 +34,12 @@ nav {
 
 .settings {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .gear {
-  padding: 1rem;
+  transition: transform 300ms ease;
 }
   
 .configuration {
@@ -110,5 +112,19 @@ nav[tema=dark] {
     li:hover {
       background-color: #000;
     }
+  }
+}
+
+.rotate {
+  animation: rotation 5s alternate linear infinite;
+  will-change: transform;
+}
+
+@keyframes rotation {
+  from {
+    transform: 0;
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

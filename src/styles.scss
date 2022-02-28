@@ -1,16 +1,21 @@
-// imports
-
+// Fonts import
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Nanum+Pen+Script');
+
+// Local Fonts
+@font-face {
+    font-family: 'Z Icons';
+    src: url(./assets/fonts/z_icons.ttf);
+}
+
+// Colors Palette
 @import '../src/colors.scss';
 
 // Root styles
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // box-shadow: 1px 1px 1px red ;
     scroll-behavior: smooth;
 }
 
@@ -72,4 +77,22 @@ li {
 
 [opt] {
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.z-icon {
+    display: inline-block;
+    padding: 1rem;
+    color: inherit;
+    font-family: 'Z Icons';
+    font-size: 24pt;
+    line-height: 1;
+    transition: color ease 300ms;
+
+    &:hover {
+        color: var(--primary-light) !important;
+    }
 }

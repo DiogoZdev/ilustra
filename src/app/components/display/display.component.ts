@@ -53,9 +53,7 @@ export class DisplayComponent implements OnInit, AfterViewInit {
   /**
    * Initial component methods
    */
-  ngOnInit() {
-    console.log(this.projectCount);
-    
+  ngOnInit() {    
     this.validateNext();
   }
 
@@ -117,9 +115,7 @@ export class DisplayComponent implements OnInit, AfterViewInit {
     } else {
       this.projectCount -= 1;
     }
-    this.setProject();
-    console.log(this.projectCount);
-    
+    this.setProject();    
   }
 
   /**

@@ -4,11 +4,11 @@ import * as projects from 'src/assets/projects/projects.json'
 import { Project } from 'src/app/interfaces/project.interface';
 
 @Component({
-  selector: 'app-galeria',
-  templateUrl: './galeria.component.html',
-  styleUrls: ['./galeria.component.scss']
+  selector: 'app-gallery',
+  templateUrl: './gallery.component.html',
+  styleUrls: ['./gallery.component.scss']
 })
-export class GaleriaComponent implements OnInit {
+export class GalleryComponent implements OnInit {
 
   filtroSelecionado!: string;
 
@@ -16,6 +16,25 @@ export class GaleriaComponent implements OnInit {
    * Component's theme
    */
   @Input() theme = '';
+
+  public filters = [
+    {
+      value: 'all',
+      key: "CATEGORY.ALL"
+    },
+    {
+      value: 'char',
+      key: "CATEGORY.CHAR"
+    },
+    {
+      value: 'book',
+      key: "CATEGORY.NOTEBOOK"
+    },
+    {
+      value: 'kids',
+      key: "CATEGORY.KIDS"
+    },
+  ]
 
   /**
    * Individual project visualization boolean flag
@@ -28,19 +47,15 @@ export class GaleriaComponent implements OnInit {
   public selectedProject!: Project;
 
   /**
-   * Lista de projects 
+   * Projects list
    */
   projectsList: Project[] = JSON.parse(JSON.stringify(projects)).projects;
 
   /**
-   * Lista de projects visíveis no compónente
+   * Visible Projects in the component
    */
   visibleProjectsList: Project[] = this.projectsList;
 
-  /**
-   * Método construtor
-   * @param themeService Instância do themeService
-   */
   constructor() { }
   
   /**
@@ -57,9 +72,17 @@ export class GaleriaComponent implements OnInit {
    * @param item filter value
    */
   filter(item: string) {
+    console.log(item);
     this.filtroSelecionado = item;
     localStorage.setItem('filtro-galeria', item);
-    console.log(this.filtroSelecionado);
+
+    this.visibleProjectsList = [];
+
+    this.projectsList.forEach((p) => {
+      if (p.categoria.indexOf(item) !== -1) {
+        this.visibleProjectsList.push(p);
+      }
+    });
   }
 
   /**
@@ -70,8 +93,7 @@ export class GaleriaComponent implements OnInit {
     this.viewDisplay = !this.viewDisplay;
     if (project) {
       this.selectedProject = project;
-    } 
-    console.log(this.selectedProject);
+    }
   }
 
 }

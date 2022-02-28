@@ -1,6 +1,14 @@
-<main>
-  <div class="contain">
-    <h2>{{ "ABOUT.TRABALHO.TITULO" | translate }}</h2>
-    <h2>{{ "ABOUT.EU.TITULO" | translate }}</h2>
+<main [attr.theme]="theme">
+  <div class="contain columns2">
+    <div pad>
+      <h2>{{ "ABOUT.TRABALHO.TITULO" | translate }}</h2>
+      <p>{{ "ABOUT.TRABALHO.P1" | translate }}</p>
+      <p>{{ "ABOUT.TRABALHO.P2" | translate }}</p>
+    </div>
+    <div pad>
+      <div class="image-area">
+        <img src="../../../assets/andressa.jpg" alt="Andressa">
+      </div>
+    </div>
   </div>
 </main>

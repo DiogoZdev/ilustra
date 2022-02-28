@@ -42,21 +42,8 @@ mat-icon {
     display: flex;
     max-height: 85vh;
 
-    .info {
-      color: transparent;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
-
-    &:hover {
-      .info {
-        color: #fa0;
-      }
-    }
-
     .icon {
-      color: transparent;
+      color: white;
       position: absolute;
 
       text-align: center;
@@ -65,6 +52,13 @@ mat-icon {
       transition: all 0.3s ease;
     }
     
+    .info {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: #fa0;
+    }
+
     .image--art {
       position: relative;
       width: 100%;
@@ -72,13 +66,6 @@ mat-icon {
       display: flex;
       justify-content: center;
       align-items: center;
-
-      &:hover {
-        .icon {
-          color: white;
-          text-shadow: 0 0 4px #000;
-        }
-      }
 
       img {
         object-fit: cover;
@@ -107,8 +94,6 @@ mat-icon {
     }
 
     .image--info {
-      // background-color: #111;
-      // color: #eee;
       width: 50%;
       border-radius: 0 8px 8px 0;
       padding: 2rem;

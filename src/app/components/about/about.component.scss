@@ -1,0 +1,42 @@
+.columns2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem 0;
+
+  @media  (max-width: 800px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+h2 {
+  width: 100%;
+  margin: 1ch auto;
+  text-align: center;
+}
+
+p {
+  max-width: 50ch;
+  margin: 0 auto;
+  margin-bottom: 3ch;
+  line-height: 2;
+  text-indent: 2ch;
+}
+
+.image-area {
+  max-width: 200px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+main[theme=dark] {
+  background-color: var(--backgroundI-dark);
+  color: var(--font-dark);
+} 
+
+main[theme=light] {
+  background-color: var(--backgroundI-light);
+  color: var(--font-light);
+} 
