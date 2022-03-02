@@ -45,13 +45,20 @@ export class NavComponent implements OnInit {
    * Método inicial do componente
    */
   ngOnInit(): void {
-    if (localStorage.getItem("language") === null) {
-      localStorage.setItem("language", "PT");
-    }
+    const theme =localStorage.getItem("theme");
+    theme === null || undefined
+    ? setTimeout(() => this.setTheme('light'), 500)
+    : this.setTheme(theme);
 
-    if (localStorage.getItem("page") === undefined) {
-      localStorage.setItem("page", "home");
-    }
+    const lang =localStorage.getItem("language");
+    lang === null || undefined
+    ? this.setLanguage('PT')
+    : this.setLanguage(lang);
+
+    const page = localStorage.getItem('page');
+    page === null || undefined
+    ? this.sendPage('home')
+    : this.sendPage(page);
   }
 
   /**

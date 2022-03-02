@@ -56,15 +56,13 @@ export class GalleryComponent implements OnInit {
    */
   visibleProjectsList: Project[] = this.projectsList;
 
-  constructor() { }
+  constructor(
+  ) { }
   
   /**
    * Initial method
    */
   ngOnInit(): void {
-    if (!localStorage.getItem('filtro-galeria')) {
-      localStorage.setItem('filtro-galeria', "all")
-    }
   }
 
   /**
@@ -72,9 +70,7 @@ export class GalleryComponent implements OnInit {
    * @param item filter value
    */
   filter(item: string) {
-    console.log(item);
     this.filtroSelecionado = item;
-    localStorage.setItem('filtro-galeria', item);
 
     this.visibleProjectsList = [];
 
@@ -95,5 +91,4 @@ export class GalleryComponent implements OnInit {
       this.selectedProject = project;
     }
   }
-
 }
