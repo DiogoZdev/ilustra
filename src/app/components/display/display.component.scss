@@ -45,18 +45,30 @@ mat-icon {
     .icon {
       color: white;
       position: absolute;
+      text-shadow: 2px 2px 5px #000;
 
       text-align: center;
       font-size: 1.5rem;
 
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: 
+          scale(1.2);
+      }
     }
     
     .info {
       position: absolute;
       top: 1rem;
-      right: 1rem;
+      right: 4rem;
       color: #fa0;
+    }
+  
+    .close {
+      top: 1rem;
+      right: 1rem;
+      color: #d6431e;
     }
 
     .image--art {
@@ -68,7 +80,9 @@ mat-icon {
       align-items: center;
 
       img {
-        object-fit: cover;
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
       }
 
       .chev {
@@ -87,9 +101,29 @@ mat-icon {
         transform: translateY(-50%);
       }
 
-      .close {
-        top: 1rem;
-        left: 1rem;
+      @media (max-width: 650px) {}
+
+      .mobile-info {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        background: #fffd;
+        padding: 1rem;
+        overflow-y: auto;
+
+        h1 {
+          margin-bottom: 1rem;
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        @media (min-width: 650px) {
+          display: none;
+        }
       }
     }
 
@@ -108,6 +142,10 @@ mat-icon {
         text-indent: 1ch;
         font-size: 16px;
         line-height: 1.8;
+      }
+
+      @media (max-width: 650px) {
+        display: none;
       }
     }
   }
