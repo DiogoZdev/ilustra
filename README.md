@@ -1,7 +1,7 @@
 # AndressaIlustra
 
 Disponível em
-[andressailustra.netlify.app]](https://andressailustra.netlify.app/)
+[andressailustra.netlify.app](https://andressailustra.netlify.app/)
 
 Project generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
 
