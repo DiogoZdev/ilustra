@@ -1,5 +1,5 @@
-<div class="to-top" *ngIf="showScroll">
-    <mat-icon (click)="toTop()">arrow_drop_up</mat-icon>
+<div class="to-top" *ngIf="showScrollToTop" (click)="toTop()">
+    <mat-icon>arrow_drop_up</mat-icon>
 </div>
 
 <nav [attr.tema]="theme">

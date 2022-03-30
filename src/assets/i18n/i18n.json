@@ -19,23 +19,6 @@
         "EN": "I'm a volunteer in the project 'Nós - Nosso Olhar Solidário' (Nós - Nest of Solidarity) contributing with posts and illustrations for the application and website. I study Visual Arts and I illustrate since 2021, creating characters, mascots and child related content.",
         "ES": "Participo voluntariemente del proyecto 'Nós - Nosso Olhar Solidário' (Nós - Nuestros ojos Solidarios) contribuyendo con ilustraciones para la applicación y sitio web. Estudo Artes Visuales y trabajo con ilustración desde 2021 creando personajes, mascotas y dibujos para ninõs."
       }
-    },
-    "EU": {
-      "TITULO": {
-        "PT": "Sobre Mim",
-        "EN": "Yo",
-        "ES": "About Me"
-      },
-      "PARAGRAFO1": {
-        "PT": "",
-        "EN": "",
-        "ES": ""
-      },
-      "PARAGRAFO2": {
-        "PT": "",
-        "EN": "",
-        "ES": ""
-      }
     }
   },
   "TAGLINE": {
@@ -91,7 +74,7 @@
     "CONFIGURACOES": {
       "PT": "Configurações",
       "EN": "Settings",
-      "ES": "Información"
+      "ES": "Configuraciones"
     }
   }
 }

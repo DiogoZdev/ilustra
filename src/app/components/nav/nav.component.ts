@@ -13,7 +13,7 @@ export class NavComponent implements OnInit {
   /**
    * Boolean de exibição do botão "voltar ao topo"
    */
-  public showScroll: boolean = false;
+  public showScrollToTop: boolean = false;
 
   /**
    * Boolean de exibição do menu de configurações
@@ -37,8 +37,8 @@ export class NavComponent implements OnInit {
   @HostListener("window:scroll", [])
   onWindowScroll() {
     window.scrollY > 50
-    ? this.showScroll = true 
-    : this.showScroll = false;
+    ? this.showScrollToTop = true
+    : this.showScrollToTop = false;
   }
 
   /**
