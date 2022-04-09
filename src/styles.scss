@@ -41,6 +41,10 @@ img {
     margin: 0 auto;
 }
 
+[min-75vh] {
+    min-height: 75vh;
+}
+
 /* IMPORTANT STYLES */
 
 mat-icon {
@@ -94,4 +98,17 @@ a {
     &:hover {
         color: var(--primary-light) !important;
     }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+
+  &-thumb {
+    background: #000;
+    border: solid 2px #555;
+  }
+
+  &-track {
+    background: #555;
+  }
 }

@@ -23,10 +23,16 @@ nav {
     ul {
       display: flex;
       flex-direction: row;
+      gap: 1rem;
+      align-items: center;
 
       li {
           list-style: none;
-          padding: 1rem;
+          padding: 0.5rem;
+      }
+
+      .logo {
+        max-width: 55px;
       }
     }
   }

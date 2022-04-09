@@ -69,7 +69,12 @@
     "SOBRE": {
       "PT": "Sobre",
       "EN": "About",
-      "ES": "Información"
+      "ES": "Sobre"
+    },
+    "APOIE": {
+      "PT": "Apoie",
+      "EN": "Support",
+      "ES": "Apoye"
     },
     "CONFIGURACOES": {
       "PT": "Configurações",

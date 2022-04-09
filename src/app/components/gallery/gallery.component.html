@@ -1,12 +1,11 @@
 <main [attr.theme]="theme">
-  <div class="contain">
+  <div class="contain" min-75vh>
 
 		<div class="filter">
 			<ul>
 				<li opt
 					*ngFor="let f of filters"
-					(click)="filter(f.value)"
-				>
+					(click)="filter(f.value)">
 					{{ f.key | translate }}
 				</li>
 			</ul>
@@ -15,13 +14,11 @@
 		<div class="imagens">
 			<div class="imagem-container" 
 				*ngFor="let project of visibleProjectsList"
-				(click)="toggleDisplay(project)"
-				>
+				(click)="toggleDisplay(project)">
 				<img
 				class="thumbnail"
 				[src]="project.thumbnail"
-				alt="project.titulo"
-			>
+				alt="project.titulo">
 			</div>
 		</div>
 	</div>
@@ -32,6 +29,5 @@
 	[theme]="theme"
 	[selectedProject]="selectedProject"
 	[displayGallery] = "visibleProjectsList"
-	(viewEmitter)="toggleDisplay()"
->
+	(viewEmitter)="toggleDisplay()">
 </app-display>
