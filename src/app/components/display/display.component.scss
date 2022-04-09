@@ -17,9 +17,8 @@ mat-icon {
 }
 
 .display {
-  width: 95%;
-  max-height: 85vh;
-  aspect-ratio: 16/9;
+  width: 95vw;
+  height: 85vh;
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
 
@@ -57,17 +56,29 @@ mat-icon {
           scale(1.2);
       }
     }
+
+    .interaction-icons {
+      position: absolute;
+      right: 0.5rem;
+      top: 0.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-direction: row;
+      width: min-content;
+      padding: 0.5rem;
+      border-radius: 5px;
+
+      mat-icon  {
+        position: relative;
+        text-shadow: none;
+      }
+    }
     
     .info {
-      position: absolute;
-      top: 1rem;
-      right: 4rem;
-      color: #fa0;
+      color: #f90;
     }
   
     .close {
-      top: 1rem;
-      right: 1rem;
       color: #d6431e;
     }
 
@@ -156,6 +167,10 @@ mat-icon {
     background-color: #fff;
     color: #000;
   }
+
+  .interaction-icons {
+    background-color: #fff;
+  }
 }
 
 
@@ -163,5 +178,9 @@ mat-icon {
   .image--info {
     background-color: #111;
     color: #eee;
+  }
+
+  .interaction-icons {
+    background-color: #111;
   }
 }

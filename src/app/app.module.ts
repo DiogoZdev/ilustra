@@ -13,6 +13,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { DisplayComponent } from './components/display/display.component';
+import { SupportComponent } from './components/support/support.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DisplayComponent } from './components/display/display.component';
     AboutComponent,
     DisplayComponent,
     TranslatePipe,
+    SupportComponent,
   ],
   imports: [
     BrowserModule,

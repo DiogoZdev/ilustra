@@ -36,13 +36,14 @@
         <p>{{ selectedProject?.descricao }}</p>
         <!--  -->
       </div>
-      <mat-icon (click)="toggleArtInfo()" class="icon info">
-        info
-      </mat-icon>
-
-      <mat-icon (click)="toggleDisplayView()" class="icon close">
-        cancel
-      </mat-icon>
+      <div class="interaction-icons">
+        <mat-icon (click)="toggleArtInfo()" class="icon info">
+          text_snippet
+        </mat-icon>
+        <mat-icon (click)="toggleDisplayView()" class="icon close">
+          cancel
+        </mat-icon>
+      </div>
     </div>
     <div class="chevron">
       <mat-icon  (click)="nextProject()">chevron_right</mat-icon>
