@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import * as projects from 'src/assets/projects/projects.json'
 
 import { Project } from 'src/app/interfaces/project.interface';
@@ -66,6 +66,15 @@ export class GalleryComponent implements OnInit {
   }
 
   /**
+   * Host Listener for closing modal with ESC
+   * @param event keyboard event
+   */
+  @HostListener('window:keydown.escape', ['$event'])
+  handleEsc(event: KeyboardEvent) {
+    this.closeDisplay();
+  }
+
+  /**
    * Filtering image method
    * @param item filter value
    */
@@ -90,5 +99,12 @@ export class GalleryComponent implements OnInit {
     if (project) {
       this.selectedProject = project;
     }
+  }
+
+  /**
+   * Method for closing project visualization
+   */
+  closeDisplay() {
+    this.viewDisplay = false;
   }
 }

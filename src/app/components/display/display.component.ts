@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit, HostListener } from '@angular/core';
 import { Project } from 'src/app/interfaces/project.interface';
 
 @Component({
@@ -49,6 +49,24 @@ export class DisplayComponent implements OnInit, AfterViewInit {
   @Output() viewEmitter = new EventEmitter();
 
   constructor() { }
+
+  /**
+   * Listener for project navigation - previous
+   * @param event ArrowLeft Keyboard event
+   */
+  @HostListener('window:keydown.arrowLeft', ['$event'])
+  handleLeftKey(event: KeyboardEvent) {
+    this.previousProject();
+  }
+
+  /**
+   * Listener for project navigation - next
+   * @param event ArrowRight Keyboard event
+   */
+  @HostListener('window:keydown.arrowRight', ['$event'])
+  handleRightKey(event: KeyboardEvent) {
+    this.nextProject();
+  }
 
   /**
    * Initial component methods
