@@ -112,15 +112,13 @@ mat-icon {
         transform: translateY(-50%);
       }
 
-      @media (max-width: 650px) {}
-
       .mobile-info {
         width: 100%;
         height: 100%;
         position: absolute;
         bottom: 0;
         background: #fffd;
-        padding: 1rem;
+        padding: 3rem 1.5rem 1rem;
         overflow-y: auto;
 
         h1 {
@@ -132,7 +130,7 @@ mat-icon {
           font-size: 16px;
         }
 
-        @media (min-width: 650px) {
+        @media (min-width: 651px) {
           display: none;
         }
       }
