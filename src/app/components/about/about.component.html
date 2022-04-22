@@ -1,4 +1,49 @@
 <main [attr.theme]="theme">
+  <div class="contain form">
+    <h2>{{ 'FORM.TITLE' | translate }}</h2>
+    <form>
+      <b class="warn">{{ 'FORM.MANDATORY_FIELDS' | translate }}</b>
+      <div form-input>
+        <input type="text" name="name" required placeholder=" ">
+        <label for="name">{{ "FORM.NAME" | translate }}*</label>
+      </div>
+
+      <div class="input-columns2">
+        <div form-input>
+          <input type="email" name="email" required placeholder=" ">
+          <label for="email">{{ "FORM.EMAIL" | translate }}*</label>
+        </div>
+  
+        <div form-input>
+          <input type="text" name="phone" placeholder=" ">
+          <label for="phone">{{ "FORM.PHONE" | translate }}</label>
+        </div>
+      </div>
+
+      <div form-input>
+        <select name="subject" required id="select">
+          <option><b>{{ "SUBJECT.CHOOSE" | translate }}*</b></option>
+          <option value="ilustracao">{{ "SUBJECT.ILLUSTRATION" | translate }}</option>
+          <option value="identidade">{{ "SUBJECT.IDENTITY" | translate }}</option>
+          <option value="comentario">{{ "SUBJECT.OTHER" | translate }}</option>
+        </select>
+      </div>
+
+      <div form-input>
+        <textarea name="message" required
+        placeholder=" "
+        ></textarea>
+        <label for="message">
+          {{ 'FORM.MESSAGE' | translate }}*
+        </label>
+      </div>
+
+      <div class="button-area">
+        <button>{{ 'BUTTONS.SEND' | translate }}</button>
+      </div>
+
+    </form>
+  </div>
   <div class="contain columns2" min-75vh>
     <div pad>
       <h2>{{ "ABOUT.TRABALHO.TITULO" | translate }}</h2>

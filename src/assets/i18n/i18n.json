@@ -71,15 +71,81 @@
       "EN": "About",
       "ES": "Sobre"
     },
-    "APOIE": {
-      "PT": "Apoie",
-      "EN": "Support",
-      "ES": "Apoye"
+    "CONTATO": {
+      "PT": "Contato",
+      "EN": "Contact",
+      "ES": "Contacto"
+    },
+    "PRODUTOS": {
+      "PT": "Produtos",
+      "EN": "Products",
+      "ES": "Products"
     },
     "CONFIGURACOES": {
       "PT": "Configurações",
       "EN": "Settings",
       "ES": "Configuraciones"
+    }
+  },
+  "FORM": {
+    "TITLE": {
+      "PT": "Entre em contato",
+      "EN": "Send a message",
+      "ES": "Mandame un mensaje"
+    },
+    "MANDATORY_FIELDS": {
+      "PT": "Campos com * são obrigatórios",
+      "EN": "Fields with * are required",
+      "ES": "Campos con * son necesários"
+    },
+    "NAME": {
+      "PT": "Nome",
+      "EN": "Name",
+      "ES": "Nombre"
+    },
+    "EMAIL": {
+      "PT": "e-Mail",
+      "EN": "eMail",
+      "ES": "Correo"
+    },
+    "PHONE": {
+      "PT": "Telefone",
+      "EN": "Phone Number",
+      "ES": "Teléfono"
+    },
+    "MESSAGE": {
+      "PT": "Mensagem",
+      "EN": "Message",
+      "ES": "Mesaje"
+    }
+  },
+  "SUBJECT": {
+    "CHOOSE": {
+      "PT": "Escolha um assunto",
+      "EN": "Choose a sobject",
+      "ES": "Escoja un tema"
+  },
+    "ILLUSTRATION": {
+      "PT": "Ilustração",
+      "EN": "Illustration",
+      "ES": "Ilustración"
+  },
+    "IDENTITY": {
+      "PT": "Identidade Visual",
+      "EN": "Visual Identity",
+      "ES": "Identidad Visual"
+    },
+    "OTHER": {
+      "PT": "Outro assunto",
+      "EN": "Other",
+      "ES": "Otro tema"
+    }
+  },
+  "BUTTONS": {
+    "SEND": {
+      "PT": "Enviar",
+      "EN": "Send",
+      "ES": "Enviar"
     }
   }
 }

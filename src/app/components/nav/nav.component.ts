@@ -57,7 +57,7 @@ export class NavComponent implements OnInit {
 
     const page = localStorage.getItem('page');
     page === null || undefined
-    ? this.sendPage('home')
+    ? this.sendPage('about')
     : this.sendPage(page);
   }
 

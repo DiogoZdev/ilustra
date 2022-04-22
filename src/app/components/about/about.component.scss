@@ -31,12 +31,62 @@ p {
   overflow: hidden;
 }
 
+.form {
+  padding: 1.5rem 0;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+
+  b {
+    line-height: 3;
+    color: var(--accent-light);
+  }
+}
+
+.input-columns2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  @media screen and (max-width: 600px){
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.button-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.5em;
+  border: none;
+  border-radius: 4px;
+  width: 140px;
+  background-color: rgb(0, 209, 174);
+  color: white;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 16px;
+}
+
 main[theme=dark] {
   background-color: var(--backgroundI-dark);
   color: var(--font-dark);
+
+  .warn {
+    color: orange;
+  }
 } 
 
 main[theme=light] {
   background-color: var(--backgroundI-light);
   color: var(--font-light);
-} 
+}
