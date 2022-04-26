@@ -4,24 +4,24 @@
     <form>
       <b class="warn">{{ 'FORM.MANDATORY_FIELDS' | translate }}</b>
       <div form-input>
-        <input type="text" name="name" required placeholder=" ">
+        <input type="text" name="name" required placeholder=" " [(ngModel)]="nameControl">
         <label for="name">{{ "FORM.NAME" | translate }}*</label>
       </div>
 
       <div class="input-columns2">
         <div form-input>
-          <input type="email" name="email" required placeholder=" ">
+          <input type="email" name="email" required placeholder=" " [(ngModel)]="emailControl">
           <label for="email">{{ "FORM.EMAIL" | translate }}*</label>
         </div>
   
         <div form-input>
-          <input type="text" name="phone" placeholder=" ">
+          <input type="text" name="phone" placeholder=" " [(ngModel)]="phoneControl">
           <label for="phone">{{ "FORM.PHONE" | translate }}</label>
         </div>
       </div>
 
       <div form-input>
-        <select name="subject" required id="select">
+        <select name="subject" required id="select" [(ngModel)]="subjectControl">
           <option><b>{{ "SUBJECT.CHOOSE" | translate }}*</b></option>
           <option value="ilustracao">{{ "SUBJECT.ILLUSTRATION" | translate }}</option>
           <option value="identidade">{{ "SUBJECT.IDENTITY" | translate }}</option>
@@ -31,7 +31,7 @@
 
       <div form-input>
         <textarea name="message" required
-        placeholder=" "
+        placeholder=" " [(ngModel)]="messageControl"
         ></textarea>
         <label for="message">
           {{ 'FORM.MESSAGE' | translate }}*
@@ -39,7 +39,9 @@
       </div>
 
       <div class="button-area">
-        <button>{{ 'BUTTONS.SEND' | translate }}</button>
+        <button
+          (click)="sendForm()"
+        >{{ 'BUTTONS.SEND' | translate }}</button>
       </div>
 
     </form>
