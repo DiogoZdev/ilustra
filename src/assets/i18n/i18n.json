@@ -4,20 +4,45 @@
   "ES": "",
   "ABOUT": {
     "TRABALHO": {
-      "TITULO": {
-        "PT": "Sobre Mim",
-        "EN": "About Me",
-        "ES": "Quién Soy Yo"
+      "GOSTO": {
+        "PT": "Do que gosto",
+        "EN": "Things I like",
+        "ES": "Qué me encanta"
+      },
+      "ESTUDEI": {
+        "PT": "O que estudei",
+        "EN": "What I've studied",
+        "ES": "Qué ya estudié"
+      },
+      "QUE_FACO": {
+        "PT": "O que eu faço",
+        "EN": "What I do",
+        "ES": "Qué hago"
+      },
+      "COMO_FACO": {
+        "PT": "Como eu faço o que faço",
+        "EN": "How I do what I do",
+        "ES": "Cómo Hago lo que hago"
       },
       "P1": {
-        "PT": "Oi, eu sou Andressa, nascida no interior de São Paulo. Faço pintura a óleo em tela, retratos com grafite em papel e tenho um grande apreço por design e uma paixão por ilustração infantil.",
-        "EN": "Hi there, I'm Andressa and I was born in the interior of São Paulo. I make oil painting in canvas, portaits with graphite, I have a deep feeling for design but I truly love illustrating for children.",
-        "ES": "!Hola! Yo soy Andressa, nacida en el interior de São Paulo. Hago pintura sobre lienzo, retratos a grafito, desing me encanta mucho, pero amo dibujos para niños."
+        "PT": "Tenho grande apreço pela arte, em suas diversas formas, mas a visual sempre me chamou mais atenção. Faço desenhos de observação e grafite, pintura à óleo, em nanquim, arrisco uma aquarela e um giz pastel. Também gosto de conhecer lugares novos e viagens com motos, que é uma coisa em processo ainda. Já participei de projetos voluntários, como 'nós nosso olhar solidário', 'organização das moças' na Igreja de Jesus Cristo, utilizando a ilustração para aproximar e comunicar.",
+        "EN": "",
+        "ES": ""
       },
       "P2": {
-        "PT": "Participo voluntariamente do projeto 'Nós - Nosso Olhar Solidário' contribuindo com ilustrações e posts para o aplicativo e site. Curso Artes Visuais e trabalho com ilustração desde 2021, criando pensonagens, mascotes e desenhos infantis.",
-        "EN": "I'm a volunteer in the project 'Nós - Nosso Olhar Solidário' (Nós - Nest of Solidarity) contributing with posts and illustrations for the application and website. I study Visual Arts and I illustrate since 2021, creating characters, mascots and child related content.",
-        "ES": "Participo voluntariemente del proyecto 'Nós - Nosso Olhar Solidário' (Nós - Nuestros ojos Solidarios) contribuyendo con ilustraciones para la applicación y sitio web. Estudo Artes Visuales y trabajo con ilustración desde 2021 creando personajes, mascotas y dibujos para ninõs."
+        "PT": "Tenho me dedicado ao estudo de arte e design desde 2012, comecei com as atividades em design de interiores, meu primeiro contato com metodologia para criar  de acordo com o perfil do cliente. Cursei 'id class', específico sobre identidade visual. Cursei parte da faculdade de artes visuais, mas direcionei meus esforços para design de animação, onde estou ampliando e fortalecendo a metodologia de criação, aumentando minhas habilidades",
+        "EN": "",
+        "ES": ""
+      },
+      "P3": {
+        "PT": "Eu desenvolvo projeto de identidade visual para agregar valor, aumentar a visibilidade, facilitar a compra, reter o público de empreendedores e negócios, crio ilustrações personalizadas (incluindo mascote, lettering, personagens)  para promoção e expansão da marca. Em breve estarei adicionando motion aos meus serviços Minha missão é proporcionar benefícios através da arte e do design. Dando vida e consolidando de modo visual suas ideias empresariais Também tenho estampas em produtos da Dobra Também estou ministrando aulas de fundamentos do desenho aqui na minha cidade. Um aprendizado e tanto!",
+        "EN": "",
+        "ES": ""
+      },
+      "P4": {
+        "PT": "Pode -se dizer que baseio o desenvolvimento dos projetos em três etapas: coleta de informação e pesquisa e segmentação; esboços iniciais e alinhamento do projeto com o cliente; desenvolvimento, gerenciamento de cores, prototipação e finalização. Todas as etapas com feedback, busco um relacionamento aberto com os clientes",
+        "EN": "",
+        "ES": ""
       }
     }
   },
