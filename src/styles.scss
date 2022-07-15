@@ -78,8 +78,17 @@ li {
     margin-left: auto;
 }
 
+[grid2] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 [opt] {
     cursor: pointer;
+}
+
+[center] {
+  margin: 0 auto;
 }
 
 a {
