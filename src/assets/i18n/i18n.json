@@ -46,6 +46,20 @@
       }
     }
   },
+  "COLLECTION": {
+    "GATO_MAGICO": {
+      "PT": "Gato Mágico",
+      "EN": "Magic Cat",
+      "ES": "Gato Mágico"
+    }
+  },
+  "CTA": {
+    "COMPRE": {
+      "PT": "Compre Aqui!",
+      "EN": "Buy it Now!",
+      "ES": "Compre"
+    }
+  },
   "TAGLINE": {
     "PT": "Arte e Design",
     "EN": "Art & Design",
@@ -100,6 +114,11 @@
       "PT": "Apoie",
       "EN": "Support",
       "ES": "Apoye"
+    },
+    "PRODUTOS": {
+      "PT": "Produtos",
+      "EN": "Products",
+      "ES": "Productos"
     },
     "CONFIGURACOES": {
       "PT": "Configurações",

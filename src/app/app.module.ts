@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { DisplayComponent } from './components/display/display.component';
 import { SupportComponent } from './components/support/support.component';
+import { ProductsComponent } from './components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SupportComponent } from './components/support/support.component';
     DisplayComponent,
     TranslatePipe,
     SupportComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
