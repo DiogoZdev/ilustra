@@ -23,17 +23,17 @@ export class GalleryComponent implements OnInit {
       key: "CATEGORY.ALL"
     },
     {
-      value: 'char',
-      key: "CATEGORY.CHAR"
+      value: 'id',
+      key: "CATEGORY.ID"
+    },
+    {
+      value: 'drawings',
+      key: "CATEGORY.DRAWINGS"
     },
     {
       value: 'book',
       key: "CATEGORY.NOTEBOOK"
-    },
-    {
-      value: 'kids',
-      key: "CATEGORY.KIDS"
-    },
+    }
   ]
 
   /**
