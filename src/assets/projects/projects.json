@@ -2,6 +2,57 @@
   "projects":
   [
     {
+      "titulo": "Gioia",
+      "descricao": "Identidade Visual -",
+      "criado": "2022",
+      "imagens": [
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-01.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-03.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-04.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-05.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-06.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-07.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-08.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-09.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-10.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-11.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-12.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-13.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-14.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-15.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-16.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-17.png"
+      ],
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-00.png",
+      "categoria": ["id", "all"]
+    },
+    {
+      "titulo": "Mr. Dash",
+      "descricao": "Identidade Visual -",
+      "criado": "2021",
+      "imagens": [
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-01.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-03.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-04.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-05.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-06.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-07.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-08.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-09.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-10.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-11.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-12.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-13.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-14.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-15.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-16.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-17.png",
+        "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-18.png"
+      ],
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-00.png",
+      "categoria": ["id", "all"]
+    },
+    {
       "titulo": "Sketchbook Baleia",
       "descricao": "Meu primeiro sketchbook artesanal produzido. Finalizado com nanquim.",
       "criado": "",
@@ -39,7 +90,7 @@
         "../../../assets/projects/gallery/capivara.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/capivara_thumbnail.jpg",
-      "categoria": ["kids", "all"]
+      "categoria": ["drawings", "all"]
     },
     {
       "titulo": "Capoeira",
@@ -49,7 +100,7 @@
         "../../../assets/projects/gallery/capoeira.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/capoeira_thumbnail.jpg",
-      "categoria": ["kids", "all"]
+      "categoria": ["drawings", "all"]
     },
     {
       "titulo": "Acampamento",
@@ -59,7 +110,7 @@
         "../../../assets/projects/gallery/acampamento.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/acampamento_thumbnail.jpg",
-      "categoria": ["kids", "all"]
+      "categoria": ["drawings", "all"]
     },
     {
       "titulo": "Anã",
@@ -69,7 +120,7 @@
         "../../../assets/projects/gallery/ana.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/ana_thumbnail.jpg",
-      "categoria": ["char", "all"]
+      "categoria": ["drawings", "all"]
     },
     {
       "titulo": "Mago",
@@ -79,7 +130,7 @@
         "../../../assets/projects/gallery/mago.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/mago_thumbnail.jpg",
-      "categoria": ["char", "all"]
+      "categoria": ["drawings", "all"]
     },
     {
       "titulo": "Anão Bárbaro",
@@ -89,7 +140,7 @@
         "../../../assets/projects/gallery/anao.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/anao_thumbnail.jpg",
-      "categoria": ["char", "all"]
+      "categoria": ["drawings", "all"]
     },
     {
       "titulo": "Elfo",
@@ -99,7 +150,7 @@
         "../../../assets/projects/gallery/elfo.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/elfo_thumbnail.jpg",
-      "categoria": ["char", "all"]
+      "categoria": ["drawings", "all"]
     },
     {
       "titulo": "Arqueira Elfo",
@@ -109,7 +160,7 @@
         "../../../assets/projects/gallery/elfa.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/elfa_thumbnail.jpg",
-      "categoria": ["char", "all"]
+      "categoria": ["drawings", "all"]
     },
     {
       "titulo": "Orc",
@@ -120,7 +171,7 @@
         "../../../assets/projects/gallery/orc_det01.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/orc_thumbnail.jpg",
-      "categoria": ["char", "all"]
+      "categoria": ["drawings", "all"]
     },
     {
       "titulo": "Gnomo",
@@ -131,7 +182,7 @@
         "../../../assets/projects/gallery/gnomo_det01.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/gnomo_thumbnail.jpg",
-      "categoria": ["char", "all"]
+      "categoria": ["drawings", "all"]
     },
     {
       "titulo": "Goblin",
@@ -141,7 +192,7 @@
         "../../../assets/projects/gallery/goblin.jpg"
       ],
       "thumbnail": "../../../assets/projects/gallery/goblin_thumbnail.jpg",
-      "categoria": ["char", "all"]
+      "categoria": ["drawings", "all"]
     }
   ]
 }

@@ -85,6 +85,16 @@
       "PT": "Infantil",
       "EN": "Kids",
       "ES": "Para Niños"
+    },
+    "DRAWINGS": {
+      "PT": "Desenhos",
+      "EN": "Drawings",
+      "ES": "Dibujos"
+    },
+    "ID": {
+      "PT": "ID Visual",
+      "EN": "Visual ID",
+      "ES": "ID Visual"
     }
   },
   "FOOTER": {
