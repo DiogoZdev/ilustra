@@ -10,6 +10,7 @@
           *ngIf="selectedProject !== null"
           [src]="selectedProject.imagens[imgCount]"
           alt="selectedProject.titulo"
+          loading="eager"
         >
         <div *ngIf="showInfo" class="mobile-info">
           <h1>{{ selectedProject?.titulo }}</h1>
