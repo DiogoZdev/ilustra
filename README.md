@@ -1,14 +1,16 @@
-# AndressaIlustra
+<p align="center">
+<img src="https://andressailustra.netlify.app/assets/images/logo.svg">
+</p>
+
+<h1 align="center">Andressa Ilustra</h1>
 
 Disponível em
 [andressailustra.netlify.app](https://andressailustra.netlify.app/)
 
-Project generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
-
+Feito com [Angular 12](https://github.com/angular/angular-cli).
 
 ## Sobre
-Projeto pessoal para portfólio de ilustrações.
-Em desenvolvimento.
+Projeto pessoal para portfólio de ilustrações de Andressa Araujo.
 
 
 ## Aprendido com este projeto
