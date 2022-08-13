@@ -1,15 +1,15 @@
 :root {
-  --light: #fff;
-  --font-light: #000;
-  --primary-light: #44ffd2;
-  --accent-light: #b60b0b;
-  --backgroundI-light: #eee;
-  --backgroundII-light: #ddd;
+  --light: hsl(0, 0%, 100%);
+  --font-light: hsl(0, 0%, 0%);
+  --primary-light: hsl(166, 100%, 63%);
+  --accent-light: hsl(0, 89%, 38%);
+  --backgroundI-light: hsl(0, 0%, 93%);
+  --backgroundII-light: hsl(0, 0%, 87%);
 
-  --dark: #000;
-  --font-dark: #eee;
-  --primary-dark: #00313d;
-  --accent-dark: #6e0000;
-  --backgroundI-dark: #222;
-  --backgroundII-dark: #111;
+  --dark: hsl(0, 0%, 0%);
+  --font-dark: hsl(0, 0%, 93%);
+  --primary-dark: hsl(192, 100%, 12%);
+  --accent-dark: hsl(0, 100%, 22%);
+  --backgroundI-dark: hsl(0, 0%, 13%);
+  --backgroundII-dark: hsl(0, 0%, 7%);
 }
