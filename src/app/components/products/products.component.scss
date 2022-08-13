@@ -1,6 +1,22 @@
-* {
-  box-sizing: border-box;
-  flex-grow: 0;
+main {
+  width: 100vw;
+  background-color: var(--backgroundI-light);
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.product-area {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
 }
 
 .product-card {
