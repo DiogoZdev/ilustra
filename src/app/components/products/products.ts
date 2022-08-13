@@ -28,5 +28,11 @@ export const productsList = [
       collection: "GATO MAGICO",
       url: "https://querodobra.com.br/produto/necessaire-gato-magico/?ref=3527",
       imageUrl: "https://raw.githubusercontent.com/andressadesign/files/main/images-produtos/necessaire-gato.png"
+    },
+    {
+      title: 'Poster Adesivo',
+      collection: 'Coruja',
+      url: 'https://querodobra.com.br/produto/lambe-a3-cow/?ref=3527',
+      imageUrl: 'https://raw.githubusercontent.com/andressadesign/files/main/images-produtos/adesivo-coruja.png'
     }
   ];
