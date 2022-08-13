@@ -1,10 +1,16 @@
 <main>
   <div class="contain" pad>
     <div class="products">
-      <div class="product-area" *ngFor="let p of products">
-        <div class="product-card">
+      <div class="product-area">
+        <div class="product-card" *ngFor="let p of products">
           <h1>{{p.title}}</h1>
           <h2>{{ p.collection }}</h2>
+
+          <img
+            [src]="p.imageUrl"
+            [alt]="p.title"
+            (click)="toggleDisplay(p.imageUrl)"
+          >
           
           <a target="_blank" [href]="p.url">
             <button>
@@ -13,13 +19,19 @@
           </a>
           
         </div>
-        <div class="product-card">
-          <img
-            [src]="p.imageUrl"
-            alt="carteira gato"
-          >
-        </div>
       </div>
     </div>
   </div>
+
+  
+
 </main>
+
+<div class="modal-area" *ngIf="productOnDisplay != ''">
+  <div class="modal">
+    <mat-icon (click)="toggleDisplay()">close</mat-icon>
+    <div class="image-area">
+      <img src={{productOnDisplay}} alt="product view">
+    </div>
+  </div>
+</div>

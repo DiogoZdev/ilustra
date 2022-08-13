@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { productsList } from 'src/app/components/products/products';
 
 @Component({
@@ -6,13 +6,20 @@ import { productsList } from 'src/app/components/products/products';
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })
-export class ProductsComponent implements OnInit {
+export class ProductsComponent {
 
   public products = productsList;
+  public productOnDisplay: string = '';
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
+  toggleDisplay(url?: string) {
+    if (url) {
+      this.productOnDisplay = url
+    } else {
+      this.productOnDisplay = '';
+    }
+    console.log(this.productOnDisplay);
+  }
 }
