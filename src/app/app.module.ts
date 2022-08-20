@@ -15,6 +15,7 @@ import { AboutComponent } from './components/about/about.component';
 import { DisplayComponent } from './components/display/display.component';
 import { SupportComponent } from './components/support/support.component';
 import { ProductsComponent } from './components/products/products.component';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ProductsComponent } from './components/products/products.component';
     TranslatePipe,
     SupportComponent,
     ProductsComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
