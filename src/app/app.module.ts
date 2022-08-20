@@ -29,8 +29,8 @@ import { ErrorComponent } from './components/error/error.component';
     TranslatePipe,
     SupportComponent,
     ProductsComponent,
-    ErrorComponent
-  ],
+    ErrorComponent,
+],
   imports: [
     BrowserModule,
     AppRoutingModule,
