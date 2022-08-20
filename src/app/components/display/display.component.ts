@@ -11,7 +11,7 @@ export class DisplayComponent implements OnInit, AfterViewInit {
   /**
    * Component's theme
    */
-  @Input() theme = '';
+  
 
   /**
    * Selected project in parent component

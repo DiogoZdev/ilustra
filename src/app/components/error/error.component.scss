@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  margin: 2rem auto;
+  width: 60vw;
+  max-width: 600px;
+}
+
+h1 {
+  padding: 1rem;
+  font-size: clamp(14px, 3vw, 30px);
+}

@@ -24,7 +24,7 @@
         "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-17.png"
       ],
       "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/gioia-reduzido/Prancheta-00.png",
-      "categoria": ["id", "all"]
+      "categoria": ["visual-id", "all"]
     },
     {
       "titulo": "Mr. Dash",
@@ -50,7 +50,7 @@
         "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-18.png"
       ],
       "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/mr-dash-reduzido/Prancheta-00.png",
-      "categoria": ["id", "all"]
+      "categoria": ["visual-id", "all"]
     },
     {
       "titulo": "Sketchbook Baleia",
@@ -60,7 +60,7 @@
         "../../../assets/projects/gallery/whale_sketch.png"
       ],
       "thumbnail": "../../../assets/projects/gallery/whale_thumbnail.jpg",
-      "categoria": ["book", "all"]
+      "categoria": ["covers", "all"]
     },
     {
       "titulo": "Sketchbook diário",
@@ -70,7 +70,7 @@
         "../../../assets/projects/gallery/diario_sketch.png"
       ],
       "thumbnail": "../../../assets/projects/gallery/diario_thumbnail.jpg",
-      "categoria": ["book", "all"]
+      "categoria": ["covers", "all"]
     },
     {
       "titulo": "Sketchbook Crânio",
@@ -80,7 +80,7 @@
         "../../../assets/projects/gallery/skull_sketch.png"
       ],
       "thumbnail": "../../../assets/projects/gallery/skull_thumbnail.jpg",
-      "categoria": ["book", "all"]
+      "categoria": ["covers", "all"]
     },
     {
       "titulo": "Capitanos",

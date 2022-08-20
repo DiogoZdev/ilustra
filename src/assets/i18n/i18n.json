@@ -135,5 +135,10 @@
       "EN": "Settings",
       "ES": "Configuraciones"
     }
+  },
+  "ERROR-404": {
+    "PT": "Desculpe, não é essa a página que você procura...",
+    "EN": "Sorry, this is not the page you are looking for...",
+    "ES": "Desculpe, esa no es la página que procura..."
   }
 }

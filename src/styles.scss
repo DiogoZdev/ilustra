@@ -110,14 +110,15 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 
   &-thumb {
-    background: #000;
-    border: solid 2px #555;
+    background: hsl(192, 100%, 30%);
+    border: solid 2px var(--primary-dark);
+    border-radius: 4px;
   }
 
   &-track {
-    background: #555;
+    background: var(--primary-dark);
   }
 }

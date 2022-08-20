@@ -8,7 +8,7 @@ import { ThemeService } from 'src/app/services/theme.service';
 })
 export class NavComponent implements OnInit { 
 
-  @Input() theme = '';
+  
 
   /**
    * Boolean de exibição do botão "voltar ao topo"

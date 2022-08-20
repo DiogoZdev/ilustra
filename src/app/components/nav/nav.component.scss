@@ -19,6 +19,9 @@
 }
 
 nav {
+  background-color: var(--backgroundII-dark);
+  color: var(--font-dark);
+
   .navigation {
     ul {
       display: flex;
@@ -46,9 +49,14 @@ nav {
 
 .gear {
   transition: transform 300ms ease;
+  
+  &:hover {
+    transform: rotate(30deg);
+  }
 }
   
 .configuration {
+  background-color: var(--backgroundII-dark);
   position: absolute;
   top: 110%;
   right: 0;
@@ -118,19 +126,5 @@ nav[tema=dark] {
     li:hover {
       background-color: #000;
     }
-  }
-}
-
-.rotate {
-  animation: rotation 5s alternate linear infinite;
-  will-change: transform;
-}
-
-@keyframes rotation {
-  from {
-    transform: 0;
-  }
-  to {
-    transform: rotate(360deg);
   }
 }

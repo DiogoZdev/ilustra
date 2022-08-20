@@ -2,6 +2,7 @@ import { Component, HostListener, Input, OnInit } from '@angular/core';
 import * as projects from 'src/assets/projects/projects.json'
 
 import { Project } from 'src/app/interfaces/project.interface';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-gallery',
@@ -15,7 +16,7 @@ export class GalleryComponent implements OnInit {
   /**
    * Component's theme
    */
-  @Input() theme = '';
+  
 
   public filters = [
     {
@@ -23,7 +24,7 @@ export class GalleryComponent implements OnInit {
       key: "CATEGORY.ALL"
     },
     {
-      value: 'id',
+      value: 'visual-id',
       key: "CATEGORY.ID"
     },
     {
@@ -31,7 +32,7 @@ export class GalleryComponent implements OnInit {
       key: "CATEGORY.DRAWINGS"
     },
     {
-      value: 'book',
+      value: 'covers',
       key: "CATEGORY.NOTEBOOK"
     }
   ]
@@ -57,12 +58,15 @@ export class GalleryComponent implements OnInit {
   visibleProjectsList: Project[] = this.projectsList;
 
   constructor(
+    private _route: ActivatedRoute,
   ) { }
   
   /**
    * Initial method
    */
   ngOnInit(): void {
+    const filter = this._route.snapshot.paramMap.get('filter');
+    filter ? this.filter(filter) : this.filter('all');
   }
 
   /**

@@ -2,15 +2,15 @@
     <mat-icon>arrow_drop_up</mat-icon>
 </div>
 
-<nav [attr.tema]="theme">
+<nav>
     <div class="contain" row>
         <div class="navigation">
             <ul>
                 <li class="logo"><img src="../../../assets/images/logo.png" alt=""></li>
-                <li opt (click)="sendPage('home')">{{ "NAV.INICIO" | translate }}</li>
-                <li opt (click)="sendPage('about')">{{ "NAV.SOBRE" | translate }}</li>
-                <li opt (click)="sendPage('products')">{{ "NAV.PRODUTOS" | translate }}</li>
-                <!-- <li opt (click)="sendPage('support')">{{ "NAV.APOIE" | translate }}</li> -->
+                <li opt routerLink="/">{{ "NAV.INICIO" | translate }}</li>
+                <li opt routerLink="about">{{ "NAV.SOBRE" | translate }}</li>
+                <li opt routerLink="products">{{ "NAV.PRODUTOS" | translate }}</li>
+                <!-- <li opt routerLink="support">{{ "NAV.APOIE" | translate }}</li> -->
             </ul>
         </div>
         <div class="settings" to-right>
@@ -25,7 +25,7 @@
                         <li class="opt" (click)="setLanguage('EN')">english</li>
                     </ul>
                 </div>
-                <div>
+                <!-- <div>
                     <ul>
                         <li class="opt"
                             (click)="setTheme('light')"
@@ -35,7 +35,7 @@
                             (click)="setTheme('dark')"
                         ><mat-icon>dark_mode</mat-icon></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
