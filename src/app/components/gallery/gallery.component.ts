@@ -1,8 +1,7 @@
-import { OnInit, Component, HostListener, } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import * as projects from 'src/assets/projects/projects.json'
 
 import { Project } from 'src/app/interfaces/project.interface';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-gallery',
@@ -13,13 +12,18 @@ export class GalleryComponent implements OnInit {
 
   filtroSelecionado!: string;
 
+  /**
+   * Component's theme
+   */
+  @Input() theme = '';
+
   public filters = [
     {
       value: 'all',
       key: "CATEGORY.ALL"
     },
     {
-      value: 'visual-id',
+      value: 'id',
       key: "CATEGORY.ID"
     },
     {
@@ -27,7 +31,7 @@ export class GalleryComponent implements OnInit {
       key: "CATEGORY.DRAWINGS"
     },
     {
-      value: 'covers',
+      value: 'book',
       key: "CATEGORY.NOTEBOOK"
     }
   ]
@@ -53,15 +57,12 @@ export class GalleryComponent implements OnInit {
   visibleProjectsList: Project[] = this.projectsList;
 
   constructor(
-    private _activeRoute: ActivatedRoute,
   ) { }
   
   /**
    * Initial method
    */
-  ngOnInit() {
-    const filter = this._activeRoute.snapshot.paramMap.get('filter');
-    filter ? this.filter(filter) : this.filter('all');
+  ngOnInit(): void {
   }
 
   /**

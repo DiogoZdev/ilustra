@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SupportComponent implements OnInit {
 
-  ;
+  @Input() theme = '';
 
   constructor() { }
 
