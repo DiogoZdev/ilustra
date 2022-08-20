@@ -8,7 +8,7 @@ import { ThemeService } from 'src/app/services/theme.service';
 })
 export class NavComponent implements OnInit { 
 
-  ;
+  @Input() theme = '';
 
   /**
    * Boolean de exibição do botão "voltar ao topo"
@@ -45,7 +45,7 @@ export class NavComponent implements OnInit {
    * Método inicial do componente
    */
   ngOnInit(): void {
-    const theme = localStorage.getItem("theme");
+    const theme =localStorage.getItem("theme");
     theme === null || undefined
     ? setTimeout(() => this.setTheme('light'), 500)
     : this.setTheme(theme);
@@ -54,13 +54,27 @@ export class NavComponent implements OnInit {
     lang === null || undefined
     ? this.setLanguage('PT')
     : this.setLanguage(lang);
+
+    const page = localStorage.getItem('page');
+    page === null || undefined
+    ? this.sendPage('home')
+    : this.sendPage(page);
   }
 
+  /**
+   * Emitter de valor de página
+   * @param page página selecionada
+   */
+  sendPage(page: string) {
+    this.pageEmitter.emit(page);
+  }
   /**
    * Método para exibir configurações da página
    */
   toggleConfiguration() {
     this.showConfiguration = !this.showConfiguration;
+
+    document.querySelector(".gear")?.classList.toggle('rotate');
   }
 
   /**

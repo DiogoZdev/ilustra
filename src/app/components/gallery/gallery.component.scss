@@ -1,18 +1,17 @@
 main {
   padding: 0;
-  background-color: var(--backgroundI-light);
-  padding-top: 1rem;
 }
 
 .filter {
   position: sticky;
   top: 0.8rem;
   width: max-content;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
+  padding: 0.2rem;
   border-radius: 4px;
   display: flex;
   justify-content: center;
-  z-index: 10;
+  z-index: 999;
 
   background-color: #fff8;
   backdrop-filter: blur(4px);
@@ -43,6 +42,8 @@ main {
   }
 
   @media (max-width: 450px) {
+    position: relative;
+
     ul {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -53,7 +54,7 @@ main {
 
 
 .imagens {
-  margin: 0 auto;
+  margin: 2rem auto 0;
   max-width: 1800px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);

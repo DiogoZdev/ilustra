@@ -11,7 +11,7 @@ export class FooterComponent implements OnInit {
   /**
    * Tema do componente
    */
-  ;
+  @Input() theme = '';
 
   constructor() {}
 

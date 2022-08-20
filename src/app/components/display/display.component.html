@@ -1,4 +1,4 @@
-<div  class="background">
+<div [attr.theme]="theme" class="background">
   <div class="display">
     <div class="chevron">
       <mat-icon (click)="previousProject()">chevron_left</mat-icon>
@@ -13,8 +13,8 @@
           loading="eager"
         >
         <div *ngIf="showInfo" class="mobile-info">
-          <h1>{{ selectedProject.titulo }}</h1>
-          <p>{{ selectedProject.descricao }}</p>
+          <h1>{{ selectedProject?.titulo }}</h1>
+          <p>{{ selectedProject?.descricao }}</p>
         </div>
         <!-- FIM TEMPLATE IMAGEM -->
         <mat-icon 
@@ -33,8 +33,8 @@
       </div>
       <div class="image--info" *ngIf="showInfo">
         <!-- TEMPLATE INFORMAÇÂO -->
-        <h1>{{ selectedProject.titulo }}</h1>
-        <p>{{ selectedProject.descricao }}</p>
+        <h1>{{ selectedProject?.titulo }}</h1>
+        <p>{{ selectedProject?.descricao }}</p>
         <!--  -->
       </div>
       <div class="interaction-icons">
