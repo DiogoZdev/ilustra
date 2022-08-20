@@ -1,20 +1,44 @@
 header {
-    min-height: 150px;
-    padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background: linear-gradient(45deg, #fff 1%, var(--primary-light), var(--primary-dark));
+  background-size: 200%;
+  //background-color: var(--backgroundI-light);
+  color: var(--font-light);
+  animation: bg 10s forwards 0s infinite ;
 
-    h1, h3 {
-        text-align: center;
-    }
+  h1, h3 {
+      text-align: center;
+  }
 }
 
-header[theme=light] {
+.light {
+  header {
     transition: all 0.3s ease;
     background-color: var(--backgroundI-light);
     color: var(--font-light);
+  }
 }
 
-header[theme=dark] {
+.dark {
+  header {
     transition: all 0.3s ease;
     background-color: var(--backgroundI-dark);
     color: var(--font-dark);
+  }
+}
+
+@keyframes bg {
+  0% {
+    background-position:0, 0;
+  }
+  50% {
+    background-position:100%, 50% ;
+  }
+  100% {
+    background-position:0, 0;
+  }
 }

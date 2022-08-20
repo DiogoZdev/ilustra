@@ -20,6 +20,5 @@ export class ProductsComponent {
     } else {
       this.productOnDisplay = '';
     }
-    console.log(this.productOnDisplay);
   }
 }

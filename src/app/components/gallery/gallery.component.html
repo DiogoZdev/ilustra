@@ -1,4 +1,4 @@
-<main [attr.theme]="theme">
+<main >
   <div min-75vh>
 
 		<div class="filter">
@@ -26,7 +26,6 @@
 
 <app-display
 	*ngIf="viewDisplay"
-	[theme]="theme"
 	[selectedProject]="selectedProject"
 	[displayGallery] = "visibleProjectsList"
 	(viewEmitter)="toggleDisplay()">

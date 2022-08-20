@@ -1,6 +1,7 @@
 footer {
   padding: 1rem 0;
-  color: #eee;
+  background-color: var(--primary-dark);
+  color: var(--font-dark);
 
   .contain {
     display: grid;
@@ -38,9 +39,9 @@ footer[theme=dark] {
 #dev {
   padding: 1ch 2ch;
   text-align: right;
-  background-color: #000;
+  background-color: var(--primary-dark);
 
   a, a:hover, a:visited, a:active {
-    color: #f80;
+    color: hsl(192, 20%, 50%);
   }
 }
