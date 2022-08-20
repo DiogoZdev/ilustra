@@ -67,6 +67,7 @@ mat-icon {
       width: min-content;
       padding: 0.5rem;
       border-radius: 5px;
+      background-color: #111;
 
       mat-icon  {
         position: relative;
@@ -132,6 +133,8 @@ mat-icon {
       width: 50%;
       border-radius: 0 8px 8px 0;
       padding: 2rem;
+      background-color: #fff;
+      color: #000;
 
       h1 {
         font-size: 30px;
