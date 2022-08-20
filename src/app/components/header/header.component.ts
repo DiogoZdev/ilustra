@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit{
   /**
    * Definição do tema
    */
-  @Input() theme = '';
+  ;
 
   constructor( ) {}
 

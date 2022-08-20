@@ -1,3 +1,8 @@
+main {
+  background-color: var(--backgroundI-light);
+  color: var(--font-light);
+}
+
 .columns2 {
   display: grid;
   grid-template-columns: 1fr 1fr;

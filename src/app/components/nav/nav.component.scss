@@ -19,6 +19,10 @@
 }
 
 nav {
+  transition: all ease 0.3s;
+  background-color: var(--backgroundI-dark);
+  color: var(--font-dark);
+
   .navigation {
     ul {
       display: flex;
@@ -46,9 +50,14 @@ nav {
 
 .gear {
   transition: transform 300ms ease;
+
+  &:hover {
+    transform: rotate(30deg);
+  }
 }
   
 .configuration {
+  transform: unset;
   position: absolute;
   top: 110%;
   right: 0;
@@ -58,6 +67,8 @@ nav {
   min-height: max-content;
   border-radius: 4px;
   box-shadow: 0 0 3px #0005;
+  background-color: var(--backgroundI-dark);
+  color: var(--font-dark);
 
   div {
     width: 100%;
@@ -84,15 +95,15 @@ nav {
     cursor: pointer;
 
     &:hover {
-      background-color: #0000001a;
+      background-color: #0005;
     }
   }
 }
 
 nav[tema=light] {
   transition: all ease 0.3s;
-  background-color: var(--backgroundI-dark);
-  color: var(--font-dark);
+  background-color: var(--backgroundI-light);
+  color: var(--font-light);
 
   .configuration {
     background-color: var(--backgroundII-light);
