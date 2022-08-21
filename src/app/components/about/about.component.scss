@@ -3,32 +3,71 @@
   grid-template-columns: 1fr 1fr;
   padding: 3rem 0;
 
-  @media  (max-width: 800px) {
+  @media  (max-width: 920px) {
     display: flex;
     flex-direction: column;
   }
 }
 
+.about-content {
+  width: 100%;
+  max-width: calc(100vw - 90px);
+}
+
 h2 {
   width: 100%;
-  margin: 1ch auto;
+  margin: 2rem auto 0;
   text-align: center;
 }
 
 p {
-  max-width: 50ch;
+  max-width: 70ch;
   margin: 0 auto;
-  margin-bottom: 3ch;
   line-height: 2;
   text-indent: 2ch;
 }
 
 .image-area {
+  position: relative;
   max-width: 200px;
   aspect-ratio: 1;
   margin: 0 auto;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.contact-area {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  width: 45px;
+  height:fit-content;
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    transition: all ease 200ms;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateX(-15px);
+      width: 60px;
+      color: white !important;
+    }
+  }
+
+  .mail {
+    background-color: #DB4437;
+    color: white;
+  }
+
+  .message {
+    background-color: #25D366;
+    color: white;
+  }
 }
 
 main[theme=dark] {
