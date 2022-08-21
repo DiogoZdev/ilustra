@@ -1,6 +1,6 @@
 <main>
   <div class="contain columns2" min-75vh>
-    <div pad>
+    <div class="about-content">
       <h2>{{ "ABOUT.TRABALHO.GOSTO" | translate }}</h2>
       <p>{{ "ABOUT.TRABALHO.P1" | translate }}</p>
       <h2>{{ "ABOUT.TRABALHO.ESTUDEI" | translate }}</h2>
@@ -9,11 +9,18 @@
       <p>{{ "ABOUT.TRABALHO.P3" | translate }}</p>
       <h2>{{ "ABOUT.TRABALHO.COMO_FACO" | translate }}</h2>
       <p>{{ "ABOUT.TRABALHO.P4" | translate }}</p>
+      <p>{{ "ABOUT.TRABALHO.P5" | translate }}</p>
+      <p>{{ "ABOUT.TRABALHO.P6" | translate }}</p>
+      <p>{{ "ABOUT.TRABALHO.P7" | translate }}</p>
     </div>
     <div pad>
       <div class="image-area">
         <img src="../../../assets/images/andressa.jpg" alt="Andressa">
       </div>
+    </div>
+    <div class="contact-area">
+      <div class="contact mail z-icon" (click)="sendMail()">mail</div>
+      <div class="contact message z-icon" (click)="sendMessage()">whatsapp</div>
     </div>
   </div>
 </main>
