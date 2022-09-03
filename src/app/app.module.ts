@@ -16,6 +16,8 @@ import { DisplayComponent } from './components/display/display.component';
 import { SupportComponent } from './components/support/support.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ErrorComponent } from './components/error/error.component';
+import { LoaderComponent } from './components/misc/loader/loader.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,15 +32,18 @@ import { ErrorComponent } from './components/error/error.component';
     SupportComponent,
     ProductsComponent,
     ErrorComponent,
+    LoaderComponent,
 ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    PipesModule
+    PipesModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

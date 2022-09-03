@@ -1,24 +1,40 @@
 <main>
+  <loader-bar *ngIf="loading"></loader-bar>
   <div class="contain" pad>
     <div class="products">
-      <div class="product-area">
-        <div class="product-card" *ngFor="let p of products">
-          <h1>{{p.title}}</h1>
-          <h2>{{ p.collection }}</h2>
 
-          <img
-            [src]="p.imageUrl"
-            [alt]="p.title"
-            (click)="toggleDisplay(p.imageUrl)"
-          >
+      <div *ngIf="loading" class="product-area">
+        <div class="product-card" *ngFor="let p of [1,2,3,4,5,6]">
+          <div class="mock mock-title-h1"></div>
+          <div class="mock mock-title-h2"></div>
+
+          <div class="mock mock-image"></div>
           
-          <a target="_blank" [href]="p.url">
-            <button>
-              {{ "CTA.COMPRE" | translate }}
+          <a>
+            <button class="mock mock-button">
+              loading
             </button>
           </a>
-          
         </div>
+      </div>
+
+      <div *ngIf="!loading" class="product-area">
+          <div class="product-card" *ngFor="let p of products">
+            <h1>{{p.title}}</h1>
+            <h2>{{ p.collection }}</h2>
+
+            <img
+              [src]="p.imageUrl"
+              [alt]="p.title"
+              (click)="toggleDisplay(p.imageUrl)"
+            >
+            
+            <a target="_blank" [href]="p.url">
+              <button>
+                {{ "CTA.COMPRE" | translate }}
+              </button>
+            </a>
+          </div>
       </div>
     </div>
   </div>

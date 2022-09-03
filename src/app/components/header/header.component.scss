@@ -4,7 +4,7 @@ header {
   justify-content: center;
   align-items: center;
   min-height: 200px;
-  background: linear-gradient(45deg, var(--primary-light), var(--primary-dark));
+  background: linear-gradient(45deg, hsl(166, 100%, 63%), hsl(166, 50%, 30%));
   background-size: 200%;
   animation: bg 10s infinite;
   color: var(--font-light);
