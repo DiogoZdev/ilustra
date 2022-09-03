@@ -1,8 +1,8 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
-import * as projects from 'src/assets/projects/projects.json'
 
-import { Project } from 'src/app/interfaces/project.interface';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Project, ProjectList } from 'src/app/interfaces/project.interface';
+import { ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-gallery',
@@ -13,10 +13,7 @@ export class GalleryComponent implements OnInit {
 
   filtroSelecionado!: string;
 
-  /**
-   * Component's theme
-   */
-  
+  public loading = false;
 
   public filters = [
     {
@@ -50,7 +47,7 @@ export class GalleryComponent implements OnInit {
   /**
    * Projects list
    */
-  projectsList: Project[] = JSON.parse(JSON.stringify(projects)).projects;
+  projectsList: Project[] = [];
 
   /**
    * Visible Projects in the component
@@ -59,14 +56,26 @@ export class GalleryComponent implements OnInit {
 
   constructor(
     private _route: ActivatedRoute,
+    private _http: HttpClient,
   ) { }
   
   /**
    * Initial method
    */
   ngOnInit(): void {
-    const filter = this._route.snapshot.paramMap.get('filter');
-    filter ? this.filter(filter) : this.filter('all');
+    this.loading = true;
+
+    
+
+    this._http.get("https://raw.githubusercontent.com/andressadesign/files/main/projects.json")
+    .toPromise().then((result) => {      
+      this.projectsList = (result as ProjectList).projects;
+
+      const filter = this._route.snapshot.paramMap.get('filter');
+      filter ? this.filter(filter) : this.filter('all');
+
+      this.loading = false;
+    })
   }
 
   /**

@@ -57,9 +57,9 @@
       "descricao": "Meu primeiro sketchbook artesanal produzido. Finalizado com nanquim.",
       "criado": "",
       "imagens": [
-        "../../../assets/projects/gallery/whale_sketch.png"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/whale_sketch.png"
       ],
-      "thumbnail": "../../../assets/projects/gallery/whale_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/whale_thumbnail.jpg",
       "categoria": ["covers", "all"]
     },
     {
@@ -67,9 +67,9 @@
       "descricao": "Eu gosto de viajar, desenhar paisagens, guardar essas recordações em um lugar especial. Nada melhor que um sketchbook mochileiro artesanal.",
       "criado": "",
       "imagens": [
-        "../../../assets/projects/gallery/diario_sketch.png"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/diario_sketch.png"
       ],
-      "thumbnail": "../../../assets/projects/gallery/diario_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/diario_thumbnail.jpg",
       "categoria": ["covers", "all"]
     },
     {
@@ -77,9 +77,9 @@
       "descricao": "Admito gostar de motos e coisas de motoclubes em geral. Acredito ter sido a inspiração para essa arte.",
       "criado": "",
       "imagens": [
-        "../../../assets/projects/gallery/skull_sketch.png"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/skull_sketch.png"
       ],
-      "thumbnail": "../../../assets/projects/gallery/skull_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/skull_thumbnail.jpg",
       "categoria": ["covers", "all"]
     },
     {
@@ -87,9 +87,9 @@
       "descricao": "Esse eu fiz durante a participação de um concurso promovido por 'As Crônicas de Wesley'",
       "criado": "",
       "imagens": [
-        "../../../assets/projects/gallery/capivara.jpg"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/capivara.jpg"
       ],
-      "thumbnail": "../../../assets/projects/gallery/capivara_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/capivara_thumbnail.jpg",
       "categoria": ["drawings", "all"]
     },
     {
@@ -97,9 +97,9 @@
       "descricao": "projeto autoral. Uma roda de capoeira amigável.",
       "criado": "",
       "imagens": [
-        "../../../assets/projects/gallery/capoeira.jpg"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/capoeira.jpg"
       ],
-      "thumbnail": "../../../assets/projects/gallery/capoeira_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/capoeira_thumbnail.jpg",
       "categoria": ["drawings", "all"]
     },
     {
@@ -107,9 +107,9 @@
       "descricao": "Acampamento, aventura e boas amizades. A natureza trás um sentimento libertador, a arte também.",
       "criado": "",
       "imagens": [
-        "../../../assets/projects/gallery/acampamento.jpg"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/acampamento.jpg"
       ],
-      "thumbnail": "../../../assets/projects/gallery/acampamento_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/acampamento_thumbnail.jpg",
       "categoria": ["drawings", "all"]
     },
     {
@@ -117,9 +117,9 @@
       "descricao": "Excelente estrategista. A guerreira é a especialista na forja de armas e armaduras usadas em suas terras.",
       "criado": "Out/2021",
       "imagens": [
-        "../../../assets/projects/gallery/ana.jpg"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/ana.jpg"
       ],
-      "thumbnail": "../../../assets/projects/gallery/ana_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/ana_thumbnail.jpg",
       "categoria": ["drawings", "all"]
     },
     {
@@ -127,9 +127,9 @@
       "descricao": "Um domador dos ares, um mago do bem, defensor dos espíritos voadores.",
       "criado": "Out/2021",
       "imagens": [
-        "../../../assets/projects/gallery/mago.jpg"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/mago.jpg"
       ],
-      "thumbnail": "../../../assets/projects/gallery/mago_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/mago_thumbnail.jpg",
       "categoria": ["drawings", "all"]
     },
     {
@@ -137,9 +137,9 @@
       "descricao": "Inspirado em 'O Senhor dos Anéis', surge um pequeno guerreiro, forte e corajoso.",
       "criado": "Out/2021",
       "imagens": [
-        "../../../assets/projects/gallery/anao.jpg"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/anao.jpg"
       ],
-      "thumbnail": "../../../assets/projects/gallery/anao_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/anao_thumbnail.jpg",
       "categoria": ["drawings", "all"]
     },
     {
@@ -147,9 +147,9 @@
       "descricao": "Elfo de poucas palavras, com seu olhar enigmático, enfrentando qualquer desafio pelo amor.",
       "criado": "Out/2021",
       "imagens": [
-        "../../../assets/projects/gallery/elfo.jpg"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/elfo.jpg"
       ],
-      "thumbnail": "../../../assets/projects/gallery/elfo_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/elfo_thumbnail.jpg",
       "categoria": ["drawings", "all"]
     },
     {
@@ -157,9 +157,9 @@
       "descricao": "A lendária caçadora da terra dos elfos. Representa a força, determinação e destreza feminina.",
       "criado": "Out/2021",
       "imagens": [
-        "../../../assets/projects/gallery/elfa.jpg"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/elfa.jpg"
       ],
-      "thumbnail": "../../../assets/projects/gallery/elfa_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/elfa_thumbnail.jpg",
       "categoria": ["drawings", "all"]
     },
     {
@@ -167,10 +167,10 @@
       "descricao": "Morador das terras distantes, representando a força e a fúria de sua nação.",
       "criado": "Out/2021",
       "imagens": [
-        "../../../assets/projects/gallery/orc.jpg",
-        "../../../assets/projects/gallery/orc_det01.jpg"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/orc.jpg",
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/orc_det01.jpg"
       ],
-      "thumbnail": "../../../assets/projects/gallery/orc_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/orc_thumbnail.jpg",
       "categoria": ["drawings", "all"]
     },
     {
@@ -178,10 +178,10 @@
       "descricao": "Esperto e industrioso, fabricante de bombas de gás para proteção de seu povo e seus tesouros.",
       "criado": "Out/2021",
       "imagens": [
-        "../../../assets/projects/gallery/gnomo.jpg",
-        "../../../assets/projects/gallery/gnomo_det01.jpg"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/gnomo.jpg",
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/gnomo_det01.jpg"
       ],
-      "thumbnail": "../../../assets/projects/gallery/gnomo_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/gnomo_thumbnail.jpg",
       "categoria": ["drawings", "all"]
     },
     {
@@ -189,9 +189,9 @@
       "descricao": "Com um coração maléfico e intenções duvidosas, o goblin aterroriza qualquer um que cruze seu caminho.",
       "criado": "Out/2021",
       "imagens": [
-        "../../../assets/projects/gallery/goblin.jpg"
+        "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/goblin.jpg"
       ],
-      "thumbnail": "../../../assets/projects/gallery/goblin_thumbnail.jpg",
+      "thumbnail": "https://raw.githubusercontent.com/andressadesign/files/main/illustrations/goblin_thumbnail.jpg",
       "categoria": ["drawings", "all"]
     }
   ]

@@ -31,3 +31,7 @@ export interface Project {
   categoria: string[];
 
 }
+
+export interface ProjectList {
+  projects: Project[];
+}
