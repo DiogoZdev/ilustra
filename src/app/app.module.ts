@@ -18,6 +18,7 @@ import { ProductsComponent } from './views/products/products.component';
 import { ErrorComponent } from './components/error/error.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     PipesModule,
     HttpClientModule,
+    MatTooltipModule
   ],
   providers: [
   ],
