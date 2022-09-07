@@ -8,15 +8,15 @@ import { NavComponent } from './components/nav/nav.component';
 import { MatIconModule } from '@angular/material/icon';
 import { PipesModule } from 'pipes-module';
 import { TranslatePipe } from './utils/pipes/translate.pipe';
-import { GalleryComponent } from './components/gallery/gallery.component';
+import { GalleryComponent } from './views/gallery/gallery.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AboutComponent } from './components/about/about.component';
+import { AboutComponent } from './views/about/about.component';
 import { DisplayComponent } from './components/display/display.component';
 import { SupportComponent } from './components/support/support.component';
-import { ProductsComponent } from './components/products/products.component';
+import { ProductsComponent } from './views/products/products.component';
 import { ErrorComponent } from './components/error/error.component';
-import { LoaderComponent } from './components/misc/loader/loader.component';
+import { LoaderComponent } from './components/loader/loader.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
