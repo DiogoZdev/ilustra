@@ -1,5 +1,6 @@
 main {
-  background-color: var(--backgroundI-dark);
+  // background-color: var(--backgroundI-dark);
+  background: #eee;
   padding: 1rem 0 0;
   position: relative;
 }
@@ -13,8 +14,8 @@ main {
   display: flex;
   justify-content: center;
   z-index: 10;
-
-  background-color: #fff8;
+  background-color: #2229;
+  color: white;
   backdrop-filter: blur(4px);
 
   ul {
@@ -86,20 +87,5 @@ main {
         transform: scale(1.1) rotate(2deg);
       }
     }
-  }
-}
-
-main[theme=light] {
-  transition: all ease 0.3s;
-  background-color: var(--backgroundI-light);
-}
-
-main[theme=dark] {
-  transition: all ease 0.3s;
-  background-color: var(--backgroundI-dark);
-  color: var(--font-dark);
-
-  .filter {
-    color: #000;
   }
 }

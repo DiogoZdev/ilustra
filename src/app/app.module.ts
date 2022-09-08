@@ -19,6 +19,8 @@ import { ErrorComponent } from './components/error/error.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { ArtDisplayComponent } from './components/art-display/art-display.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     ProductsComponent,
     ErrorComponent,
     LoaderComponent,
+    ArtDisplayComponent,
 ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatIconModule,
     PipesModule,
     HttpClientModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatDialogModule
   ],
   providers: [
   ],

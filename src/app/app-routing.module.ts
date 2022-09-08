@@ -4,6 +4,7 @@ import { AboutComponent } from './views/about/about.component';
 import { ErrorComponent } from './components/error/error.component';
 import { GalleryComponent } from './views/gallery/gallery.component';
 import { ProductsComponent } from './views/products/products.component';
+import { ArtDisplayComponent } from './components/art-display/art-display.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductsComponent
+  },
+  {
+    path: 'test',
+    component: ArtDisplayComponent
   },
   {
     path: '**',
