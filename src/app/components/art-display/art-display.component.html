@@ -1,25 +1,30 @@
-<main>
-  <h1>{{ project.titulo }}</h1>
-  <div class="description">
-    {{ project.descricao }}
-  </div>
-
-  <div class="art">
-    <div class="image-area"
-    *ngFor="let i of project.imagens">
-      <img 
-        src={{i}} 
-        alt={{i}}
-      >
+<div class="background-modal">
+  <main>
+    <div class="display-header">
+      <h1 pad-x>{{ project.titulo }}</h1>
+      <mat-icon class="close" (click)="closeArtDisplay()">close</mat-icon>
     </div>
-  </div>
+    <div pad-x class="description">
+      {{ project.descricao }}
+    </div>
 
-  <div class="display-footer">
-    <h2>Obrigada!</h2>
-    
-    <img src="../../../assets/images/logo.svg" alt="">
-    <h3>Andressa Araujo</h3>
-    <h4>Arte e Design</h4>
-    <span>CNPJ: 40.068.642/0001-47</span>
-  </div>
-</main>
+    <div class="art">
+      <div class="image-area"
+      *ngFor="let i of project.imagens">
+        <img 
+          src={{i}} 
+          alt={{i}}
+        >
+      </div>
+    </div>
+
+    <div class="display-footer">
+      <h2>Obrigada!</h2>
+      
+      <img src="../../../assets/images/logo.svg" alt="">
+      <h3>Andressa Araujo</h3>
+      <h4>Arte e Design</h4>
+      <span>CNPJ: 40.068.642/0001-47</span>
+    </div>
+  </main>
+</div>

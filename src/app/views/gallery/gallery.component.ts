@@ -96,10 +96,11 @@ export class GalleryComponent implements OnInit {
   }
 
   openProject(project: Project) {
-    console.log(project);
-    
-    this._dialog.open(ArtDisplayComponent, {
-      data: project,
-    });
+    this.selectedProject = project;
+    this.viewDisplay = true;
+  }
+
+  closeDisplay() {
+    this.viewDisplay = false;
   }
 }

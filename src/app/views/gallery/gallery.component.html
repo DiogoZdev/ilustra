@@ -23,11 +23,15 @@
 			</div>
 		</div>
 	</div>
+
+
+  <app-art-display
+    *ngIf="viewDisplay"
+    [project]="selectedProject"
+    (closeDisplay)="closeDisplay()"
+  >
+  </app-art-display>
+
 </main>
-<!-- 
-<app-display
-	*ngIf="viewDisplay"
-	[selectedProject]="selectedProject"
-	[displayGallery] = "visibleProjectsList"
-	(viewEmitter)="toggleDisplay()">
-</app-display> -->
+
+
