@@ -15,7 +15,7 @@
 		<div class="imagens">
 			<div class="imagem-container" 
 				*ngFor="let project of visibleProjectsList"
-				(click)="toggleDisplay(project)">
+				(click)="openProject(project)">
 				<img
 				class="thumbnail"
 				[src]="project.thumbnail"
@@ -23,11 +23,15 @@
 			</div>
 		</div>
 	</div>
+
+
+  <app-art-display
+    *ngIf="viewDisplay"
+    [project]="selectedProject"
+    (closeDisplay)="closeDisplay()"
+  >
+  </app-art-display>
+
 </main>
 
-<app-display
-	*ngIf="viewDisplay"
-	[selectedProject]="selectedProject"
-	[displayGallery] = "visibleProjectsList"
-	(viewEmitter)="toggleDisplay()">
-</app-display>
+

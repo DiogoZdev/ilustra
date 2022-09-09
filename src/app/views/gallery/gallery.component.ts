@@ -3,6 +3,8 @@ import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { Project, ProjectList } from 'src/app/interfaces/project.interface';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { MatDialog } from '@angular/material/dialog';
+import { ArtDisplayComponent } from 'src/app/components/art-display/art-display.component';
 
 @Component({
   selector: 'app-gallery',
@@ -57,6 +59,7 @@ export class GalleryComponent implements OnInit {
   constructor(
     private _route: ActivatedRoute,
     private _http: HttpClient,
+    private _dialog: MatDialog,
   ) { }
   
   /**
@@ -64,8 +67,6 @@ export class GalleryComponent implements OnInit {
    */
   ngOnInit(): void {
     this.loading = true;
-
-    
 
     this._http.get("https://raw.githubusercontent.com/andressadesign/files/main/projects.json")
     .toPromise().then((result) => {      
@@ -76,15 +77,6 @@ export class GalleryComponent implements OnInit {
 
       this.loading = false;
     })
-  }
-
-  /**
-   * Host Listener for closing modal with ESC
-   * @param event keyboard event
-   */
-  @HostListener('window:keydown.escape', ['$event'])
-  handleEsc(event: KeyboardEvent) {
-    this.closeDisplay();
   }
 
   /**
@@ -103,20 +95,11 @@ export class GalleryComponent implements OnInit {
     });
   }
 
-  /**
-   * Method to open project visualization
-   * @param project 
-   */
-  toggleDisplay(project?: Project) {
-    this.viewDisplay = !this.viewDisplay;
-    if (project) {
-      this.selectedProject = project;
-    }
+  openProject(project: Project) {
+    this.selectedProject = project;
+    this.viewDisplay = true;
   }
 
-  /**
-   * Method for closing project visualization
-   */
   closeDisplay() {
     this.viewDisplay = false;
   }
