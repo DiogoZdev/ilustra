@@ -118,15 +118,19 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
+
+  &:hover {
+    background-color: #80808080;
+  }
 
   &-thumb {
-    background: hsl(192, 100%, 30%);
-    border: solid 2px var(--primary-dark);
+    background: #808080;
+    border: solid 2px transparent;
     border-radius: 4px;
   }
 
   &-track {
-    background: var(--primary-dark);
+    background: transparent;
   }
 }
