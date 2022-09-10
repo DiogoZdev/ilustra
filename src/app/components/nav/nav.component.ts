@@ -1,5 +1,4 @@
 import { Component, HostListener, OnInit, Output, EventEmitter, Input } from '@angular/core';
-import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-nav',
@@ -28,9 +27,7 @@ export class NavComponent implements OnInit {
   /**
    * Método construtor do componente
    */
-  constructor(
-    private themeService: ThemeService
-  ) { 
+  constructor() { 
 
   }
 
@@ -45,29 +42,15 @@ export class NavComponent implements OnInit {
    * Método inicial do componente
    */
   ngOnInit(): void {
-    const theme =localStorage.getItem("theme");
-    theme === null || undefined
-    ? setTimeout(() => this.setTheme('light'), 500)
-    : this.setTheme(theme);
+    const theme = localStorage.getItem("dark");
+    if (theme) this.setDarkTheme();
 
     const lang =localStorage.getItem("language");
     lang === null || undefined
     ? this.setLanguage('PT')
     : this.setLanguage(lang);
-
-    const page = localStorage.getItem('page');
-    page === null || undefined
-    ? this.sendPage('home')
-    : this.sendPage(page);
   }
 
-  /**
-   * Emitter de valor de página
-   * @param page página selecionada
-   */
-  sendPage(page: string) {
-    this.pageEmitter.emit(page);
-  }
   /**
    * Método para exibir configurações da página
    */
@@ -89,8 +72,14 @@ export class NavComponent implements OnInit {
    * Método que define o tema no observable
    * @param tema Novo tema
    */
-  setTheme(tema: string) {
-    this.themeService.setTheme(tema);
+  setDarkTheme() {
+    localStorage.setItem("dark", "true");
+    document.body.classList.add("dark");
+  }
+
+  resetTheme() {
+    localStorage.removeItem("dark");
+    document.body.classList.remove("dark");
   }
 
   /**

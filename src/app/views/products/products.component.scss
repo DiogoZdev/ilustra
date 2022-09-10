@@ -1,6 +1,6 @@
 main {
   max-width: 100vw;
-  background-color: var(--backgroundI-light);
+  background-color: var(--background);
   position: relative;
 }
 
@@ -32,7 +32,7 @@ main {
 .product-card {
   width: 100%;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: var(--card-background);
   box-shadow: 5px 5px 10px #0001;
   padding:1rem 0;
   object-fit: scale-down;
@@ -48,6 +48,7 @@ main {
 
 h1, h2 {
   text-align: center;
+  color: var(--font);
 }
 
 h1 {
@@ -57,7 +58,7 @@ h1 {
 h2 {
   font-size: clamp(12px, 1.5vw ,1rem);
   margin-bottom: 1rem;
-  color: rgb(56, 86, 91);
+  color: #808080;
 }
 
 
@@ -69,7 +70,8 @@ a {
 
 button {
   padding: 10px 20px;
-  background: linear-gradient(90deg, hsl(166,100%,63%), hsl(166,70%,50%));
+  background: var(--button-bg);
+  color: var(--font);
   border-radius: 8px;
   border: none;
   box-shadow: .5em .5em 1em #0002;
@@ -100,8 +102,7 @@ button {
   .modal {
     position: absolute;
     inset: 0;
-    background-color: #fffa;
-    //border-radius: 1rem;
+    background-color: var(--background-thin);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,6 +111,7 @@ button {
       position: absolute;
       top: 1rem;
       right: 1rem;
+      color: var(--font);
     }
 
     .image-area {

@@ -1,5 +1,6 @@
 main {
-  background: #eee;
+  background: var(--background);
+  color: var(--font);
 }
 
 .columns2 {

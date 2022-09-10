@@ -1,0 +1,21 @@
+body {
+ --background: hsl(0, 0%, 87%);
+ --card-background: hsl(0, 0%, 100%);
+ --background-thin: hsla(0, 0%, 100%, 0.6);
+ --font: hsl(0, 0%, 0%);
+
+ --primary: hsl(166, 100%, 63%);
+ --accent: hsl(0, 89%, 38%);
+ --button-bg: linear-gradient(90deg, hsl(166,100%,63%), hsl(166,70%,50%));
+}
+
+body.dark {
+  --card-background: hsl(0, 0%, 10%);
+  --background:hsl(0, 0%, 20%);
+  --background-thin:hsl(0, 0%, 20%, 0.8);
+  --font: hsl(0, 0%, 93%);
+
+  --primary: hsl(192, 100%, 12%);
+  --accent: hsl(0, 100%, 22%);
+  --button-bg: hsl(166,70%,20%);
+}
