@@ -29,10 +29,6 @@ export class GalleryComponent implements OnInit {
     {
       value: 'drawings',
       key: "CATEGORY.DRAWINGS"
-    },
-    {
-      value: 'covers',
-      key: "CATEGORY.NOTEBOOK"
     }
   ]
 

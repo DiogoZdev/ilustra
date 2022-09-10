@@ -1,7 +1,7 @@
 main {
-  // background-color: var(--backgroundI-dark);
-  background: #eee;
+  background-color: var(--background);
   padding: 1rem 0 0;
+  position: relative;
 }
 
 .filter {
@@ -74,7 +74,7 @@ main {
     cursor: pointer;
     padding: 0;
     object-fit: cover;
-    background-color: #aaa;
+    background-color: var(--background);
     overflow: hidden;
 
     img.thumbnail {

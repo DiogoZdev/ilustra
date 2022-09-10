@@ -4,27 +4,13 @@ header {
   justify-content: center;
   align-items: center;
   min-height: 200px;
-  background: #eee;
-  // background: linear-gradient(45deg, hsl(166, 100%, 63%), hsl(166, 50%, 30%));
-  // background-size: 200%;
+  background: var(--background);
   animation: bg 10s infinite;
-  color: var(--font-light);
+  color: var(--font);
 
   h1, h3 {
     text-align: center;
   }
-}
-
-header[theme=light] {
-    transition: all 0.3s ease;
-    background-color: var(--backgroundI-light);
-    color: var(--font-light);
-}
-
-header[theme=dark] {
-    transition: all 0.3s ease;
-    background-color: var(--backgroundI-dark);
-    color: var(--font-dark);
 }
 
 @keyframes bg {
