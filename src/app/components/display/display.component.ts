@@ -7,12 +7,6 @@ import { Project } from 'src/app/interfaces/project.interface';
   styleUrls: ['./display.component.scss']
 })
 export class DisplayComponent implements OnInit, AfterViewInit {
-
-  /**
-   * Component's theme
-   */
-  
-
   /**
    * Selected project in parent component
    */
