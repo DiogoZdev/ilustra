@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #0008;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 90;
@@ -31,7 +31,8 @@ main {
     h1 {
       display: block;
       font-size: 28px;
-      background-color: #fff8;
+      background-color: var(--background-thin);
+      color: var(--font);
       line-height: 2;
       width: fit-content;
       padding: 0 1rem;
