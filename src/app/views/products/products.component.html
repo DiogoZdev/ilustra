@@ -26,7 +26,6 @@
             <img
               [src]="p.imageUrl"
               [alt]="p.title"
-              (click)="toggleDisplay(p.imageUrl)"
             >
             
             <a target="_blank" [href]="p.url">
@@ -42,12 +41,3 @@
   
 
 </main>
-
-<div class="modal-area" *ngIf="productOnDisplay != ''">
-  <div class="modal">
-    <mat-icon (click)="toggleDisplay()">close</mat-icon>
-    <div class="image-area">
-      <img src={{productOnDisplay}} alt="product view">
-    </div>
-  </div>
-</div>
