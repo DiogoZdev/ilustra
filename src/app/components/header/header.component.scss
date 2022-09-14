@@ -5,34 +5,17 @@ header {
   align-items: center;
   min-height: 200px;
   background: var(--background);
-  animation: bg 10s infinite;
   color: var(--font);
 
   h1, h3 {
     text-align: center;
   }
-}
 
-@keyframes bg {
-  0% {
-    background-position: 0,0;
+  h1 {
+    font-size: 32px;
   }
-  50% {
-    background-position: 100%,100%;
-  }
-  100% {
-    background-position: 0,0;
-  }  
-}
 
-@keyframes color {
-  0% {
-    color: #000;
+  h3 {
+    font-size: 20px;
   }
-  50% {
-    color: #ccc;
-  }
-  100% {
-    color: #000;
-  }  
 }
