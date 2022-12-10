@@ -8,6 +8,11 @@
     src: url(./assets/fonts/z_icons.ttf);
 }
 
+@font-face {
+    font-family: 'Font Gothic';
+    src: url(./assets/fonts/GOTHIC.TTF);
+}
+
 // Colors Palette
 @import './colors.scss';
 @import './themes.scss';
@@ -23,7 +28,7 @@
 :root {
     font-size: 18px;
     font-weight: 300;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Font Gothic', sans-serif;
 }
 
 html, body {

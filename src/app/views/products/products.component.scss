@@ -52,12 +52,12 @@ h1, h2 {
 }
 
 h1 {
-  font-size: clamp(16px, 2vw ,1.5rem);
+  font-size: 18px;
 }
 
 h2 {
-  font-size: clamp(12px, 1.5vw ,1rem);
-  margin-bottom: 1rem;
+  font-size: 14px;
+  margin: 5px 0 1rem;
   color: #808080;
 }
 
@@ -79,8 +79,7 @@ button {
   letter-spacing: 1px;
   cursor: pointer;
   transition: all ease 300ms;
-  font-family: 'Didact Gothic', sans-serif;
-  font-weight: bold;
+  font-family: 'Font Gothic', sans-serif;
 
   &:hover {
     transform: scale(1.1);

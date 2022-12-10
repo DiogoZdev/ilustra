@@ -21,8 +21,9 @@ main {
 
 h2 {
   width: 100%;
-  margin: 2rem auto 0;
+  margin: 2rem auto 1rem;
   text-align: center;
+  font-size: 24px;
 }
 
 p {
@@ -30,6 +31,7 @@ p {
   margin: 0 auto;
   line-height: 2;
   text-indent: 2ch;
+  font-size: 16px;
 }
 
 .image-area {
