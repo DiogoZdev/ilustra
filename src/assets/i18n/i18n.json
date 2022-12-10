@@ -3,61 +3,36 @@
   "EN": "",
   "ES": "",
   "ABOUT": {
-    "TRABALHO": {
-      "GOSTO": {
-        "PT": "Do que gosto",
-        "EN": "Things I like",
-        "ES": "Qué me encanta"
+    "WORK": {
+      "TITLE": {
+        "PT": "Sobre mim",
+        "EN": "About me",
+        "ES": "Sobre mi"
       },
-      "ESTUDEI": {
-        "PT": "O que estudei",
-        "EN": "What I've studied",
-        "ES": "Qué ya estudié"
+      "PARAGRAPH_1": {
+        "PT": "Olá! Eu sou a Andressa, moro atualmente em Londrina, no Paraná.",
+        "EN": "Hello! I'm Andressa. I live in Londrina - Brazil.",
+        "ES": "Hola! Me llamo Andressa, vivo en Londrina - Brasil.."
       },
-      "QUE_FACO": {
-        "PT": "O que eu faço",
-        "EN": "What I do",
-        "ES": "Qué hago"
+      "PARAGRAPH_2": {
+        "PT": "Eu tenho um grande amor pela comunicação visual, meu primeiro contato foi por volta de 2012.",
+        "EN": "I have a great love for visual communication, my first contact with it was around 2012.",
+        "ES": "Tengo un grande amor por la comunicación visual, creo que mi primer contacto fue cerca de 2012."
       },
-      "COMO_FACO": {
-        "PT": "Como eu faço o que faço",
-        "EN": "How I do what I do",
-        "ES": "Cómo hago lo que hago"
+      "PARAGRAPH_3": {
+        "PT": "Hoje desenvolvo projetos visuais para agregar valor, aumentar a visibilidade e comunicar boas ideias. Faço identidades visuais, ilustrações, mascotes, personagens e outras composições para divulgação.",
+        "EN": "Today I develop projects to aggregate value, improve visibility and communicate great ideas. I make Visual Identities, ilustrations, characters, mascots and other compositions.",
+        "ES": "Hoy, desarrollo projectos para agregar valor, aumentar la visibilidad y comunicar buenas ideas. Hago Identidad Visual, ilustraciones, personajes, mascotas y otras composiciones."
       },
-      "P1": {
-        "PT": "Tenho grande apreço pela arte, principalmente arte visual. Faço desenhos de observação, pintura à óleo, nanquim, arrisco uma aquarela e giz pastel. Já participei de projetos voluntários, como 'nós nosso olhar solidário', 'organização das moças' na Igreja de Jesus Cristo, utilizando a ilustração para aproximar e comunicar.",
-        "EN": "I have a great appreciation for art, specially visual art. I do observation drawings, use graphite, oil painting, India ink, I venture a watercolor and a pastel chalk. I have already participated in volunteer projects, such as 'NOS - Nest Of Solidarity', 'young women's organization' in the Church of Jesus Christ, using illustration to approach people and communicate.",
-        "ES": "Tengo un gran aprecio por el arte, especialmente las artes visuales. Hago dibujos de observación, uso el grafito, hago pintura al óleo, en tinta china, aventuro una acuarela y una tiza pastel. Ya he participado en proyectos de voluntariado, como 'Nos - nuestros ojos solidarios', 'organización de mujeres jóvenes' en la Iglesia de Jesucristo, utilizando la ilustración para acercar y comunicar."
+      "PARAGRAPH_4": {
+        "PT": "Em breve 'motion design' (animação) vai estar entre meus trabalhos.",
+        "EN": "Soon I'll have Motion Design in my services.",
+        "ES": "Luego tendré 'motion design' (animación) en mis trabajos."
       },
-      "P2": {
-        "PT": "Tenho me dedicado ao estudo de arte e design desde 2012, comecei com design de interiores e artes visuais, mas, direcionei meus esforços para fazer identidades visuais e design animação, onde busco trazer vida a ideias por meio dos projetos visuais",
-        "EN": "I have been dedicated to the study of art and design since 2012, I started with interior design and visual arts college, but I directed my efforts to animation design, where I look up to bring ideas to life through visual projects",
-        "ES": "Me dedico al estudio del arte y el dibujo desde 2012, comencé con actividades de diseño de interiores y cursé la facultad de artes visuales, pero dirigí mis esfuerzos al diseño de animación, donde traigo ideas a la vida por medio de los proyectos visuales."
-      },
-      "P3": {
-        "PT": "Atualmente desenvolvo projetos de identidade visual para agregar valor, aumentar a visibilidade, reter empreendedores e clientes. Nos projetos crio ilustrações personalizadas, mascotes, lettering e outros. Em breve estarei adicionando Design de Animação aos meus serviços.",
-        "EN": "I develop visual identity projects to add value, increase visibility, retain the audience of entrepreneurs and clients. In the projects I create custom illustrations, mascots, lettering and so on. Soon I will be adding Animation Design to my services.",
-        "ES": "Yo desarrollo proyectos de identidad visual para agregar valor, aumentar la visibilidad, retener la audiencia de emprendedores y clientes. En los proyectos yo creo ilustraciones personalizadas, mascotas, lettering y otros. Luego más estaré agregando Diseño de Animación a mis servicios."
-      },
-      "P4": {
-        "PT": "Pode-se dizer que baseio o desenvolvimento dos projetos em três etapas:",
-        "EN": "It can be said that I base the development of projects on three stages:",
-        "ES": "Se puede decir que baso el desarrollo de proyectos en tres etapas:"
-      },
-      "P5": {
-        "PT": "(1) Coleta de informação e pesquisa.",
-        "EN": "(1) Collection of information and research and segmentation.",
-        "ES": "(1) Recolección de información, investigación y segmentación."
-      },
-      "P6": {
-        "PT": "(2) Esboços iniciais e alinhamento do projeto.",
-        "EN": "(2) initial sketches and project alignment with the client.",
-        "ES": "(2) dibujos iniciales y alineación del proyecto con el cliente."
-      },
-      "P7": {
-        "PT": "(3) Desenvolvimento, gerenciamento de cores, prototipação e finalização.",
-        "EN": "(3) development, color management, prototyping and finalization.",
-        "ES": "(3) desarrollo, gestión del color, creación de prototipos y finalización."
+      "PARAGRAPH_5": {
+        "PT": "Estou à disposição para fazermos um excelente projeto juntos!",
+        "EN": "You can count on me so we can develop an amazing project together!",
+        "ES": "Cuenta conmigo para que podamos hacer un grande proyecto juntos."
       }
     }
   },
