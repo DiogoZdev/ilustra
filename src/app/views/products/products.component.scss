@@ -6,6 +6,7 @@ main {
   & > h1 {
     padding: 2rem 0;
     text-align: center;
+    color: var(--font);
   }
 }
 
@@ -47,6 +48,7 @@ main {
   h1 {
     font-size: 18px;
     text-align: center;
+    color: var(--font);
   }
   
   h2 {
