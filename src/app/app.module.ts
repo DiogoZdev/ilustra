@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ArtDisplayComponent } from './components/art-display/art-display.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { CoverComponent } from './components/cover/cover.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     ErrorComponent,
     LoaderComponent,
     ArtDisplayComponent,
+    CoverComponent,
 ],
   imports: [
     BrowserModule,

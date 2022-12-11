@@ -2,6 +2,11 @@ main {
   max-width: 100vw;
   background-color: var(--background);
   position: relative;
+
+  & > h1 {
+    padding: 2rem 0;
+    text-align: center;
+  }
 }
 
 .products {
@@ -39,28 +44,24 @@ main {
   display: flex;
   flex-direction: column;
 
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 14px;
+    margin: 5px 0 1rem;
+    color: #808080;
+    text-align: center;
+  }
+
   img {
     width: 100%;
     height: 100%;
     cursor: zoom-in;
   }
 }
-
-h1, h2 {
-  text-align: center;
-  color: var(--font);
-}
-
-h1 {
-  font-size: 18px;
-}
-
-h2 {
-  font-size: 14px;
-  margin: 5px 0 1rem;
-  color: #808080;
-}
-
 
 a {
   margin: 0 auto;

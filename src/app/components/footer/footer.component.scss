@@ -5,6 +5,7 @@ footer {
   padding: 10px 1rem;
   background-color: #0a0a0a;
   color: var(--font-dark);
+  z-index: 20;
 
   .contain {
     display: flex;

@@ -19,6 +19,10 @@
 }
 
 nav {
+  position: sticky;
+  width: 100vw;
+  top: 0;
+  z-index: 50;
   background-color: var(--backgroundII-dark);
   color: var(--font-dark);
 

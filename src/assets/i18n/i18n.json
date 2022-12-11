@@ -2,6 +2,18 @@
   "PT": "",
   "EN": "",
   "ES": "",
+  "PAGES": {
+    "ABOUT": {
+      "PT": "Sobre",
+      "EN": "About",
+      "ES": "Sobre"
+    },
+    "PRODUCTS": {
+      "PT": "Produtos",
+      "EN": "Products",
+      "ES": "Productos"
+    }
+  },
   "ABOUT": {
     "WORK": {
       "TITLE": {
