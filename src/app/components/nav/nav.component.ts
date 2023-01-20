@@ -1,4 +1,6 @@
 import { Component, HostListener, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { languages } from 'src/app/config/languages';
+import { pages } from 'src/app/config/pages';
 
 @Component({
   selector: 'app-nav',
@@ -7,12 +9,8 @@ import { Component, HostListener, OnInit, Output, EventEmitter, Input } from '@a
 })
 export class NavComponent implements OnInit { 
 
-  
-
-  /**
-   * Boolean de exibição do botão "voltar ao topo"
-   */
-  public showScrollToTop: boolean = false;
+  public languages = languages;
+  public pages = pages;
 
   /**
    * Boolean de exibição do menu de configurações
@@ -25,27 +23,13 @@ export class NavComponent implements OnInit {
   @Output() pageEmitter = new EventEmitter<string>();
 
   /**
-   * Método construtor do componente
-   */
-  constructor() { 
-
-  }
-
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-    window.scrollY > 50
-    ? this.showScrollToTop = true
-    : this.showScrollToTop = false;
-  }
-
-  /**
    * Método inicial do componente
    */
   ngOnInit(): void {
     const theme = localStorage.getItem("dark");
     if (theme) this.setDarkTheme();
 
-    const lang =localStorage.getItem("language");
+    const lang = localStorage.getItem("language");
     lang === null || undefined
     ? this.setLanguage('PT')
     : this.setLanguage(lang);

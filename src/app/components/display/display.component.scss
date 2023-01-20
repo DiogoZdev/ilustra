@@ -21,6 +21,7 @@ mat-icon {
   height: 85vh;
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
+  background: var(--bg-300);
 
   .chevron {
     display: flex;

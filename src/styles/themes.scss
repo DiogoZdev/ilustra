@@ -1,0 +1,55 @@
+@use "./colors.scss";
+
+body {
+  --menu: var(--gray-200);
+  --menu-text: var(--gray-800);
+  --menu-opt-hover: var(--gray-200);
+
+  --bg-100: var(--gray-50);
+  --bg-200: var(--gray-100);
+  --bg-300: var(--gray-200);
+
+  --color-normal: var(--gray-900);
+  --color-accent: var(--green-700);
+
+  --button-accent: var(--green-400);
+
+  --shadow: 0 0 4px #0003;
+
+  --svg-normal: 
+    invert(80%);
+
+  --svg-accent:
+    invert(33%)
+    sepia(63%)
+    hue-rotate(84deg)
+    saturate(399%)
+    brightness(95%);
+}
+
+body.dark {
+  --menu: var(--gray-900);
+  --menu-text: var(--gray-50);
+  --menu-opt-hover: var(--gray-800);
+
+  --bg-100: var(--gray-800);
+  --bg-200: var(--gray-700);
+  --bg-300: var(--gray-600);
+
+  --color-normal: var(--gray-50);
+  --color-accent: var(--green-400);
+  
+  --button-accent: var(--green-500);
+
+  --shadow: none;
+
+  --svg-normal: 
+  invert(15%);
+
+  --svg-accent:
+    invert(33%)
+    sepia(63%)
+    hue-rotate(84deg)
+    saturate(399%)
+    brightness(95%);
+}

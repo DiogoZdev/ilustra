@@ -2,11 +2,8 @@
     <div class="contain" row>
         <div class="navigation">
             <ul>
-                <li class="logo"><img src="../../../assets/images/logo.png" alt=""></li>
-                <li opt routerLink="/">{{ "NAV.INICIO" | translate }}</li>
-                <li opt routerLink="about">{{ "NAV.SOBRE" | translate }}</li>
-                <li opt routerLink="products">{{ "NAV.PRODUTOS" | translate }}</li>
-                <!-- <li opt routerLink="support">{{ "NAV.APOIE" | translate }}</li> -->
+                <li class="logo"><img src="../../../assets/images/ilustra-logo.svg" alt=""></li>
+                <li *ngFor="let page of pages" opt [routerLink]="page.path">{{ page.i18n | translate }}</li>
             </ul>
         </div>
         <div class="settings" to-right>
@@ -16,9 +13,7 @@
             <div class="configuration" *ngIf="showConfiguration">
                 <div>
                     <ul>
-                        <li class="opt" (click)="setLanguage('PT')">português</li>
-                        <li class="opt" (click)="setLanguage('ES')">español</li>
-                        <li class="opt" (click)="setLanguage('EN')">english</li>
+                        <li *ngFor="let lang of languages" class="opt" (click)="setLanguage(lang.id)">{{ lang.language }}</li>
                     </ul>
                 </div>
                 <div>

@@ -16,8 +16,8 @@ main {
   width: 95vw;
   max-width: 1000px;
   overflow-y: auto;
-  background-color: var(--background);
-  color: var(--font);
+  background-color: var(--bg-300);
+  color: var(--color-normal);
   position: relative;
   border-radius: 15px;
 
@@ -32,8 +32,8 @@ main {
     h1 {
       display: block;
       font-size: 28px;
-      background-color: var(--background-thin);
-      color: var(--font);
+      background-color: var(--bg-300);
+      color: var(--color-accent);
       line-height: 2;
       width: fit-content;
       padding: 0 1rem;
@@ -42,7 +42,9 @@ main {
   
     .close {
       color: red;
+      background-color: var(--bg-300);
       transform: translateX(-1rem);
+      border-radius: 50%;
     }
   }
 

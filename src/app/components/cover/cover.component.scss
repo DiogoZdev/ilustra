@@ -1,12 +1,21 @@
 header {
   width: 100vw;
   height: calc(100vh - 128px);
-  background-image: linear-gradient(45deg, #222, rgb(54, 64, 65));
+  background: var(--bg-100);
   display: flex;
   justify-content: center;
   align-items: center;
 
-  .image-container {
-    width: clamp(250px, 500px, 40vw);
+  h1,h2 {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: clamp(2em, 5em, 5vw);
+    color: var(--green-500);
+  }
+  h2 {
+    font-size: clamp(1em, 3em, 2.5vw);
+    color: var(--gray-500);
   }
 }

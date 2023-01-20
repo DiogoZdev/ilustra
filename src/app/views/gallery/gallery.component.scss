@@ -1,12 +1,12 @@
 main {
-  background-color: var(--background);
+  background-color: var(--bg-100);
   padding: 1rem 0 0;
   position: relative;
 }
 
 .filter {
   position: sticky;
-  top: 3.1rem;
+  top: 64px;
   width: max-content;
   margin: 0 auto 1rem;
   border-radius: 4px;

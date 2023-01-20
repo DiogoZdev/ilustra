@@ -1,12 +1,12 @@
 main {
   max-width: 100vw;
-  background-color: var(--background);
+  background-color: var(--bg-100);
   position: relative;
 
   & > h1 {
     padding: 2rem 0;
     text-align: center;
-    color: var(--font);
+    color: var(--color-normal);
   }
 }
 
@@ -21,6 +21,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   width: 100%;
+  padding-bottom: 2rem;
 
   @media screen and (max-width: 800px) {
     grid-template-columns: repeat(2, 1fr);
@@ -38,8 +39,8 @@ main {
 .product-card {
   width: 100%;
   border-radius: 8px;
-  background-color: var(--card-background);
-  box-shadow: 5px 5px 10px #0001;
+  background-color: var(--bg-200);
+  box-shadow: var(--shadow);
   padding:1rem 0;
   object-fit: scale-down;
   display: flex;
@@ -48,13 +49,13 @@ main {
   h1 {
     font-size: 18px;
     text-align: center;
-    color: var(--font);
+    color: var(--color-accent);
   }
   
   h2 {
     font-size: 14px;
     margin: 5px 0 1rem;
-    color: #808080;
+    color: var(--color-normal);
     text-align: center;
   }
 
@@ -73,11 +74,11 @@ a {
 
 button {
   padding: 10px 20px;
-  background: var(--button-bg);
+  background: var(--button-accent);
   color: var(--font);
   border-radius: 8px;
   border: none;
-  box-shadow: .5em .5em 1em #0002;
+  box-shadow: var(--shadow);
   font-weight: 800;
   letter-spacing: 1px;
   cursor: pointer;
@@ -86,46 +87,6 @@ button {
 
   &:hover {
     transform: scale(1.1);
-    box-shadow: 1em 1em 1em #0002;
-  }
-}
-
-.modal-area {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 100;
-  top: 0;
-  // background-color: #000a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .modal {
-    position: absolute;
-    inset: 0;
-    background-color: var(--background-thin);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    mat-icon {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      color: var(--font);
-    }
-
-    .image-area {
-      max-width: 700px;
-      max-height: 700px;
-      object-fit: contain;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 }
 

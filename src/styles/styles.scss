@@ -5,12 +5,12 @@
 // Local Fonts
 @font-face {
     font-family: 'Z Icons';
-    src: url(./assets/fonts/z_icons.ttf);
+    src: url(../assets/fonts/z_icons.ttf);
 }
 
 @font-face {
     font-family: 'Font Gothic';
-    src: url(./assets/fonts/GOTHIC.TTF);
+    src: url(../assets/fonts/GOTHIC.TTF);
 }
 
 // Colors Palette
@@ -32,9 +32,12 @@
 }
 
 html, body {
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
     background-color: inherit;
+    overflow: hidden;
 }
 
 img {
@@ -109,29 +112,12 @@ a {
     text-decoration: none;
 }
 
-.z-icon {
-    display: inline-block;
-    padding: 0.5rem;
-    color: inherit;
-    font-family: 'Z Icons';
-    font-size: 24pt;
-    line-height: 1;
-    transition: color ease 300ms;
-
-    &:hover {
-        color: var(--primary-light) !important;
-    }
-}
-
 ::-webkit-scrollbar {
   width: 8px;
-
-  &:hover {
-    background-color: #80808080;
-  }
+  background-color: var(--bg-100);
 
   &-thumb {
-    background: #808080;
+    background: var(--bg-300);
     border: solid 2px transparent;
     border-radius: 4px;
   }

@@ -1,30 +1,11 @@
-@import "../../../colors.scss";
-
-.to-top {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  width: 2rem;
-  height: 2rem;
-  background-color: white;
-  color: #222;
-  border-radius: 50%;
-  box-shadow: 2px 2px 4px #0005;
-
-  mat-icon {
-    width: 100%;
-    line-height: 1.5;
-    text-align: center;
-  }
-}
-
 nav {
   position: sticky;
   width: 100vw;
   top: 0;
   z-index: 50;
-  background-color: var(--backgroundII-dark);
-  color: var(--font-dark);
+  background-color: var(--bg-300);
+  box-shadow: var(--shadow);
+  color: var(--menu-text);
 
   .navigation {
     ul {
@@ -40,6 +21,8 @@ nav {
 
       .logo {
         max-width: 55px;
+        filter: var(--svg-accent)
+        ;
       }
     }
   }
@@ -60,7 +43,8 @@ nav {
 }
   
 .configuration {
-  background-color: var(--backgroundII-dark);
+  background-color: var(--bg-300);
+  color: var(--menu-text);
   position: absolute;
   top: 110%;
   right: 0;
@@ -69,7 +53,7 @@ nav {
   padding: 0.5rem;
   min-height: max-content;
   border-radius: 4px;
-  box-shadow: 0 0 3px #0005;
+  box-shadow: var(--shadow);
 
   div {
     width: 100%;
@@ -96,39 +80,7 @@ nav {
     cursor: pointer;
 
     &:hover {
-      background-color: #0000001a;
-    }
-  }
-}
-
-nav[tema=light] {
-  transition: all ease 0.3s;
-  background-color: var(--backgroundI-dark);
-  color: var(--font-dark);
-
-  .configuration {
-    background-color: var(--backgroundII-light);
-    color: var(--font-light);
-  }
-}
-
-nav[tema=dark] {
-  transition: all ease 0.3s;
-  background-color: var(--backgroundII-dark);
-  color: var(--font-dark);
-
-  li:hover {
-    background-color: #000;
-  }
-
-  .configuration {
-    background-color: var(--backgroundII-dark);
-    &>:last-child {
-      border-left: #333 solid 1px;
-    }
-
-    li:hover {
-      background-color: #000;
+      background-color: var(--menu-opt-hover);
     }
   }
 }

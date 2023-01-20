@@ -3,8 +3,8 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 10px 1rem;
-  background-color: #0a0a0a;
-  color: var(--font-dark);
+  background-color: var(--bg-300);
+  color: var(--color-normal);
   z-index: 20;
 
   .contain {
@@ -15,11 +15,12 @@ footer {
     width: 100%;
     max-width: 1200px;
     padding: 0 1rem;
-    color: #999;
+    color: var(--text-normal);
 
     .contact {
       display: flex;
       align-items: center;
+      gap: 1rem;
     }
 
     .contact-text {
@@ -31,6 +32,16 @@ footer {
     .icons {
       display: flex;
       align-items: flex-end;
+      gap: 1rem;
+    }
+
+    .z-icon {
+      width: 30px;
+      filter: var(--svg-normal);
+
+      &:hover {
+        filter: var(--svg-accent);
+      }
     }
 
     a,
