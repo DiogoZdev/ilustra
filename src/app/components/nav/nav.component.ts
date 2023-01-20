@@ -12,6 +12,8 @@ export class NavComponent implements OnInit {
   public languages = languages;
   public pages = pages;
 
+  actualPage: string = "/"
+
   /**
    * Boolean de exibição do menu de configurações
    */
@@ -33,6 +35,18 @@ export class NavComponent implements OnInit {
     lang === null || undefined
     ? this.setLanguage('PT')
     : this.setLanguage(lang);
+
+    this.checkPage();
+  }
+
+  checkPage() {
+    setTimeout(() => {
+      const url = window.location.href;
+      url.indexOf("about") === -1 && url.indexOf("products") === -1 ? this.actualPage = "/" : ""
+      url.indexOf("about") !== -1 ? this.actualPage = "about" : "";
+      url.indexOf("products") !== -1 ? this.actualPage = "products" : "";
+    }, 50)
+    
   }
 
   /**

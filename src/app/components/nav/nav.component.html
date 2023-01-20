@@ -3,7 +3,15 @@
         <div class="navigation">
             <ul>
                 <li class="logo"><img src="../../../assets/images/ilustra-logo.svg" alt=""></li>
-                <li *ngFor="let page of pages" opt [routerLink]="page.path">{{ page.i18n | translate }}</li>
+                <li 
+                    *ngFor="let page of pages" 
+                    opt 
+                    [routerLink]="page.path"
+                    (click)="checkPage()"
+                    [ngClass]="{ 'active-tab': page.path === actualPage }"
+                  >
+                  {{ page.i18n | translate }}
+                </li>
             </ul>
         </div>
         <div class="settings" to-right>
