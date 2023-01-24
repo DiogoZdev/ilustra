@@ -41,10 +41,13 @@ main {
     }
   
     .close {
-      color: red;
+      width: unset;
+      height: unset;
+      color: var(--orange-500);
       background-color: var(--bg-300);
-      transform: translateX(-1rem);
-      border-radius: 50%;
+      transform: translateX(-0.5rem);
+      border-radius: 25%;
+      padding: .5rem;
     }
   }
 
@@ -60,7 +63,6 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
   
   .image-area {
     position: relative;

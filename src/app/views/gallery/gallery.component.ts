@@ -53,9 +53,8 @@ export class GalleryComponent implements OnInit {
   visibleProjectsList: Project[] = this.projectsList;
 
   constructor(
-    private _route: ActivatedRoute,
-    private _http: HttpClient,
-    private _dialog: MatDialog,
+    private route: ActivatedRoute,
+    private http: HttpClient,
   ) { }
   
   /**
@@ -64,11 +63,11 @@ export class GalleryComponent implements OnInit {
   ngOnInit(): void {
     this.loading = true;
 
-    this._http.get("https://raw.githubusercontent.com/andressadesign/files/main/projects.json")
+    this.http.get("https://raw.githubusercontent.com/andressadesign/files/main/projects.json")
     .toPromise().then((result) => {      
       this.projectsList = (result as ProjectList).projects;
 
-      const filter = this._route.snapshot.paramMap.get('filter');
+      const filter = this.route.snapshot.paramMap.get('filter');
       filter ? this.filter(filter) : this.filter('all');
 
       this.loading = false;

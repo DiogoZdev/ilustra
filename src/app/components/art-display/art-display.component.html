@@ -11,9 +11,10 @@
 
     <div class="art">
       <div class="image-area"
-      *ngFor="let i of project.imagens">
+      *ngFor="let url of project.imagens">
         <img 
-          src={{i}}
+          [src]="url"
+          [alt]="url"
         >
       </div>
     </div>

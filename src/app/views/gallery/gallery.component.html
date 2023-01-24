@@ -13,14 +13,18 @@
 			</ul>
 		</div>
 
-		<div class="imagens">
-			<div class="imagem-container" 
+		<div class="images">
+			<div class="image-container"
 				*ngFor="let project of visibleProjectsList"
 				(click)="openProject(project)">
 				<img
-				class="thumbnail"
-				[src]="project.thumbnail"
-				[alt]="project.titulo">
+          class="thumbnail"
+          [src]="project.thumbnail"
+          [alt]="project.titulo"
+        >
+        <div class="overlay">
+          {{ project.titulo }}
+        </div>
 			</div>
 		</div>
 	</div>
