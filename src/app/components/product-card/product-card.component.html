@@ -1,0 +1,15 @@
+<div class="product-card">
+  <h1>{{ title}}</h1>
+  <h2>{{ collection }}</h2>
+
+  <img
+    [src]="imageUrl"
+    [alt]="title"
+  >
+  
+  <a target="_blank" [href]="url">
+    <button>
+      {{ "CTA.COMPRE" | translate }}
+    </button>
+  </a>
+</div>

@@ -22,6 +22,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { ArtDisplayComponent } from './components/art-display/art-display.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CoverComponent } from './components/cover/cover.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
+import { ProductCardMockComponent } from './components/product-card-mock/product-card-mock.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { CoverComponent } from './components/cover/cover.component';
     LoaderComponent,
     ArtDisplayComponent,
     CoverComponent,
+    ProductCardComponent,
+    ProductCardMockComponent,
 ],
   imports: [
     BrowserModule,

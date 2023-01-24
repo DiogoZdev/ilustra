@@ -1,0 +1,58 @@
+
+.product-card {
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--bg-200);
+  box-shadow: var(--shadow);
+  padding:1rem 0;
+  object-fit: scale-down;
+  display: flex;
+  flex-direction: column;
+}
+
+.mock {
+  border-radius: 8px;
+  animation: load-bg 1s linear infinite;
+}
+
+.mock-title-h1 {
+  width: 60%;
+  height: 30px;
+  margin: 0 auto .5rem;
+}
+
+.mock-title-h2 {
+  width: 50%;
+  height: 25px;
+  margin: 0 auto .5rem;
+}
+
+.mock-image {
+  width: 70%;
+  height: 160px;
+  margin: 1rem auto;
+}
+
+.mock-button {
+  margin: 0 auto;
+  padding: 10px 20px;
+  color: var(--font);
+  border-radius: 8px;
+  border: none;
+  box-shadow: var(--shadow);
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: 'Font Gothic', sans-serif;
+}
+
+@keyframes load-bg {
+  0% {
+    background-color: rgb(235,235,235);
+  }
+  50% {
+    background-color: rgb(205,205,205);
+  }
+  100% {
+    background-color: rgb(235,235,235);
+  }
+}

@@ -4,41 +4,24 @@
   <div class="contain" pad>
     <div class="products">
 
-      <div *ngIf="loading" class="product-area">
-        <div class="product-card" *ngFor="let p of [1,2,3,4,5,6]">
-          <div class="mock mock-title-h1"></div>
-          <div class="mock mock-title-h2"></div>
-
-          <div class="mock mock-image"></div>
-          
-          <a>
-            <button class="mock mock-button">
-              loading
-            </button>
-          </a>
-        </div>
+      <div *ngIf="loading; else realProducts" class="product-area">
+        <app-product-card-mock class="product-card" *ngFor="let p of [1,2,3,4,5,6]">
+        </app-product-card-mock>
       </div>
 
-      <div *ngIf="!loading" class="product-area">
-          <div class="product-card" *ngFor="let p of products">
-            <h1>{{p.title}}</h1>
-            <h2>{{ p.collection }}</h2>
-
-            <img
-              [src]="p.imageUrl"
-              [alt]="p.title"
+      <ng-template #realProducts>
+        <div  class="product-area">
+          <ng-container *ngFor="let p of products">
+            <app-product-card
+              [imageUrl]="p.imageUrl"
+              [title]="p.title"
+              [url]="p.url"
+              [collection]="p.collection"
             >
-            
-            <a target="_blank" [href]="p.url">
-              <button>
-                {{ "CTA.COMPRE" | translate }}
-              </button>
-            </a>
-          </div>
-      </div>
+            </app-product-card>
+          </ng-container>
+        </div>
+      </ng-template>
     </div>
   </div>
-
-  
-
 </main>

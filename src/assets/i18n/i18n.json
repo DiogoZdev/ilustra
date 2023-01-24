@@ -2,6 +2,13 @@
   "PT": "",
   "EN": "",
   "ES": "",
+  "GENERAL": {
+    "LOADING": {
+      "PT": "Carregando",
+      "EN": "Loading",
+      "ES": "Cargando"
+    }
+  },
   "PAGES": {
     "ABOUT": {
       "PT": "Sobre",
