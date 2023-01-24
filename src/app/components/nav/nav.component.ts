@@ -46,7 +46,6 @@ export class NavComponent implements OnInit {
       url.indexOf("about") !== -1 ? this.actualPage = "about" : "";
       url.indexOf("products") !== -1 ? this.actualPage = "products" : "";
     }, 50)
-    
   }
 
   /**
