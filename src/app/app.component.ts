@@ -1,23 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  /**
-   * Título da aplicação
-   */
+export class AppComponent implements AfterViewInit {
   public title = 'andressa-ilustra';
 
-  /**
-   * Método construtor do componente
-   */
-  constructor () {}
+  constructor(
+  ) {}
 
-  /**
-   * Método inicial do componente
-   */
-  ngOnInit(): void { }
+  ngAfterViewInit() {
+    const footerHeight = (document.getElementById("footer")?.offsetHeight ?? 50 ) + 15;
+    document.getElementById("spacer")?.setAttribute("style", `height: ${footerHeight}px`)
+  }
 }
