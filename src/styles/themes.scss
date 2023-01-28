@@ -25,6 +25,9 @@ body {
     hue-rotate(84deg)
     saturate(399%)
     brightness(95%);
+
+  --sm-cloud-size: clamp(60px, 120px,12vw);
+  --lg-cloud-size: clamp(120px, 240px,25vw);
 }
 
 body.dark {

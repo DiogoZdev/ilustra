@@ -1,6 +1,7 @@
 header {
+  position: relative;
   width: 100vw;
-  height: calc(100vh - 128px);
+  height: calc(100vh - 6.3rem);
   background: var(--bg-100);
   display: flex;
   justify-content: center;
@@ -17,5 +18,98 @@ header {
   h2 {
     font-size: clamp(1em, 3em, 2.5vw);
     color: var(--gray-500);
+  }
+
+  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: #0554;
+
+    img {
+      position: absolute;
+    }
+  }
+}
+
+#logo {
+  filter: var(--svg-normal);
+  width: clamp(250px, 500px,20vw);
+  left: 10%;
+  top: 20%;
+}
+
+#sm {
+  &-cloud-1 {
+    width: var(--sm-cloud-size);
+    top: 40%;
+    right: 1%;
+  }
+  
+  &-cloud-2 {
+    width: var(--sm-cloud-size);
+    top: 60%;
+    right: 30%;
+  }
+  
+  &-cloud-3 {
+    width: var(--sm-cloud-size);
+    top: 85%;
+    right: 42%;
+  }
+}
+
+#lg {
+  &-cloud-1 {
+    width: var(--lg-cloud-size);
+    top: 5%;
+    right: 1%;
+  }
+  
+  &-cloud-2 {
+    width: var(--lg-cloud-size);
+    top: 30%;
+    right: 25%;
+  }
+  
+  &-cloud-3 {
+    width: var(--lg-cloud-size);
+    top: 65%;
+    right: 60%;
+  }
+  
+  &-cloud-4 {
+    width: var(--lg-cloud-size);
+    top: 75%;
+    right: 2%;
+  }
+}
+
+.sm-clouds-movement {
+  filter: blur(1px);
+  animation: sm-clouds-wind 80s infinite alternate;
+}
+
+.lg-clouds-movement {
+  animation: lg-clouds-wind 80s infinite alternate;
+}
+
+@keyframes sm-clouds-wind {
+  from {
+    transform: translateX(3vw);
+  }
+  to {
+    transform: translateX(-8vw);
+  }
+}
+
+@keyframes lg-clouds-wind {
+  from {
+    transform: translateX(5vw);
+  }
+  to {
+    transform: translateX(-20vw);
   }
 }
