@@ -9,7 +9,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { PipesModule } from 'pipes-module';
 import { TranslatePipe } from './utils/pipes/translate.pipe';
 import { GalleryComponent } from './views/gallery/gallery.component';
-import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './views/about/about.component';
 import { DisplayComponent } from './components/display/display.component';
@@ -30,7 +29,6 @@ import { ProductCardMockComponent } from './components/product-card-mock/product
     AppComponent,
     NavComponent,
     GalleryComponent,
-    HeaderComponent,
     FooterComponent,
     AboutComponent,
     DisplayComponent,
