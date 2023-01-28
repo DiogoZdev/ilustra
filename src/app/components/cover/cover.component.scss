@@ -39,6 +39,11 @@ header {
   width: clamp(250px, 500px,20vw);
   left: 10%;
   top: 20%;
+
+  @media (max-width: 500px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 #sm {
