@@ -12,7 +12,7 @@ export class AppComponent implements AfterViewInit {
   ) {}
 
   ngAfterViewInit() {
-    const footerHeight = (document.getElementById("footer")?.offsetHeight ?? 50 ) + 15;
+    const footerHeight = (document.getElementById("footer")?.offsetHeight ?? 50 ) + 20;
     document.getElementById("spacer")?.setAttribute("style", `height: ${footerHeight}px`)
   }
 }
