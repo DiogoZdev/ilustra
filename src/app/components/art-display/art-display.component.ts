@@ -24,14 +24,14 @@ export class ArtDisplayComponent implements OnInit {
 
     if (document.body.classList.contains('dark')) {
       document
-        .querySelector('#logo')
+        .querySelector('#art-display-logo')
         ?.setAttribute(
           'src',
           'https://raw.githubusercontent.com/andressadesign/files/main/andressa/logo-claro.png'
         );
     } else {
       document
-        .querySelector('#logo')
+        .querySelector('#art-display-logo')
         ?.setAttribute(
           'src',
           'https://raw.githubusercontent.com/andressadesign/files/main/andressa/logo-escuro.png'
