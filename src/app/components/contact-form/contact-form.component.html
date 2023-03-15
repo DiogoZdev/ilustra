@@ -1,0 +1,32 @@
+<footer>
+  <div class="footer-upper">
+    <div class="contact-info">
+      
+      <div class="image-area">
+        <img src="../../../assets/images/andressa.jpg" alt="A">
+        <div class="blob">Vamos fazer um projeto juntos</div>
+      </div>
+      <ul class="info-list">
+        <li><img src="../../../assets/icons/email.svg" alt="">araujoandressa2018@gmail.com</li>
+        <li><img src="../../../assets/icons/whatsapp.svg" alt="">+55 43 98482-7696</li>
+        <li><img src="../../../assets/icons/email.svg" alt="">Londrina, PR</li>
+      </ul>
+
+    </div>
+    <form [formGroup]="form" class="shadow">
+      <h2>Entre em contato!</h2>
+      <div class="inputs">
+        <input class="dev-input" type="text" placeholder="Nome" formControlName="name">
+        <input class="dev-input" type="tel" placeholder="Telefone" formControlName="phone">
+        <input class="dev-input" type="email" placeholder="Email" formControlName="email">
+        <textarea class="message dev-input" placeholder="Mensagem" formControlName="message"></textarea>
+      </div>
+      <div class="button-area">
+        <button>Enviar</button>
+      </div>
+    </form>
+  </div>
+  <div class="footer-lower">
+    
+  </div>
+</footer>

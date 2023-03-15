@@ -23,6 +23,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { CoverComponent } from './components/cover/cover.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ProductCardMockComponent } from './components/product-card-mock/product-card-mock.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,7 @@ import { ProductCardMockComponent } from './components/product-card-mock/product
     CoverComponent,
     ProductCardComponent,
     ProductCardMockComponent,
+    ContactFormComponent,
 ],
   imports: [
     BrowserModule,
@@ -50,7 +53,9 @@ import { ProductCardMockComponent } from './components/product-card-mock/product
     PipesModule,
     HttpClientModule,
     MatTooltipModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

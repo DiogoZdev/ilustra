@@ -1,0 +1,118 @@
+footer {
+  &>* {
+    padding: 2rem;
+  }
+
+  .footer-upper {
+    position: relative;
+    min-height: 500px;
+
+    .contact-info {
+      transform: translateY(3rem);
+      
+      .image-area {
+        display: flex;
+        gap: 1rem;
+
+        img {
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+        }
+        
+        .blob {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 350px;
+          height: 50px;
+          background: var(--color-theme-transparency);
+          color: var(--color-normal);
+          border-radius: 15px;
+        }
+      }
+        
+      .info-list {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        li {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          gap: 1rem;
+          color: var(--color-normal);
+          img {
+            filter: var(--svg-accent);
+            width: 30px;
+          }
+        }
+      }
+    }
+    
+    form {
+      position: absolute;
+      right: 3rem;
+      top: 3rem;
+      background: var(--bg-200);
+      height: 100%;
+      width: 90%;
+      max-width: 500px;
+      padding: 2rem;
+      transform: translateY(2rem);
+      box-shadow: var(--shadow);
+
+      h2 {
+        color: var(--color-theme);
+      }
+
+      .inputs {
+        padding-block: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        input {
+          border: none;
+          padding: 10px;
+        }
+
+        .message {
+          padding: 10px;
+          height: 100px;
+          resize: none;
+          border: none;
+        }
+
+        .dev-input {
+          color: var(--color-normal);
+          background-color: transparent;
+          border-bottom: 2px solid var(--color-theme-transparency);
+        }
+      }
+
+      .button-area {
+        button {
+          font-size: 14px;
+          font-weight: bold;
+          padding: .8em 1.5em;
+          border: none;
+          color: #222;
+          cursor: pointer;
+          background: var(--color-theme);
+          &:hover {
+            background: var(--color-theme-transparency);
+          }
+        }
+      }
+    }
+  }
+
+  .footer-lower {
+    height: 300px;
+    background: var(--color-theme);
+  }
+
+}
