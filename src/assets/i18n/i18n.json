@@ -55,6 +55,55 @@
       }
     }
   },
+  "FORM": {
+    "TITLE": {
+      "PT": "Entre em contato",
+      "EN": "Keep in touch",
+      "ES": "Póngase en contacto"
+    },
+    "NAME": {
+      "PT": "Nome",
+      "EN": "Name",
+      "ES": "Nombre"
+    },
+    "PHONE": {
+      "PT": "Telefone",
+      "EN": "Phone number",
+      "ES": "Teléfono"
+    },
+    "PHONE_ERROR": {
+      "PT": "Informe um telefone válido",
+      "EN": "Inform a valid Brazil number",
+      "ES": "Informe un teléfono válido de Brasil"
+    },
+    "EMAIL": {
+      "PT": "Email",
+      "EN": "Email",
+      "ES": "Correo"
+    },
+    "EMAIL_ERROR": {
+      "PT": "Informe um email válido",
+      "EN": "Inform a valid email",
+      "ES": "Informe un correo válido"
+    },
+    "MESSAGE": {
+      "PT": "Mensagem",
+      "EN": "Message",
+      "ES": "Mensage"
+    },
+    "TIPS": {
+      "MAX_LENGTH_MESSAGE": {
+      "PT": "Máximo de 1000 caracteres",
+      "EN": "1000 characters limit",
+      "ES": "Límite de 1000 caracteres"
+      }
+    },
+    "SEND": {
+      "PT": "Enviar",
+      "EN": "Send",
+      "ES": "Enviar"
+    }
+  },
   "COLLECTION": {
     "GATO_MAGICO": {
       "PT": "Gato Mágico",
@@ -107,15 +156,15 @@
     }
   },
   "FOOTER": {
-    "CONTATO": {
-      "PT": "Entre em contato",
-      "EN": "Get in touch",
-      "ES": "Habla Conmigo"
+    "CALL_TO_ACTION": {
+      "PT": "Vamos fazer um trabalho juntos!",
+      "EN": "Let's work together!",
+      "ES": "Vamos hacer un projecto juntos!"
     },
-    "COMPARTILHE": {
-      "PT": "Compartilhe meu trabalho!",
-      "EN": "Share my work!",
-      "ES": "Comparte mi trabajo!"
+    "NETWORK": {
+      "PT": "Veja também",
+      "EN": "See also",
+      "ES": "Vea también"
     }
   },
   "NAV": {

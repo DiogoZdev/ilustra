@@ -5,7 +5,7 @@
       
       <div class="image-area">
         <img src="../../../assets/images/andressa.jpg" alt="A">
-        <div class="blob">Vamos fazer um projeto juntos</div>
+        <div class="blob">{{ 'FOOTER.CALL_TO_ACTION' | translate }}</div>
       </div>
       <ul class="info-list">
         <li><img src="../../../assets/icons/email.svg" alt="">araujoandressa2018@gmail.com</li>
@@ -15,19 +15,49 @@
 
     </div>
     <form [formGroup]="form" class="shadow">
-      <h2>Entre em contato!</h2>
+      <h2>{{ 'FORM.TITLE' | translate }}</h2>
       <div class="inputs">
-        <input class="dev-input" type="text" placeholder="Nome" formControlName="name">
-        <input class="dev-input" type="tel" placeholder="Telefone" formControlName="phone">
-        <input class="dev-input" type="email" placeholder="Email" formControlName="email">
-        <textarea class="message dev-input" placeholder="Mensagem" formControlName="message"></textarea>
+        <div class="form-field">
+          <input class="dev-input" type="text" [placeholder]="'FORM.NAME' | translate" formControlName="name">
+        </div>
+        <div class="form-field">
+          <input class="dev-input" type="text" [placeholder]="'FORM.PHONE' | translate" formControlName="phone">
+          <div class="input-tip error" *ngIf="form.get('phone')?.invalid && form.get('phone')?.touched">{{ 'FORM.PHONE_ERROR' | translate}}</div>
+        </div>
+        <div class="form-field">
+          <input class="dev-input" type="email" [placeholder]="'FORM.EMAIL' | translate" formControlName="email">
+          <div class="input-tip error" *ngIf="form.get('email')?.invalid && form.get('email')?.touched">{{ 'FORM.EMAIL_ERROR' | translate}}</div>
+        </div>
+        <div class="form-field">
+          <textarea class="message dev-input" [placeholder]="'FORM.MESSAGE' | translate" formControlName="message" maxlength="500"></textarea>
+          <div class="input-tip"><span></span> <span>{{ form.get('message')?.value.length }}/500</span></div>
+        </div>
       </div>
-      <div class="button-area">
-        <button (click)="sendFormResponse()">Enviar</button>
+      <div class="button-area flex">
+        <button (click)="sendFormResponse()">{{ 'FORM.SEND' | translate }}</button>
+        <span class="msg-sent" *ngIf="isMessageSent">Mensagem enviada</span>
       </div>
     </form>
   </div>
   <div class="footer-lower">
-    
+    <div class="network">
+      <a class="z-icon" matTooltip="Instagram" target="_blank" href="https://instagram.com/andressailustradora">
+        <img src="assets/icons/instagram.svg" alt="">
+      </a>
+      <a class="z-icon" matTooltip="Behance" target="_blank" href="https://behance.net/andressaaraujo4">
+        <img src="assets/icons/behance.svg" alt="">
+      </a>
+      <a class="z-icon" matTooltip="Facebook" target="_blank" href="https://facebook.com/amaarteedesign">
+        <img src="assets/icons/facebook.svg" alt="">
+      </a>
+      <a class="z-icon" matTooltip="Artstation" target="_blank" href="https://www.artstation.com/andressaraujo">
+        <img src="assets/icons/artstation.svg" alt="">
+      </a>
+    </div>
+
+    <span class="dev">
+      <a href="https://github.com/diogozdev" target="_blank">&lt;/dev&gt; with 💙 by Diogo Lara</a>
+    </span>
+
   </div>
 </footer>

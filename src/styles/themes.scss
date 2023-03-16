@@ -21,6 +21,9 @@ body {
   --svg-normal: 
     invert(80%);
 
+  --svg-inverted: 
+  invert(90%);
+
   --svg-accent:
     invert(33%)
     sepia(63%)
@@ -50,6 +53,9 @@ body.dark {
 
   --svg-normal: 
   invert(15%);
+
+  --svg-inverted: 
+  invert(90%);
 
   --svg-accent:
     invert(33%)
