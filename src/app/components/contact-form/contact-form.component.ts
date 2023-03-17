@@ -12,13 +12,12 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class ContactFormComponent implements OnInit {
 
   public form!: FormGroup;
-  public isMessageSent = false;
 
-  constructor (
+  constructor(
     private formBuilder: FormBuilder,
     private contactService: ContactService,
     private snack: MatSnackBar,
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.form = this.formBuilder.group({
@@ -30,21 +29,15 @@ export class ContactFormComponent implements OnInit {
   }
 
   sendFormResponse() {
-  if (!this.form.valid) return;
-  
-   this.contactService.sendResponse(this.form.value).then((res) => {
-    console.log(res)
-   }).finally(() => {
-    this.notifyMessageSent();
-    this.clearForm()
-   })
-  }
+    if (!this.form.valid) return;
 
-  notifyMessageSent() {
-    this.isMessageSent = true;
-    setTimeout(() => {
-      this.isMessageSent = false;
-    }, 4000)
+    this.contactService.sendResponse(this.form.value)
+      .then(() => {
+        this.snack.open("Mensagem enviada! Obrigada", ":)", { duration: 3500 })
+        this.clearForm()
+      }).catch((err) => {
+        console.log("bateu no err", err);
+      });
   }
 
   clearForm() {

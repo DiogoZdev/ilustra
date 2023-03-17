@@ -122,3 +122,20 @@ a {
     background: transparent;
   }
 }
+
+snack-bar-container {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 999;
+  background-color: rgb(77, 174, 230);
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 900;
+  box-shadow: 0 0 5px #0005;
+
+
+  button {
+    background: transparent;
+  }
+}

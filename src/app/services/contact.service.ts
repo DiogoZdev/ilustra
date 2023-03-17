@@ -28,12 +28,9 @@ export class ContactService {
     return fetch(this.formUrl, {
       method: "POST",
       body: formData
-    }).then(() => {
-      console.log("")
-    }).finally(() => {
-      return {
-        message: "Mensagem enviada"
-      }
     })
+    .then((res) => res)
+    .catch((err) => err)
+    .finally(() => console.log("Message delivery atempt made"))
   }
 }
