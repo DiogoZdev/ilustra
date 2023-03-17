@@ -49,6 +49,14 @@ footer {
           align-items: center;
           gap: 1rem;
           color: var(--color-normal);
+         
+          a {
+            color: unset;
+            text-decoration: unset;
+            display: inherit;
+            gap: inherit;
+          }
+          
           img {
             filter: var(--svg-accent);
             width: 30px;
