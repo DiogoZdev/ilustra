@@ -36,7 +36,7 @@ export class ContactFormComponent implements OnInit {
         this.snack.open("Mensagem enviada! Obrigada", ":)", { duration: 3500 })
         this.clearForm()
       }).catch((err) => {
-        console.log("bateu no err", err);
+        console.error("An error occurred", err);
       });
   }
 
