@@ -1,4 +1,6 @@
 footer {
+  position: relative;
+
   &>* {
     padding: 2rem;
   }
@@ -6,6 +8,7 @@ footer {
   .footer-upper {
     position: relative;
     min-height: 500px;
+    background: var(--bg-100);
 
     @media (max-width: 970px) {
       display: flex;

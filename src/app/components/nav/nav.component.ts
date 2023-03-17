@@ -9,6 +9,8 @@ import { pages } from 'src/app/config/pages';
 })
 export class NavComponent implements OnInit { 
 
+  private appWindow = document.querySelector("#app-wrapper");
+
   public languages = languages;
   public pages = pages;
 
@@ -40,6 +42,7 @@ export class NavComponent implements OnInit {
   }
 
   checkPage() {
+    this.toTop();
     setTimeout(() => {
       const url = window.location.href;
       url.indexOf("about") === -1 && url.indexOf("products") === -1 ? this.actualPage = "/" : ""
@@ -83,6 +86,6 @@ export class NavComponent implements OnInit {
    * Método para voltar ao topo da página
    */
   toTop() {
-    window.scrollTo(0, 0);
+    this.appWindow?.scrollTo(0, 0);
   }
 }
