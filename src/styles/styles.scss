@@ -134,6 +134,11 @@ snack-bar-container {
   font-weight: 900;
   box-shadow: 0 0 5px #0005;
 
+  @media (max-width:600px) {
+    right: 0;
+    bottom: 0;
+  }
+
 
   button {
     background: transparent;
