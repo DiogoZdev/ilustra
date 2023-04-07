@@ -25,6 +25,7 @@ import { ProductCardMockComponent } from './components/product-card-mock/product
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { TopButtonComponent } from './components/top-button/top-button.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     ProductCardComponent,
     ProductCardMockComponent,
     ContactFormComponent,
+    TopButtonComponent,
 ],
   imports: [
     BrowserModule,
