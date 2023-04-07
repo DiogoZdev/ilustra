@@ -1,42 +1,33 @@
 <nav>
-    <div class="contain" row>
-        <div class="navigation">
-            <ul>
-                <li class="logo"><img src="../../../assets/images/header/logo-feather.svg" alt="feather"></li>
-                <li 
-                    *ngFor="let page of pages" 
-                    opt 
-                    [routerLink]="page.path"
-                    (click)="checkPage()"
-                    [ngClass]="{ 'active-tab': page.path === actualPage }"
-                  >
-                  {{ page.i18n | translate }}
-                </li>
-            </ul>
-        </div>
-        <div class="settings" to-right>
-            <mat-icon class="gear" id="gear" (click)="toggleConfiguration()">
-                settings
-            </mat-icon>
-            <div class="configuration" *ngIf="showConfiguration">
-                <div>
-                    <ul>
-                        <li *ngFor="let lang of languages" class="opt" (click)="setLanguage(lang.id)">{{ lang.language }}</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li
-                          class="opt"
-                          (click)="resetTheme()"
-                        ><mat-icon>light_mode</mat-icon></li>
-                        <li 
-                          class="opt"
-                          (click)="setDarkTheme()"
-                        ><mat-icon>dark_mode</mat-icon></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <div class="contain" row>
+    <div class="navigation">
+      <ul>
+        <li class="logo"><img src="../../../assets/images/header/logo-feather.svg" alt="feather"></li>
+        <li *ngFor="let page of pages" opt [routerLink]="page.path" (click)="checkPage()"
+          [ngClass]="{ 'active-tab': page.path === actualPage }">
+          {{ page.i18n | translate }}
+        </li>
+      </ul>
     </div>
+    <div class="settings" to-right>
+      <mat-icon class="gear" id="gear">
+        settings
+      </mat-icon>
+      <div class="configuration-background">
+        <div class="configuration">
+          <div>
+            <ul>
+              <li *ngFor="let lang of languages" class="opt" (click)="setLanguage(lang.id)">{{ lang.language }}</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li class="opt" (click)="resetTheme()"><mat-icon>light_mode</mat-icon></li>
+              <li class="opt" (click)="setDarkTheme()"><mat-icon>dark_mode</mat-icon></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>

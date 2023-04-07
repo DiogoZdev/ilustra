@@ -52,15 +52,6 @@ export class NavComponent implements OnInit {
   }
 
   /**
-   * Método para exibir configurações da página
-   */
-  toggleConfiguration() {
-    this.showConfiguration = !this.showConfiguration;
-
-    document.querySelector(".gear")?.classList.toggle('rotate');
-  }
-
-  /**
    * Método para alterar idioma da UI
    * @param value Idioma selecionado
    */
