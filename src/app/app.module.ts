@@ -12,7 +12,6 @@ import { GalleryComponent } from './views/gallery/gallery.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './views/about/about.component';
 import { DisplayComponent } from './components/display/display.component';
-import { SupportComponent } from './components/support/support.component';
 import { ProductsComponent } from './views/products/products.component';
 import { ErrorComponent } from './components/error/error.component';
 import { LoaderComponent } from './components/loader/loader.component';
@@ -36,7 +35,6 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     AboutComponent,
     DisplayComponent,
     TranslatePipe,
-    SupportComponent,
     ProductsComponent,
     ErrorComponent,
     LoaderComponent,

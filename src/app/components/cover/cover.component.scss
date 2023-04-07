@@ -26,23 +26,41 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    // background-color: #0554;
 
     img {
       position: absolute;
     }
   }
+
+
+#logo-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  max-width: 60vw;
+  aspect-ratio: 40/24.5;
 }
 
 #logo {
+  display: block;
   filter: var(--svg-normal);
-  width: clamp(250px, 500px,20vw);
-  left: 10%;
-  top: 20%;
+  width: 100%;
 
   @media (max-width: 500px) {
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+  #feather {
+    width: 14%;
+    position: absolute;
+    bottom: 8%;
+    right: 0;
+
+    filter: var(--svg-accent);
   }
 }
 
@@ -93,11 +111,12 @@ header {
 }
 
 .sm-clouds-movement {
-  filter: blur(1px);
+  filter: opacity(0.1);
   animation: sm-clouds-wind 80s infinite alternate;
 }
 
 .lg-clouds-movement {
+  filter: opacity(0.1);
   animation: lg-clouds-wind 80s infinite alternate;
 }
 

@@ -25,11 +25,12 @@ body {
   invert(90%);
 
   --svg-accent:
-    invert(33%)
-    sepia(63%)
-    hue-rotate(84deg)
-    saturate(399%)
-    brightness(95%);
+    brightness(0)
+    invert(100%)
+    sepia(19%)
+    saturate(6759%)
+    hue-rotate(67deg)
+    contrast(82%);
 
   --sm-cloud-size: clamp(60px, 120px,12vw);
   --lg-cloud-size: clamp(120px, 240px,25vw);
@@ -56,11 +57,4 @@ body.dark {
 
   --svg-inverted: 
   invert(90%);
-
-  --svg-accent:
-    invert(33%)
-    sepia(63%)
-    hue-rotate(84deg)
-    saturate(399%)
-    brightness(95%);
 }
