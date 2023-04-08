@@ -2,7 +2,6 @@ import {
   Component,
   EventEmitter,
   Input,
-  OnInit,
   Output,
 } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -13,7 +12,7 @@ import { Project } from 'src/app/interfaces/project.interface';
   templateUrl: './art-display.component.html',
   styleUrls: ['./art-display.component.scss'],
 })
-export class ArtDisplayComponent implements OnInit {
+export class ArtDisplayComponent {
 
   @Input() project!: Project;
 
@@ -22,24 +21,6 @@ export class ArtDisplayComponent implements OnInit {
   constructor(
     private snack: MatSnackBar,
   ) {}
-
-  ngOnInit(): void {
-    if (document.body.classList.contains('dark')) {
-      document
-        .querySelector('#art-display-logo')
-        ?.setAttribute(
-          'src',
-          'https://raw.githubusercontent.com/andressadesign/files/main/andressa/logo-claro.png'
-        );
-    } else {
-      document
-        .querySelector('#art-display-logo')
-        ?.setAttribute(
-          'src',
-          'https://raw.githubusercontent.com/andressadesign/files/main/andressa/logo-escuro.png'
-        );
-    }
-  }
 
   shareArt(tag: string) {
     navigator.clipboard.writeText(

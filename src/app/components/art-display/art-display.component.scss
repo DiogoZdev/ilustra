@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+::-webkit-scrollbar {
+  background: transparent;
+}
+
 main {
   position: relative;
   height: 95vh;
@@ -35,7 +39,8 @@ main {
   .close, .share {
     width: unset;
     height: unset;
-    background-color: var(--bg-300);
+    background-color: #fff3;
+    backdrop-filter: blur(3px);
     border-radius: 25%;
     padding: .5rem;
     position: sticky;
@@ -45,7 +50,7 @@ main {
 
   .close {
     top: 1rem;
-    color: var(--orange-500);
+    color: var(--orange-400);
 
     &:hover {
       background-color: var(--orange-100);
@@ -78,7 +83,7 @@ main {
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding-bottom: 1px;
+    padding-bottom: 0.5px;
 
     img {
       width:  100%;
@@ -91,13 +96,20 @@ main {
 
   .display-footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    gap: 1rem;
+    padding: 2rem 0 4rem;
+
+    h2 {
+      font-weight: 400;
+      color: var(--font);
+    }
     
     img {
-      height: 100px;
-      width: unset;
+      padding-block: 1rem;
+      width: 30px;
     }
 
     #cnpj {
