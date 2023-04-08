@@ -11,7 +11,6 @@ import { TranslatePipe } from './utils/pipes/translate.pipe';
 import { GalleryComponent } from './views/gallery/gallery.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './views/about/about.component';
-import { DisplayComponent } from './components/display/display.component';
 import { ProductsComponent } from './views/products/products.component';
 import { ErrorComponent } from './components/error/error.component';
 import { LoaderComponent } from './components/loader/loader.component';
@@ -26,6 +25,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { TopButtonComponent } from './components/top-button/top-button.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,6 @@ import { TopButtonComponent } from './components/top-button/top-button.component
     GalleryComponent,
     FooterComponent,
     AboutComponent,
-    DisplayComponent,
     TranslatePipe,
     ProductsComponent,
     ErrorComponent,
@@ -58,6 +57,7 @@ import { TopButtonComponent } from './components/top-button/top-button.component
     FormsModule,
     ReactiveFormsModule,
     MatSnackBarModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

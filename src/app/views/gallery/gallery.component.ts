@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { MatDialog } from '@angular/material/dialog';
 import { ArtDisplayComponent } from 'src/app/components/art-display/art-display.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-gallery',
@@ -55,6 +56,7 @@ export class GalleryComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private http: HttpClient,
+    private snack: MatSnackBar,
   ) { }
   
   /**
@@ -63,15 +65,38 @@ export class GalleryComponent implements OnInit {
   ngOnInit(): void {
     this.loading = true;
 
-    this.http.get("https://raw.githubusercontent.com/andressadesign/files/main/projects.json")
-    .toPromise().then((result) => {      
-      this.projectsList = (result as ProjectList).projects;
+    try {
+      this.http.get("https://raw.githubusercontent.com/andressadesign/files/main/projects.json")
+      .toPromise()
+      .then((result) => {      
+        this.projectsList = (result as ProjectList).projects;
 
-      const filter = this.route.snapshot.paramMap.get('filter');
-      filter ? this.filter(filter) : this.filter('all');
-
+        this.checkFilters();
+      });
+    }
+    catch (error) {
+      this.snack.open('Ocorreu um erro ao carregar os projetos! :(');
+      console.error(error);
+    }
+    finally {
       this.loading = false;
-    })
+    }
+    
+  }
+
+  checkFilters() {
+    const filter = this.route.snapshot.queryParamMap.get('filter');
+    const hasRealfilter = filter ? !!this.projectsList.find((p) => p.categoria.indexOf(filter) !== -1) : false;
+
+    hasRealfilter && filter ? this.filter(filter) : this.filter('all');
+    
+    const tag = this.route.snapshot.queryParamMap.get('t');
+    const foundProject = tag ? this.projectsList.find((p) => p.tag === tag) : null;
+    
+    if (foundProject) {
+      this.selectedProject = foundProject;
+      this.viewDisplay = true;
+    }
   }
 
   /**

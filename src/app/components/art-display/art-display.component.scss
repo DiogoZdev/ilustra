@@ -12,6 +12,7 @@
 }
 
 main {
+  position: relative;
   height: 95vh;
   width: 95vw;
   max-width: 1000px;
@@ -21,33 +22,42 @@ main {
   position: relative;
   border-radius: 15px;
 
-  .display-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 20;
-
-    h1 {
-      display: block;
-      font-size: 28px;
-      background-color: var(--bg-300);
-      color: var(--color-accent);
-      line-height: 2;
-      width: fit-content;
-      padding: 0 1rem;
-      border-radius: 0 0 15px 0;
-    }
   
-    .close {
-      width: unset;
-      height: unset;
-      color: var(--orange-500);
-      background-color: var(--bg-300);
-      transform: translateX(-0.5rem);
-      border-radius: 25%;
-      padding: .5rem;
+
+  h1 {
+    font-size: 28px;
+    color: var(--color-accent);
+    line-height: 1;
+    width: fit-content;
+    padding: 0 2rem ;
+  }
+
+  .close, .share {
+    width: unset;
+    height: unset;
+    background-color: var(--bg-300);
+    border-radius: 25%;
+    padding: .5rem;
+    position: sticky;
+    left: 92%;
+    z-index: 20;
+  }
+
+  .close {
+    top: 1rem;
+    color: var(--orange-500);
+
+    &:hover {
+      background-color: var(--orange-100);
+    }
+  }
+  
+  .share {
+    top: 4rem;
+    color: var(--green-600);
+
+    &:hover {
+      background-color: var(--green-100);
     }
   }
 

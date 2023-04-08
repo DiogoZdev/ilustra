@@ -5,6 +5,7 @@ import {
   OnInit,
   Output,
 } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Project } from 'src/app/interfaces/project.interface';
 
 @Component({
@@ -13,15 +14,16 @@ import { Project } from 'src/app/interfaces/project.interface';
   styleUrls: ['./art-display.component.scss'],
 })
 export class ArtDisplayComponent implements OnInit {
+
   @Input() project!: Project;
 
   @Output() closeDisplay = new EventEmitter();
 
-  constructor() {}
+  constructor(
+    private snack: MatSnackBar,
+  ) {}
 
   ngOnInit(): void {
-    console.log(this.project);
-
     if (document.body.classList.contains('dark')) {
       document
         .querySelector('#art-display-logo')
@@ -37,6 +39,13 @@ export class ArtDisplayComponent implements OnInit {
           'https://raw.githubusercontent.com/andressadesign/files/main/andressa/logo-escuro.png'
         );
     }
+  }
+
+  shareArt(tag: string) {
+    navigator.clipboard.writeText(
+      `${window.location.toString().split('?')[0]}?t=${tag}`
+    );
+    this.snack.open("Link copiado, só compartilhar!", ":)", { duration: 3500 });
   }
 
   closeArtDisplay() {

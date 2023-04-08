@@ -5,6 +5,7 @@ export interface Project {
   imagens: string[];
   thumbnail: string,
   categoria: string[];
+  tag: string;
 }
 
 export interface ProjectList {
