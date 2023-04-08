@@ -73,10 +73,11 @@ main {
     img.thumbnail {
       width: 100%;
       height: 100%;
+      transform: scale(1.02);
       transition: transform ease 600ms;
 
       &:hover {
-        transform: scale(1.1) rotate(2deg);
+        transform: scale(1.15) rotate(2deg);
       }
     }
 
