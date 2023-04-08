@@ -2,8 +2,8 @@
   <div class="contain" row>
     <div class="navigation">
       <ul>
-        <li class="logo"><img src="../../../assets/images/header/logo-feather.svg" alt="feather"></li>
-        <li *ngFor="let page of pages" opt [routerLink]="page.path" (click)="checkPage()"
+        <li class="logo" routerLink="/" (click)="checkPage()"><img src="../../../assets/images/header/logo-feather.svg" alt="feather"></li>
+        <li *ngFor="let page of pages" opt [class]="page.class || ''" [routerLink]="page.path" (click)="checkPage()"
           [ngClass]="{ 'active-tab': page.path === actualPage }">
           {{ page.i18n | translate }}
         </li>

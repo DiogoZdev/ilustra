@@ -14,6 +14,10 @@ nav {
       gap: 1rem;
       align-items: center;
 
+      @media screen and (max-width: 500px) {
+        gap: 0.5rem; 
+      }
+
       li {
           list-style: none;
           padding: 0.5rem;
@@ -23,7 +27,14 @@ nav {
           }
       }
 
+      @media screen and (max-width: 500px) {
+        .mobile-optional {
+          display: none;
+        } 
+      }
+
       .logo {
+        cursor: pointer;
         max-width: 55px;
         filter: var(--svg-accent);
       }
