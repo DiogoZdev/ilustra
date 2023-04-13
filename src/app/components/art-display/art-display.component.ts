@@ -23,10 +23,11 @@ export class ArtDisplayComponent {
   ) {}
 
   shareArt(tag: string) {
-    navigator.clipboard.writeText(
-      `${window.location.toString().split('?')[0]}?t=${tag}`
-    );
-    this.snack.open("Link copiado, só compartilhar!", ":)", { duration: 3500 });
+    const link = `${window.location.toString().split('?')[0]}?t=${tag}`;
+    navigator.clipboard.writeText(link)
+      .then(() => {
+        this.snack.open("Link copiado, só compartilhar!", ":)", { duration: 3500 });
+      })
   }
 
   closeArtDisplay() {
