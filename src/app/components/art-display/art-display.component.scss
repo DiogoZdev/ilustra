@@ -33,7 +33,7 @@ main {
     color: var(--color-accent);
     line-height: 1;
     width: fit-content;
-    padding: 0 2rem ;
+    padding: 0 2rem 2rem;
   }
 
   .close, .share {
@@ -67,14 +67,14 @@ main {
   }
 
   .description {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     width: 100%;
-    max-width: 70ch;
+    max-width: 80ch;
     line-height: 1.5;
+    margin-bottom: 1ch;
   }
 
   .art {
+    margin-top: 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;

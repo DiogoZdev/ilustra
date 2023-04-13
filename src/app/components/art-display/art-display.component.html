@@ -5,8 +5,8 @@
     <mat-icon class="share" title="compartilhar" (click)="shareArt(project.tag)">share</mat-icon>
     <h1 pad-x>{{ project.titulo }}</h1>
     
-    <div pad-x class="description">
-      {{ project.descricao }}
+    <div pad-x class="description" *ngFor="let paragraph of project.descricao.split('//')">
+      {{ paragraph }}
     </div>
 
     <div class="art">
