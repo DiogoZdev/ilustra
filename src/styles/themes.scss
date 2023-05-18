@@ -11,26 +11,18 @@ body {
 
   --color-normal: var(--gray-900);
   --color-accent: var(--green-700);
-  --color-theme: hsl(146, 71%, 62%);
-  --color-theme-transparency: hsla(146, 71%, 62%, 50%);
+  --color-theme: hsl(162, 56%, 46%);
+  --color-theme-transparency: hsla(162, 56%, 46%, 0.5);
 
   --button-accent: var(--green-400);
 
   --shadow: 0 0 4px #0003;
 
-  --svg-normal: 
-    invert(80%);
+  --svg-normal: invert(80%);
 
-  --svg-inverted: 
-  invert(90%);
+  --svg-inverted: invert(90%);
 
-  --svg-accent:
-    brightness(0)
-    invert(100%)
-    sepia(19%)
-    saturate(6759%)
-    hue-rotate(67deg)
-    contrast(82%);
+  --svg-accent:invert(58%) sepia(76%) saturate(363%) hue-rotate(111deg) brightness(90%) contrast(89%);
 
   --sm-cloud-size: clamp(60px, 120px,12vw);
   --lg-cloud-size: clamp(120px, 240px,25vw);
