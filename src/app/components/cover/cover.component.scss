@@ -111,12 +111,12 @@ header {
 }
 
 .sm-clouds-movement {
-  filter: opacity(0.1);
+  filter: opacity(0.5);
   animation: sm-clouds-wind 80s infinite alternate;
 }
 
 .lg-clouds-movement {
-  filter: opacity(0.1);
+  filter: opacity(0.5);
   animation: lg-clouds-wind 80s infinite alternate;
 }
 
